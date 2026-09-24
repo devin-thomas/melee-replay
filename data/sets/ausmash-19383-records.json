@@ -1,0 +1,240 @@
+{
+  "source": {
+    "sourceId": "ausmash-public-results",
+    "publisher": "Ausmash tournament results",
+    "evidenceUrls": [
+      "https://ausmash.com.au/results/19383/meleevac-17-swagman-post-okran-loss-7325",
+      "https://ausmash.com.au/terms"
+    ],
+    "accessConditions": "The publisher exposes direct ordered replay links on its public bracket page; no account was required during review.",
+    "useConditions": "The app fetches individual replay files from the publisher's storage and does not redistribute them. Ausmash terms do not state a replay redistribution license.",
+    "reviewedAt": "2026-09-24T06:27:29.000Z",
+    "auditReference": "data/sets/ausmash-19383-records.json: pinned direct-file hashes and per-match ordered link, game ending and bracket-result cross-check.",
+    "downloadScopes": [
+      {
+        "origin": "https://ausmashstorage.blob.core.windows.net",
+        "pathPrefix": "/ausmash-content/"
+      }
+    ],
+    "redirectScopes": [],
+    "eligibility": "eligible"
+  },
+  "assets": [
+    {
+      "assetId": "4e63963c-5aab-54ac-be80-ab7f0c470c87",
+      "sourceId": "ausmash-public-results",
+      "format": "slp",
+      "fetchUrl": "https://ausmashstorage.blob.core.windows.net/ausmash-content/56741c4e-50f2-45de-ab74-8bcfeab600c8.slp",
+      "sha256": "1e96eeac7e202c2b5be5be80079ef98c3f248f2ec3ce5d2afef7e1869a59f568",
+      "byteSize": 3887822
+    },
+    {
+      "assetId": "39ed2791-f17f-5e07-ba0c-c8b1057c0537",
+      "sourceId": "ausmash-public-results",
+      "format": "slp",
+      "fetchUrl": "https://ausmashstorage.blob.core.windows.net/ausmash-content/b68f652f-18af-486b-8dbd-0dc286f66b00.slp",
+      "sha256": "3b2d088a0604c45f9ee9712fcd026961a11dd23deec9b435c5f4a4b5b7de42e9",
+      "byteSize": 3721796
+    },
+    {
+      "assetId": "32afc779-3d08-568c-9926-f2a094a94d51",
+      "sourceId": "ausmash-public-results",
+      "format": "slp",
+      "fetchUrl": "https://ausmashstorage.blob.core.windows.net/ausmash-content/8d12425e-7306-4dd6-9ed7-455896ef5d9f.slp",
+      "sha256": "b47e4f1de443608946b9846c70d73b396c0f9dd2b475f54ed8f5f3b84dbc6339",
+      "byteSize": 2438055
+    },
+    {
+      "assetId": "3f740526-bbf4-5a5f-b71b-38de4c8c7352",
+      "sourceId": "ausmash-public-results",
+      "format": "slp",
+      "fetchUrl": "https://ausmashstorage.blob.core.windows.net/ausmash-content/53aa5e6e-8e2d-413d-8a32-4c6bb55cd03e.slp",
+      "sha256": "9be0d5098c21ec6933de8e82fbe49d9fb1dd58b96cf28d711a581ca6318e130d",
+      "byteSize": 3470068
+    }
+  ],
+  "replays": [
+    {
+      "replayId": "f6e545bd-db52-5470-8138-47053cc8685c",
+      "assetId": "4e63963c-5aab-54ac-be80-ab7f0c470c87",
+      "sha256": "1e96eeac7e202c2b5be5be80079ef98c3f248f2ec3ce5d2afef7e1869a59f568",
+      "byteSize": 3887822,
+      "formatEvidence": "Publisher-linked .slp parsed as a complete human singles GAME with unambiguous terminal stocks.",
+      "participants": {
+        "player1": "WillD",
+        "player2": "Rizzarro Flame"
+      },
+      "sourceIdentity": "https://ausmashstorage.blob.core.windows.net/ausmash-content/56741c4e-50f2-45de-ab74-8bcfeab600c8.slp",
+      "aliases": [
+        "https://ausmashstorage.blob.core.windows.net/ausmash-content/56741c4e-50f2-45de-ab74-8bcfeab600c8.slp"
+      ]
+    },
+    {
+      "replayId": "c18badee-9b94-546e-a74c-2ea59be76ff2",
+      "assetId": "39ed2791-f17f-5e07-ba0c-c8b1057c0537",
+      "sha256": "3b2d088a0604c45f9ee9712fcd026961a11dd23deec9b435c5f4a4b5b7de42e9",
+      "byteSize": 3721796,
+      "formatEvidence": "Publisher-linked .slp parsed as a complete human singles GAME with unambiguous terminal stocks.",
+      "participants": {
+        "player1": "WillD",
+        "player2": "Rizzarro Flame"
+      },
+      "sourceIdentity": "https://ausmashstorage.blob.core.windows.net/ausmash-content/b68f652f-18af-486b-8dbd-0dc286f66b00.slp",
+      "aliases": [
+        "https://ausmashstorage.blob.core.windows.net/ausmash-content/b68f652f-18af-486b-8dbd-0dc286f66b00.slp"
+      ]
+    },
+    {
+      "replayId": "b3c3b5c8-531d-593d-81b7-a4f86a919658",
+      "assetId": "32afc779-3d08-568c-9926-f2a094a94d51",
+      "sha256": "b47e4f1de443608946b9846c70d73b396c0f9dd2b475f54ed8f5f3b84dbc6339",
+      "byteSize": 2438055,
+      "formatEvidence": "Publisher-linked .slp parsed as a complete human singles GAME with unambiguous terminal stocks.",
+      "participants": {
+        "player1": "McCloud",
+        "player2": "Rizzarro Flame"
+      },
+      "sourceIdentity": "https://ausmashstorage.blob.core.windows.net/ausmash-content/8d12425e-7306-4dd6-9ed7-455896ef5d9f.slp",
+      "aliases": [
+        "https://ausmashstorage.blob.core.windows.net/ausmash-content/8d12425e-7306-4dd6-9ed7-455896ef5d9f.slp"
+      ]
+    },
+    {
+      "replayId": "e103bf06-d8bf-5297-a427-e793d0958d0a",
+      "assetId": "3f740526-bbf4-5a5f-b71b-38de4c8c7352",
+      "sha256": "9be0d5098c21ec6933de8e82fbe49d9fb1dd58b96cf28d711a581ca6318e130d",
+      "byteSize": 3470068,
+      "formatEvidence": "Publisher-linked .slp parsed as a complete human singles GAME with unambiguous terminal stocks.",
+      "participants": {
+        "player1": "McCloud",
+        "player2": "Rizzarro Flame"
+      },
+      "sourceIdentity": "https://ausmashstorage.blob.core.windows.net/ausmash-content/53aa5e6e-8e2d-413d-8a32-4c6bb55cd03e.slp",
+      "aliases": [
+        "https://ausmashstorage.blob.core.windows.net/ausmash-content/53aa5e6e-8e2d-413d-8a32-4c6bb55cd03e.slp"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "itemId": "a3cfdf71-1d6d-5305-8fd6-bdef8f04552d",
+      "kind": "set",
+      "sourceSetIdentity": "Ausmash event 19383: W1 Rizzarro Flame vs WillD",
+      "eventContext": "MeleeVac #17 - Swagman post okran loss - 7/3/25",
+      "entrantA": "Rizzarro Flame",
+      "entrantB": "WillD",
+      "bestOf": 3,
+      "completionRule": "target-wins",
+      "segments": [
+        {
+          "replayId": "f6e545bd-db52-5470-8138-47053cc8685c",
+          "order": 1,
+          "group": "main",
+          "player1Entrant": "B",
+          "player2Entrant": "A",
+          "openingCharacters": [
+            "Fox",
+            "Peach"
+          ],
+          "scoreEffect": "entrantA"
+        },
+        {
+          "replayId": "c18badee-9b94-546e-a74c-2ea59be76ff2",
+          "order": 2,
+          "group": "main",
+          "player1Entrant": "B",
+          "player2Entrant": "A",
+          "openingCharacters": [
+            "Fox",
+            "Peach"
+          ],
+          "scoreEffect": "entrantA"
+        }
+      ],
+      "verification": {
+        "method": "reviewed-source-crosscheck",
+        "sourceReferences": [
+          "https://ausmash.com.au/results/19383/meleevac-17-swagman-post-okran-loss-7325",
+          "https://ausmash.com.au/terms",
+          "https://ausmashstorage.blob.core.windows.net/ausmash-content/56741c4e-50f2-45de-ab74-8bcfeab600c8.slp",
+          "https://ausmashstorage.blob.core.windows.net/ausmash-content/b68f652f-18af-486b-8dbd-0dc286f66b00.slp"
+        ],
+        "reviewer": "Melee Replay curation",
+        "verifiedAt": "2026-09-24T06:27:29.000Z",
+        "manifestRevision": "filled-by-catalog-builder",
+        "orderedAssetHashes": [
+          "1e96eeac7e202c2b5be5be80079ef98c3f248f2ec3ce5d2afef7e1869a59f568",
+          "3b2d088a0604c45f9ee9712fcd026961a11dd23deec9b435c5f4a4b5b7de42e9"
+        ],
+        "completenessEvidence": "The publisher's bracket row gives the set score and exactly ordered per-game Slippi links; every linked game was downloaded, hashed, parsed to a complete ending, and its terminal score agreed with that row.",
+        "decisions": "Membership and chronology come from the publisher's Game 1/2/3 links in the same bracket row, not file proximity or timestamps."
+      },
+      "sourceResult": {
+        "entrantA": 2,
+        "entrantB": 0
+      }
+    },
+    {
+      "itemId": "4bfd3ca2-4b10-5c71-9515-e6cddc25a6ea",
+      "kind": "set",
+      "sourceSetIdentity": "Ausmash event 19383: W2 McCloud vs Rizzarro Flame",
+      "eventContext": "MeleeVac #17 - Swagman post okran loss - 7/3/25",
+      "entrantA": "McCloud",
+      "entrantB": "Rizzarro Flame",
+      "bestOf": 3,
+      "completionRule": "target-wins",
+      "segments": [
+        {
+          "replayId": "b3c3b5c8-531d-593d-81b7-a4f86a919658",
+          "order": 1,
+          "group": "main",
+          "player1Entrant": "A",
+          "player2Entrant": "B",
+          "openingCharacters": [
+            "Peach",
+            "Fox"
+          ],
+          "scoreEffect": "entrantA"
+        },
+        {
+          "replayId": "e103bf06-d8bf-5297-a427-e793d0958d0a",
+          "order": 2,
+          "group": "main",
+          "player1Entrant": "A",
+          "player2Entrant": "B",
+          "openingCharacters": [
+            "Peach",
+            "Fox"
+          ],
+          "scoreEffect": "entrantA"
+        }
+      ],
+      "verification": {
+        "method": "reviewed-source-crosscheck",
+        "sourceReferences": [
+          "https://ausmash.com.au/results/19383/meleevac-17-swagman-post-okran-loss-7325",
+          "https://ausmash.com.au/terms",
+          "https://ausmashstorage.blob.core.windows.net/ausmash-content/8d12425e-7306-4dd6-9ed7-455896ef5d9f.slp",
+          "https://ausmashstorage.blob.core.windows.net/ausmash-content/53aa5e6e-8e2d-413d-8a32-4c6bb55cd03e.slp"
+        ],
+        "reviewer": "Melee Replay curation",
+        "verifiedAt": "2026-09-24T06:27:29.000Z",
+        "manifestRevision": "filled-by-catalog-builder",
+        "orderedAssetHashes": [
+          "b47e4f1de443608946b9846c70d73b396c0f9dd2b475f54ed8f5f3b84dbc6339",
+          "9be0d5098c21ec6933de8e82fbe49d9fb1dd58b96cf28d711a581ca6318e130d"
+        ],
+        "completenessEvidence": "The publisher's bracket row gives the set score and exactly ordered per-game Slippi links; every linked game was downloaded, hashed, parsed to a complete ending, and its terminal score agreed with that row.",
+        "decisions": "Membership and chronology come from the publisher's Game 1/2/3 links in the same bracket row, not file proximity or timestamps."
+      },
+      "sourceResult": {
+        "entrantA": 2,
+        "entrantB": 0
+      }
+    }
+  ],
+  "catalogItemIds": [
+    "a3cfdf71-1d6d-5305-8fd6-bdef8f04552d",
+    "4bfd3ca2-4b10-5c71-9515-e6cddc25a6ea"
+  ]
+}

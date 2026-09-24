@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "catalogRevision": "curated-v1-a662053b9c93b0b1",
-  "generatedAt": "2026-09-24T03:38:51.904Z",
+  "catalogRevision": "curated-v1-962af863d60daead",
+  "generatedAt": "2026-09-24T06:27:29.000Z",
   "sources": [
     {
       "sourceId": "huggingface-slippi-public-v3.7",
@@ -13,7 +13,7 @@
       ],
       "accessConditions": "Public individual replay downloads through revision-pinned Hugging Face resolve URLs; no account was required during review.",
       "useConditions": "The dataset card labels the replay collection CC0-1.0, credits altf4 with contributions from nikki and yashichi, and permits use. This is the publisher's stated license for replay data, not a license for Nintendo game assets.",
-      "reviewedAt": "2026-09-24T03:38:51.904Z",
+      "reviewedAt": "2026-09-24T06:27:29.000Z",
       "auditReference": "data/replay-batch.json: local SHA-256, byte size, and py-slippi 1.6.2 game-end validation; standalone classification only.",
       "downloadScopes": [
         {
@@ -62,6 +62,26 @@
         {
           "origin": "https://storage.googleapis.com",
           "pathPrefix": "/slippi.appspot.com/replays/bundles/"
+        }
+      ],
+      "redirectScopes": [],
+      "eligibility": "eligible"
+    },
+    {
+      "sourceId": "ausmash-public-results",
+      "publisher": "Ausmash tournament results",
+      "evidenceUrls": [
+        "https://ausmash.com.au/results/19383/meleevac-17-swagman-post-okran-loss-7325",
+        "https://ausmash.com.au/terms"
+      ],
+      "accessConditions": "The publisher exposes direct ordered replay links on its public bracket page; no account was required during review.",
+      "useConditions": "The app fetches individual replay files from the publisher's storage and does not redistribute them. Ausmash terms do not state a replay redistribution license.",
+      "reviewedAt": "2026-09-24T06:27:29.000Z",
+      "auditReference": "data/sets/ausmash-19383-records.json: pinned direct-file hashes and per-match ordered link, game ending and bracket-result cross-check.",
+      "downloadScopes": [
+        {
+          "origin": "https://ausmashstorage.blob.core.windows.net",
+          "pathPrefix": "/ausmash-content/"
         }
       ],
       "redirectScopes": [],
@@ -616,6 +636,38 @@
       "fetchUrl": "https://storage.googleapis.com/slippi.appspot.com/replays/bundles/Summit-11.zip",
       "sha256": "3831c276c2c5e4492ea955abf1ee080667d2c7252afb8771e2e97659d989f7c4",
       "byteSize": 208987744
+    },
+    {
+      "assetId": "4e63963c-5aab-54ac-be80-ab7f0c470c87",
+      "sourceId": "ausmash-public-results",
+      "format": "slp",
+      "fetchUrl": "https://ausmashstorage.blob.core.windows.net/ausmash-content/56741c4e-50f2-45de-ab74-8bcfeab600c8.slp",
+      "sha256": "1e96eeac7e202c2b5be5be80079ef98c3f248f2ec3ce5d2afef7e1869a59f568",
+      "byteSize": 3887822
+    },
+    {
+      "assetId": "39ed2791-f17f-5e07-ba0c-c8b1057c0537",
+      "sourceId": "ausmash-public-results",
+      "format": "slp",
+      "fetchUrl": "https://ausmashstorage.blob.core.windows.net/ausmash-content/b68f652f-18af-486b-8dbd-0dc286f66b00.slp",
+      "sha256": "3b2d088a0604c45f9ee9712fcd026961a11dd23deec9b435c5f4a4b5b7de42e9",
+      "byteSize": 3721796
+    },
+    {
+      "assetId": "32afc779-3d08-568c-9926-f2a094a94d51",
+      "sourceId": "ausmash-public-results",
+      "format": "slp",
+      "fetchUrl": "https://ausmashstorage.blob.core.windows.net/ausmash-content/8d12425e-7306-4dd6-9ed7-455896ef5d9f.slp",
+      "sha256": "b47e4f1de443608946b9846c70d73b396c0f9dd2b475f54ed8f5f3b84dbc6339",
+      "byteSize": 2438055
+    },
+    {
+      "assetId": "3f740526-bbf4-5a5f-b71b-38de4c8c7352",
+      "sourceId": "ausmash-public-results",
+      "format": "slp",
+      "fetchUrl": "https://ausmashstorage.blob.core.windows.net/ausmash-content/53aa5e6e-8e2d-413d-8a32-4c6bb55cd03e.slp",
+      "sha256": "9be0d5098c21ec6933de8e82fbe49d9fb1dd58b96cf28d711a581ca6318e130d",
+      "byteSize": 3470068
     }
   ],
   "replays": [
@@ -2110,6 +2162,66 @@
       "aliases": [
         "Day 2/Game_20210717T023118.slp"
       ]
+    },
+    {
+      "replayId": "f6e545bd-db52-5470-8138-47053cc8685c",
+      "assetId": "4e63963c-5aab-54ac-be80-ab7f0c470c87",
+      "sha256": "1e96eeac7e202c2b5be5be80079ef98c3f248f2ec3ce5d2afef7e1869a59f568",
+      "byteSize": 3887822,
+      "formatEvidence": "Publisher-linked .slp parsed as a complete human singles GAME with unambiguous terminal stocks.",
+      "participants": {
+        "player1": "WillD",
+        "player2": "Rizzarro Flame"
+      },
+      "sourceIdentity": "https://ausmashstorage.blob.core.windows.net/ausmash-content/56741c4e-50f2-45de-ab74-8bcfeab600c8.slp",
+      "aliases": [
+        "https://ausmashstorage.blob.core.windows.net/ausmash-content/56741c4e-50f2-45de-ab74-8bcfeab600c8.slp"
+      ]
+    },
+    {
+      "replayId": "c18badee-9b94-546e-a74c-2ea59be76ff2",
+      "assetId": "39ed2791-f17f-5e07-ba0c-c8b1057c0537",
+      "sha256": "3b2d088a0604c45f9ee9712fcd026961a11dd23deec9b435c5f4a4b5b7de42e9",
+      "byteSize": 3721796,
+      "formatEvidence": "Publisher-linked .slp parsed as a complete human singles GAME with unambiguous terminal stocks.",
+      "participants": {
+        "player1": "WillD",
+        "player2": "Rizzarro Flame"
+      },
+      "sourceIdentity": "https://ausmashstorage.blob.core.windows.net/ausmash-content/b68f652f-18af-486b-8dbd-0dc286f66b00.slp",
+      "aliases": [
+        "https://ausmashstorage.blob.core.windows.net/ausmash-content/b68f652f-18af-486b-8dbd-0dc286f66b00.slp"
+      ]
+    },
+    {
+      "replayId": "b3c3b5c8-531d-593d-81b7-a4f86a919658",
+      "assetId": "32afc779-3d08-568c-9926-f2a094a94d51",
+      "sha256": "b47e4f1de443608946b9846c70d73b396c0f9dd2b475f54ed8f5f3b84dbc6339",
+      "byteSize": 2438055,
+      "formatEvidence": "Publisher-linked .slp parsed as a complete human singles GAME with unambiguous terminal stocks.",
+      "participants": {
+        "player1": "McCloud",
+        "player2": "Rizzarro Flame"
+      },
+      "sourceIdentity": "https://ausmashstorage.blob.core.windows.net/ausmash-content/8d12425e-7306-4dd6-9ed7-455896ef5d9f.slp",
+      "aliases": [
+        "https://ausmashstorage.blob.core.windows.net/ausmash-content/8d12425e-7306-4dd6-9ed7-455896ef5d9f.slp"
+      ]
+    },
+    {
+      "replayId": "e103bf06-d8bf-5297-a427-e793d0958d0a",
+      "assetId": "3f740526-bbf4-5a5f-b71b-38de4c8c7352",
+      "sha256": "9be0d5098c21ec6933de8e82fbe49d9fb1dd58b96cf28d711a581ca6318e130d",
+      "byteSize": 3470068,
+      "formatEvidence": "Publisher-linked .slp parsed as a complete human singles GAME with unambiguous terminal stocks.",
+      "participants": {
+        "player1": "McCloud",
+        "player2": "Rizzarro Flame"
+      },
+      "sourceIdentity": "https://ausmashstorage.blob.core.windows.net/ausmash-content/53aa5e6e-8e2d-413d-8a32-4c6bb55cd03e.slp",
+      "aliases": [
+        "https://ausmashstorage.blob.core.windows.net/ausmash-content/53aa5e6e-8e2d-413d-8a32-4c6bb55cd03e.slp"
+      ]
     }
   ],
   "items": [
@@ -2789,6 +2901,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Marth",
+            "Fox"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -2797,6 +2913,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Marth",
+            "Fox"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -2805,6 +2925,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Marth",
+            "Fox"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -2813,6 +2937,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Marth",
+            "Fox"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -2821,6 +2949,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Marth",
+            "Fox"
+          ],
           "scoreEffect": "entrantB"
         }
       ],
@@ -2834,7 +2966,7 @@
         ],
         "reviewer": "Melee Replay curation",
         "verifiedAt": "2026-09-24T04:59:46.689Z",
-        "manifestRevision": "curated-v1-a662053b9c93b0b1",
+        "manifestRevision": "curated-v1-962af863d60daead",
         "orderedAssetHashes": [
           "90ba49ae207dfc4c0a8c6c02a01b905d56cb89ae02981c46a27c53a89057a0bd",
           "173ffe74008365149ed58cd7dd53bd57aeae6ae9bb5bdffde979f063ac1af299",
@@ -2866,6 +2998,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Marth",
+            "Captain Falcon"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -2874,6 +3010,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Marth",
+            "Captain Falcon"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -2882,6 +3022,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Marth",
+            "Captain Falcon"
+          ],
           "scoreEffect": "entrantA"
         }
       ],
@@ -2895,7 +3039,7 @@
         ],
         "reviewer": "Melee Replay curation",
         "verifiedAt": "2026-09-24T05:25:00.000Z",
-        "manifestRevision": "curated-v1-a662053b9c93b0b1",
+        "manifestRevision": "curated-v1-962af863d60daead",
         "orderedAssetHashes": [
           "bf487ade77b9df53697ddd2ff197147f28b710adbe173bd7099ced575d2ddd8e",
           "8b5cd1e2d00daab9dfa705a6705ec3c1ea35e927017a5c6cef35f0f453331d4f",
@@ -2925,6 +3069,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Yoshi",
+            "Falco"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -2933,6 +3081,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Yoshi",
+            "Falco"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -2941,6 +3093,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Yoshi",
+            "Falco"
+          ],
           "scoreEffect": "entrantA"
         }
       ],
@@ -2954,7 +3110,7 @@
         ],
         "reviewer": "Melee Replay curation",
         "verifiedAt": "2026-09-24T05:25:00.000Z",
-        "manifestRevision": "curated-v1-a662053b9c93b0b1",
+        "manifestRevision": "curated-v1-962af863d60daead",
         "orderedAssetHashes": [
           "f758c75a64f18868b4d4bc3a8075e2262b49a54deb97b5a5b169ba15d956b49b",
           "a4af0bd085857f361ef77d23485fcc1772b86c35a8425d7114c70b2392aca8b0",
@@ -2984,6 +3140,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Falco",
+            "Fox"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -2992,6 +3152,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Falco",
+            "Fox"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -3000,6 +3164,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Falco",
+            "Fox"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -3008,6 +3176,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Falco",
+            "Fox"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -3016,6 +3188,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Falco",
+            "Fox"
+          ],
           "scoreEffect": "entrantA"
         }
       ],
@@ -3029,7 +3205,7 @@
         ],
         "reviewer": "Melee Replay curation",
         "verifiedAt": "2026-09-24T05:25:00.000Z",
-        "manifestRevision": "curated-v1-a662053b9c93b0b1",
+        "manifestRevision": "curated-v1-962af863d60daead",
         "orderedAssetHashes": [
           "d55601d04992dbe963a14271d88c2c0aa7269b90e525181c5e8b37ce6b823bf6",
           "033e6b8811ee5c369e718d68e4477f1af78a3fda1baad0760f5ac18f938bfef7",
@@ -3061,6 +3237,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Jigglypuff",
+            "Marth"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -3069,6 +3249,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Jigglypuff",
+            "Marth"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -3077,6 +3261,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Jigglypuff",
+            "Marth"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -3085,6 +3273,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Jigglypuff",
+            "Marth"
+          ],
           "scoreEffect": "entrantA"
         }
       ],
@@ -3098,7 +3290,7 @@
         ],
         "reviewer": "Melee Replay curation",
         "verifiedAt": "2026-09-24T05:25:00.000Z",
-        "manifestRevision": "curated-v1-a662053b9c93b0b1",
+        "manifestRevision": "curated-v1-962af863d60daead",
         "orderedAssetHashes": [
           "adfc5986b3200223b6e1470705271a329644c119e8703524039b4eff7339904c",
           "128f66bdebc907535e08bddf8bddc5367c4a5f8d059c893f2fc789975a269941",
@@ -3129,6 +3321,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Captain Falcon",
+            "Fox"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -3137,6 +3333,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Captain Falcon",
+            "Fox"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -3145,6 +3345,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Captain Falcon",
+            "Fox"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -3153,6 +3357,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Captain Falcon",
+            "Fox"
+          ],
           "scoreEffect": "entrantA"
         }
       ],
@@ -3166,7 +3374,7 @@
         ],
         "reviewer": "Melee Replay curation",
         "verifiedAt": "2026-09-24T05:25:00.000Z",
-        "manifestRevision": "curated-v1-a662053b9c93b0b1",
+        "manifestRevision": "curated-v1-962af863d60daead",
         "orderedAssetHashes": [
           "f5ac64228b34dd2024cf323f5a0f6be6abd92491f8238cb25ed0caa82c86d3bd",
           "8cbcff67f7ecef5ada041e949cd8c940b233a9de46117921729a71fed420ae70",
@@ -3197,6 +3405,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Fox",
+            "Marth"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -3205,6 +3417,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Fox",
+            "Marth"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -3213,6 +3429,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Fox",
+            "Marth"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -3221,6 +3441,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Fox",
+            "Marth"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -3229,6 +3453,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Link",
+            "Marth"
+          ],
           "scoreEffect": "entrantB"
         }
       ],
@@ -3242,7 +3470,7 @@
         ],
         "reviewer": "Melee Replay curation",
         "verifiedAt": "2026-09-24T05:25:00.000Z",
-        "manifestRevision": "curated-v1-a662053b9c93b0b1",
+        "manifestRevision": "curated-v1-962af863d60daead",
         "orderedAssetHashes": [
           "81163c43945a9ecfc369155fd155683700cddaebd8207ac3532248d243cc4104",
           "47e27725ea6beb1ba5081a82272cbdfba7f6ed9138cbc38a5b5c511773947820",
@@ -3274,6 +3502,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Fox",
+            "Sheik"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -3282,6 +3514,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Fox",
+            "Samus"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -3290,6 +3526,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Fox",
+            "Sheik"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -3298,6 +3538,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Fox",
+            "Sheik"
+          ],
           "scoreEffect": "entrantB"
         }
       ],
@@ -3311,7 +3555,7 @@
         ],
         "reviewer": "Melee Replay curation",
         "verifiedAt": "2026-09-24T05:25:00.000Z",
-        "manifestRevision": "curated-v1-a662053b9c93b0b1",
+        "manifestRevision": "curated-v1-962af863d60daead",
         "orderedAssetHashes": [
           "16547bfee3535ffdd7d52779d693c57010864cdb4b5cbb02902c979b021c4573",
           "77dea9c305d1052a6ed017b862ac6e7b9087dda7455a1858841e7779ebd14b89",
@@ -3342,6 +3586,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Pikachu",
+            "Jigglypuff"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -3350,6 +3598,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Pikachu",
+            "Jigglypuff"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -3358,6 +3610,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Pikachu",
+            "Jigglypuff"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -3366,6 +3622,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Pikachu",
+            "Jigglypuff"
+          ],
           "scoreEffect": "entrantA"
         }
       ],
@@ -3379,7 +3639,7 @@
         ],
         "reviewer": "Melee Replay curation",
         "verifiedAt": "2026-09-24T05:25:00.000Z",
-        "manifestRevision": "curated-v1-a662053b9c93b0b1",
+        "manifestRevision": "curated-v1-962af863d60daead",
         "orderedAssetHashes": [
           "2d7860e72076bc7a3c810a8413a709718ab212c25b1e4fb3d1b3b886549437ff",
           "81bdd3f69a02359a92821753a88463a13c2d63993510d6860532a609203c17ff",
@@ -3392,6 +3652,122 @@
       "sourceResult": {
         "entrantA": 3,
         "entrantB": 1
+      }
+    },
+    {
+      "itemId": "a3cfdf71-1d6d-5305-8fd6-bdef8f04552d",
+      "kind": "set",
+      "sourceSetIdentity": "Ausmash event 19383: W1 Rizzarro Flame vs WillD",
+      "eventContext": "MeleeVac #17 - Swagman post okran loss - 7/3/25",
+      "entrantA": "Rizzarro Flame",
+      "entrantB": "WillD",
+      "bestOf": 3,
+      "completionRule": "target-wins",
+      "segments": [
+        {
+          "replayId": "f6e545bd-db52-5470-8138-47053cc8685c",
+          "order": 1,
+          "group": "main",
+          "player1Entrant": "B",
+          "player2Entrant": "A",
+          "openingCharacters": [
+            "Fox",
+            "Peach"
+          ],
+          "scoreEffect": "entrantA"
+        },
+        {
+          "replayId": "c18badee-9b94-546e-a74c-2ea59be76ff2",
+          "order": 2,
+          "group": "main",
+          "player1Entrant": "B",
+          "player2Entrant": "A",
+          "openingCharacters": [
+            "Fox",
+            "Peach"
+          ],
+          "scoreEffect": "entrantA"
+        }
+      ],
+      "verification": {
+        "method": "reviewed-source-crosscheck",
+        "sourceReferences": [
+          "https://ausmash.com.au/results/19383/meleevac-17-swagman-post-okran-loss-7325",
+          "https://ausmash.com.au/terms",
+          "https://ausmashstorage.blob.core.windows.net/ausmash-content/56741c4e-50f2-45de-ab74-8bcfeab600c8.slp",
+          "https://ausmashstorage.blob.core.windows.net/ausmash-content/b68f652f-18af-486b-8dbd-0dc286f66b00.slp"
+        ],
+        "reviewer": "Melee Replay curation",
+        "verifiedAt": "2026-09-24T06:27:29.000Z",
+        "manifestRevision": "curated-v1-962af863d60daead",
+        "orderedAssetHashes": [
+          "1e96eeac7e202c2b5be5be80079ef98c3f248f2ec3ce5d2afef7e1869a59f568",
+          "3b2d088a0604c45f9ee9712fcd026961a11dd23deec9b435c5f4a4b5b7de42e9"
+        ],
+        "completenessEvidence": "The publisher's bracket row gives the set score and exactly ordered per-game Slippi links; every linked game was downloaded, hashed, parsed to a complete ending, and its terminal score agreed with that row.",
+        "decisions": "Membership and chronology come from the publisher's Game 1/2/3 links in the same bracket row, not file proximity or timestamps."
+      },
+      "sourceResult": {
+        "entrantA": 2,
+        "entrantB": 0
+      }
+    },
+    {
+      "itemId": "4bfd3ca2-4b10-5c71-9515-e6cddc25a6ea",
+      "kind": "set",
+      "sourceSetIdentity": "Ausmash event 19383: W2 McCloud vs Rizzarro Flame",
+      "eventContext": "MeleeVac #17 - Swagman post okran loss - 7/3/25",
+      "entrantA": "McCloud",
+      "entrantB": "Rizzarro Flame",
+      "bestOf": 3,
+      "completionRule": "target-wins",
+      "segments": [
+        {
+          "replayId": "b3c3b5c8-531d-593d-81b7-a4f86a919658",
+          "order": 1,
+          "group": "main",
+          "player1Entrant": "A",
+          "player2Entrant": "B",
+          "openingCharacters": [
+            "Peach",
+            "Fox"
+          ],
+          "scoreEffect": "entrantA"
+        },
+        {
+          "replayId": "e103bf06-d8bf-5297-a427-e793d0958d0a",
+          "order": 2,
+          "group": "main",
+          "player1Entrant": "A",
+          "player2Entrant": "B",
+          "openingCharacters": [
+            "Peach",
+            "Fox"
+          ],
+          "scoreEffect": "entrantA"
+        }
+      ],
+      "verification": {
+        "method": "reviewed-source-crosscheck",
+        "sourceReferences": [
+          "https://ausmash.com.au/results/19383/meleevac-17-swagman-post-okran-loss-7325",
+          "https://ausmash.com.au/terms",
+          "https://ausmashstorage.blob.core.windows.net/ausmash-content/8d12425e-7306-4dd6-9ed7-455896ef5d9f.slp",
+          "https://ausmashstorage.blob.core.windows.net/ausmash-content/53aa5e6e-8e2d-413d-8a32-4c6bb55cd03e.slp"
+        ],
+        "reviewer": "Melee Replay curation",
+        "verifiedAt": "2026-09-24T06:27:29.000Z",
+        "manifestRevision": "curated-v1-962af863d60daead",
+        "orderedAssetHashes": [
+          "b47e4f1de443608946b9846c70d73b396c0f9dd2b475f54ed8f5f3b84dbc6339",
+          "9be0d5098c21ec6933de8e82fbe49d9fb1dd58b96cf28d711a581ca6318e130d"
+        ],
+        "completenessEvidence": "The publisher's bracket row gives the set score and exactly ordered per-game Slippi links; every linked game was downloaded, hashed, parsed to a complete ending, and its terminal score agreed with that row.",
+        "decisions": "Membership and chronology come from the publisher's Game 1/2/3 links in the same bracket row, not file proximity or timestamps."
+      },
+      "sourceResult": {
+        "entrantA": 2,
+        "entrantB": 0
       }
     }
   ]

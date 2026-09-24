@@ -8,8 +8,8 @@ and attributes the original compilation to altf4, with contributions from
 nikki and yashichi. Each manifest record retains its original path, canonical
 revision-pinned download URL, LFS SHA-256, byte size, and parse evidence.
 `catalog-v1.json` maps the same records into the app's `curated-v1` schema as
-60 standalone practice items with neutral player labels, alongside one reviewed
-complete-set item from the [official Summit 11 archive](sets/README.md). Its opaque IDs are
+60 standalone practice items with neutral player labels, alongside reviewed
+complete-set items from the [official Summit 11 archive and Ausmash](sets/README.md). Its opaque IDs are
 stable for each replay hash. `openingCharacters` records the two characters
 visible from the current game's start without inferring player identities.
 
@@ -23,8 +23,9 @@ The replay bytes are kept locally under `slp/` and excluded from Git. To
 recreate the same sample on this machine or another Windows development host:
 
 ```powershell
-python -m pip install requests py-slippi==1.6.2
+python -m pip install requests beautifulsoup4 py-slippi==1.6.2
 python data/acquire_replays.py
+python data/sets/review_ausmash_19383.py --fetch
 python data/build_catalog.py
 npx vitest run data/catalog-v1.test.ts
 ```
@@ -33,6 +34,10 @@ To reproduce the set review, place the publisher's original archive at
 `data/archives/Summit-11.zip`, install `py-slippi==1.6.2`, and run
 `python data/sets/review_summit11.py` before rebuilding the catalog. The
 archive and extracted replay bytes are ignored by Git.
+The Ausmash review script retrieves its four exact publisher-linked replay files
+under `data/archives/ausmash-19383/` with `curl.exe`, verifies the current event
+page's ordered links, and checks pinned byte hashes and parsed endings. These
+bytes are ignored by Git as well.
 
 The script fetches a bounded selection from 12 character folders, checks each
 file against the publisher's LFS hash and size, parses start/end/metadata,

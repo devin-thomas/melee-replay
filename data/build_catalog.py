@@ -8,31 +8,21 @@ import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 
+from sets.character_metadata import character_label
+
 
 ROOT = Path(__file__).resolve().parent
 SOURCE = ROOT / "replay-batch.json"
 OUTPUT = ROOT / "catalog-v1.json"
 SET_RECORDS = ROOT / "sets" / "summit11-records.json"
 POOL_RECORDS = ROOT / "sets" / "summit11-pool-records.json"
+AUSMASH_RECORDS = ROOT / "sets" / "ausmash-19383-records.json"
 SOURCE_ID = "huggingface-slippi-public-v3.7"
 NAMESPACE = uuid.UUID("f8cbf661-8ead-491b-b637-e869300b69f5")
 
 
 def opaque_id(kind: str, digest: str) -> str:
     return str(uuid.uuid5(NAMESPACE, f"{SOURCE_ID}:{kind}:{digest}"))
-
-
-def character_label(value: str) -> str:
-    special = {
-        "CPTFALCON": "Captain Falcon",
-        "DK": "Donkey Kong",
-        "DOC": "Dr. Mario",
-        "GAMEANDWATCH": "Mr. Game & Watch",
-        "ICE_CLIMBERS": "Ice Climbers",
-        "JIGGLYPUFF": "Jigglypuff",
-        "ZELDA_SHEIK": "Zelda/Sheik",
-    }
-    return special.get(value, value.replace("_", " ").title())
 
 
 def main() -> None:
@@ -45,23 +35,28 @@ def main() -> None:
     if any(record["endMethod"] != "GAME" for record in records):
         raise ValueError("Batch contains a non-game ending")
 
-    generated_at = datetime.fromisoformat(batch["sampledAt"]).astimezone(timezone.utc)
-    timestamp = generated_at.isoformat(timespec="milliseconds").replace("+00:00", "Z")
-    set_records = [json.loads(path.read_text(encoding="utf-8"))
-                   for path in (SET_RECORDS, POOL_RECORDS)]
+    summit_records = [json.loads(path.read_text(encoding="utf-8"))
+                      for path in (SET_RECORDS, POOL_RECORDS)]
+    direct_record = json.loads(AUSMASH_RECORDS.read_text(encoding="utf-8"))
+    set_records = [*summit_records, direct_record]
+    generated_at = max(datetime.fromisoformat(value.replace("Z", "+00:00"))
+                       for value in [batch["sampledAt"],
+                                     *(record["source"]["reviewedAt"] for record in set_records)])
+    timestamp = generated_at.astimezone(timezone.utc).isoformat(timespec="milliseconds").replace("+00:00", "Z")
     archive_asset = set_records[0]["asset"]
-    if any(record["asset"] != archive_asset for record in set_records[1:]):
+    if any(record["asset"] != archive_asset for record in summit_records[1:]):
         raise ValueError("Reviewed sets must reference the same pinned publisher archive")
     archive_source = set_records[0]["source"]
     archive_source["evidenceUrls"] = list(dict.fromkeys(
-        url for record in set_records for url in record["source"]["evidenceUrls"]))
-    archive_source["reviewedAt"] = max(record["source"]["reviewedAt"] for record in set_records)
+        url for record in summit_records for url in record["source"]["evidenceUrls"]))
+    archive_source["reviewedAt"] = max(record["source"]["reviewedAt"] for record in summit_records)
     archive_source["auditReference"] = (
         "data/sets/summit11-records.json and data/sets/summit11-pool-records.json: "
         "pinned archive and member hashes, complete endings, ordered stage and result cross-checks."
     )
     content_key = revision + "\n" + "\n".join(record["sha256"] for record in records)
     content_key += "\n" + archive_asset["sha256"]
+    content_key += "\n" + "\n".join(asset["sha256"] for asset in direct_record["assets"])
     reviewed_items = [item for record in set_records for item in record["items"]]
     published_id_list = [item_id for record in set_records for item_id in record["catalogItemIds"]]
     published_ids = set(published_id_list)
@@ -82,6 +77,8 @@ def main() -> None:
         raise ValueError("Reviewed set references a missing replay")
     content_key += "\n" + "\n".join(replay["sha256"] for replay in catalog_set_replays)
     content_key += "\n" + "\n".join(item["itemId"] for item in catalog_sets)
+    content_key += "\n" + "\n".join(json.dumps(segment["openingCharacters"], separators=(",", ":"))
+                                     for item in catalog_sets for segment in item["segments"])
     catalog_revision = "curated-v1-" + hashlib.sha256(content_key.encode()).hexdigest()[:16]
     download_scope = {
         "origin": "https://huggingface.co",
@@ -148,7 +145,9 @@ def main() -> None:
         })
 
     catalog["sources"].append(archive_source)
+    catalog["sources"].append(direct_record["source"])
     catalog["assets"].append(archive_asset)
+    catalog["assets"].extend(direct_record["assets"])
     catalog["replays"].extend(catalog_set_replays)
     for item in catalog_sets:
         item["verification"]["manifestRevision"] = catalog_revision

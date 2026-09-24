@@ -1,0 +1,52 @@
+{
+  "eventPage": "https://ausmash.com.au/results/19383/meleevac-17-swagman-post-okran-loss-7325",
+  "termsPage": "https://ausmash.com.au/terms",
+  "eventName": "MeleeVac #17 - Swagman post okran loss - 7/3/25",
+  "reviewedAt": "2026-09-24T06:27:29.000Z",
+  "sets": [
+    {
+      "round": "W1",
+      "entrantA": "Rizzarro Flame",
+      "entrantB": "WillD",
+      "entrantACharacter": "FOX",
+      "entrantBCharacter": "PEACH",
+      "sourceScore": [2, 0],
+      "games": [
+        {
+          "url": "https://ausmashstorage.blob.core.windows.net/ausmash-content/56741c4e-50f2-45de-ab74-8bcfeab600c8.slp",
+          "localFile": "other-1.slp",
+          "sha256": "1e96eeac7e202c2b5be5be80079ef98c3f248f2ec3ce5d2afef7e1869a59f568",
+          "byteSize": 3887822
+        },
+        {
+          "url": "https://ausmashstorage.blob.core.windows.net/ausmash-content/b68f652f-18af-486b-8dbd-0dc286f66b00.slp",
+          "localFile": "other-2.slp",
+          "sha256": "3b2d088a0604c45f9ee9712fcd026961a11dd23deec9b435c5f4a4b5b7de42e9",
+          "byteSize": 3721796
+        }
+      ]
+    },
+    {
+      "round": "W2",
+      "entrantA": "McCloud",
+      "entrantB": "Rizzarro Flame",
+      "entrantACharacter": "PEACH",
+      "entrantBCharacter": "FOX",
+      "sourceScore": [2, 0],
+      "games": [
+        {
+          "url": "https://ausmashstorage.blob.core.windows.net/ausmash-content/8d12425e-7306-4dd6-9ed7-455896ef5d9f.slp",
+          "localFile": "game-1.slp",
+          "sha256": "b47e4f1de443608946b9846c70d73b396c0f9dd2b475f54ed8f5f3b84dbc6339",
+          "byteSize": 2438055
+        },
+        {
+          "url": "https://ausmashstorage.blob.core.windows.net/ausmash-content/53aa5e6e-8e2d-413d-8a32-4c6bb55cd03e.slp",
+          "localFile": "game-2.slp",
+          "sha256": "9be0d5098c21ec6933de8e82fbe49d9fb1dd58b96cf28d711a581ca6318e130d",
+          "byteSize": 3470068
+        }
+      ]
+    }
+  ]
+}

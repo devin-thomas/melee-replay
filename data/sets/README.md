@@ -36,3 +36,14 @@ has public set pages but its replay download required sign-in during review;
 public event dumps but not an inspectable per-set listing through the tested
 route; [Hotswap/Replay Reporter](https://github.com/jmlee337/hotswap-info)
 describes per-set exports but did not itself provide a public replay pack.
+
+[Ausmash's public tournament result page](https://ausmash.com.au/results/19383/meleevac-17-swagman-post-okran-loss-7325)
+also identifies two complete best-of-three Melee sets with explicit ordered
+per-game Slippi links. `ausmash-19383-selections.json` pins the match rows and
+four direct-file URLs. `review_ausmash_19383.py` rechecks those rows against the
+publisher page, downloads the exact files when called with `--fetch`, verifies
+their hashes and sizes, parses each complete singles ending, and checks the
+source bracket score. Its backstage output is `ausmash-19383-records.json`.
+The app downloads only the selected individual files from the original host.
+[Ausmash's terms](https://ausmash.com.au/terms) do not state a replay
+redistribution license; replay bytes remain unbundled and uncommitted.

@@ -14,6 +14,7 @@ import slippi
 
 from review_summit11 import ARCHIVE, ARCHIVE_BYTES, ARCHIVE_SHA256, ARCHIVE_URL
 from review_summit11 import PUBLISHER_POST, SOURCE_ID, archive_hash, opaque_id
+from character_metadata import entrant_ordered_characters
 
 
 DIRECTORY = Path(__file__).parent
@@ -107,6 +108,9 @@ def main() -> None:
                     "group": "main",
                     "player1Entrant": "A" if active_ports[0] == entrant_a_port else "B",
                     "player2Entrant": "B" if active_ports[0] == entrant_a_port else "A",
+                    "openingCharacters": entrant_ordered_characters(
+                        game.start.players, entrant_a_port,
+                        active_ports[0] if active_ports[1] == entrant_a_port else active_ports[1]),
                     "scoreEffect": "entrantA" if winner_side == 0 else "entrantB",
                 })
             if facts_hash(stages) != selected["stageSequenceSha256"] or facts_hash(score) != selected["sourceScoreSha256"]:

@@ -15,6 +15,8 @@ from pathlib import Path
 
 import slippi
 
+from character_metadata import entrant_ordered_characters
+
 
 ROOT = Path(__file__).resolve().parent.parent
 ARCHIVE = ROOT / "archives" / "Summit-11.zip"
@@ -84,13 +86,14 @@ def main() -> None:
             stocks = [final[index].leader.post.stocks for index in (0, 1)]
             if stocks.count(0) != 1 or max(stocks) == 0:
                 continue
-            candidates.append((member, content, game.start.stage.name, stocks))
+            candidates.append((member, content, game.start.stage.name, stocks,
+                               entrant_ordered_characters(players, 0, 1)))
     # The preceding same-matchup warmup is excluded by the independent bracket's
     # two consecutive best-of-five records and exact game-stage sequence.
     selected = candidates[-10:]
     if len(selected) != 10:
         raise ValueError("Expected selected Grand Finals material is missing")
-    facts = [(stage, int(stocks[1] > 0)) for _, _, stage, stocks in selected]
+    facts = [(stage, int(stocks[1] > 0)) for _, _, stage, stocks, _ in selected]
     facts_hash = hashlib.sha256(json.dumps(facts, separators=(",", ":")).encode()).hexdigest()
     if facts_hash != REVIEWED_FACTS_SHA256:
         raise ValueError("Selected games no longer match the reviewed bracket cross-check")
@@ -99,7 +102,7 @@ def main() -> None:
     items = []
     for set_index in range(2):
         segments = []
-        for order, (member, content, stage, stocks) in enumerate(selected[set_index * 5:(set_index + 1) * 5], 1):
+        for order, (member, content, stage, stocks, opening_characters) in enumerate(selected[set_index * 5:(set_index + 1) * 5], 1):
             digest = hashlib.sha256(content).hexdigest()
             replay_id = opaque_id("replay", digest)
             replays.append({
@@ -119,6 +122,7 @@ def main() -> None:
                 "group": "main",
                 "player1Entrant": "A",
                 "player2Entrant": "B",
+                "openingCharacters": opening_characters,
                 "scoreEffect": "entrantA" if stocks[0] > 0 else "entrantB",
             })
         score_a = sum(segment["scoreEffect"] == "entrantA" for segment in segments)

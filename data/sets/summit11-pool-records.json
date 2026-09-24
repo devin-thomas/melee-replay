@@ -572,6 +572,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Marth",
+            "Captain Falcon"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -580,6 +584,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Marth",
+            "Captain Falcon"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -588,6 +596,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Marth",
+            "Captain Falcon"
+          ],
           "scoreEffect": "entrantA"
         }
       ],
@@ -631,6 +643,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Yoshi",
+            "Falco"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -639,6 +655,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Yoshi",
+            "Falco"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -647,6 +667,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Yoshi",
+            "Falco"
+          ],
           "scoreEffect": "entrantA"
         }
       ],
@@ -690,6 +714,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Falco",
+            "Fox"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -698,6 +726,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Falco",
+            "Fox"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -706,6 +738,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Falco",
+            "Fox"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -714,6 +750,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Falco",
+            "Fox"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -722,6 +762,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Falco",
+            "Fox"
+          ],
           "scoreEffect": "entrantA"
         }
       ],
@@ -767,6 +811,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Jigglypuff",
+            "Marth"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -775,6 +823,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Jigglypuff",
+            "Marth"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -783,6 +835,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Jigglypuff",
+            "Marth"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -791,6 +847,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Jigglypuff",
+            "Marth"
+          ],
           "scoreEffect": "entrantA"
         }
       ],
@@ -835,6 +895,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Captain Falcon",
+            "Fox"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -843,6 +907,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Captain Falcon",
+            "Fox"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -851,6 +919,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Captain Falcon",
+            "Fox"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -859,6 +931,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Captain Falcon",
+            "Fox"
+          ],
           "scoreEffect": "entrantA"
         }
       ],
@@ -903,6 +979,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Fox",
+            "Marth"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -911,6 +991,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Fox",
+            "Marth"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -919,6 +1003,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Fox",
+            "Marth"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -927,6 +1015,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Fox",
+            "Marth"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -935,6 +1027,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Link",
+            "Marth"
+          ],
           "scoreEffect": "entrantB"
         }
       ],
@@ -980,6 +1076,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Fox",
+            "Sheik"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -988,6 +1088,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Fox",
+            "Samus"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -996,6 +1100,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Fox",
+            "Sheik"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -1004,6 +1112,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Fox",
+            "Sheik"
+          ],
           "scoreEffect": "entrantB"
         }
       ],
@@ -1048,6 +1160,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Pikachu",
+            "Jigglypuff"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -1056,6 +1172,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Pikachu",
+            "Jigglypuff"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -1064,6 +1184,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Pikachu",
+            "Jigglypuff"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -1072,6 +1196,10 @@
           "group": "main",
           "player1Entrant": "B",
           "player2Entrant": "A",
+          "openingCharacters": [
+            "Pikachu",
+            "Jigglypuff"
+          ],
           "scoreEffect": "entrantA"
         }
       ],

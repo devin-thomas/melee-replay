@@ -208,6 +208,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Marth",
+            "Fox"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -216,6 +220,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Marth",
+            "Fox"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -224,6 +232,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Marth",
+            "Fox"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -232,6 +244,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Marth",
+            "Fox"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -240,6 +256,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Marth",
+            "Fox"
+          ],
           "scoreEffect": "entrantB"
         }
       ],
@@ -285,6 +305,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Marth",
+            "Fox"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -293,6 +317,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Marth",
+            "Fox"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -301,6 +329,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Marth",
+            "Fox"
+          ],
           "scoreEffect": "entrantA"
         },
         {
@@ -309,6 +341,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Marth",
+            "Fox"
+          ],
           "scoreEffect": "entrantB"
         },
         {
@@ -317,6 +353,10 @@
           "group": "main",
           "player1Entrant": "A",
           "player2Entrant": "B",
+          "openingCharacters": [
+            "Marth",
+            "Fox"
+          ],
           "scoreEffect": "entrantB"
         }
       ],
