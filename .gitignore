@@ -1,0 +1,15 @@
+node_modules/
+.vite/
+out/
+out-final/
+coverage/
+output/
+*.log
+data/slp/
+data/__pycache__/
+*.slp
+*.zip
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*

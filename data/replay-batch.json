@@ -1,0 +1,1096 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Standalone replay development sample; no verified-set claims",
+  "sampledAt": "2026-09-24T03:38:51.904367+00:00",
+  "source": {
+    "dataset": "erickfm/slippi-public-dataset-v3.7",
+    "revision": "c82be5f6e43f3388555cfe0cf8652580601f396d",
+    "cardUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7",
+    "licenseLabel": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "licenseEvidence": "Dataset card labels collection CC0-1.0 and attributes original compilation to altf4 with contributions from nikki and yashichi.",
+    "access": "Public individual files at canonical Hugging Face resolve URLs; redirects may point to temporary CDN locations."
+  },
+  "replays": [
+    {
+      "replayId": "slippi-public-v3-375c0e32e68842da400f50f6e65b63f3cb20b878c3e55595663b345fb673b758",
+      "sampleCharacter": "BOWSER",
+      "sourcePath": "BOWSER/16_56_35 [314] Kirby + [CUMB] Bowser (YS).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/BOWSER/16_56_35%20%5B314%5D%20Kirby%20%2B%20%5BCUMB%5D%20Bowser%20%28YS%29.slp",
+      "localPath": "slp/375c0e32e68842da400f50f6e65b63f3cb20b878c3e55595663b345fb673b758.slp",
+      "sha256": "375c0e32e68842da400f50f6e65b63f3cb20b878c3e55595663b345fb673b758",
+      "byteSize": 1423890,
+      "durationFrames": 6135,
+      "stage": "YOSHIS_STORY",
+      "characters": [
+        "KIRBY",
+        "BOWSER"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-411a378da668c4cd810a73aeea55216b2cdb87068ff4b4a8d46f7f3dd56ee349",
+      "sampleCharacter": "BOWSER",
+      "sourcePath": "BOWSER/18_46_36 Bowser + Fox (YI).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/BOWSER/18_46_36%20Bowser%20%2B%20Fox%20%28YI%29.slp",
+      "localPath": "slp/411a378da668c4cd810a73aeea55216b2cdb87068ff4b4a8d46f7f3dd56ee349.slp",
+      "sha256": "411a378da668c4cd810a73aeea55216b2cdb87068ff4b4a8d46f7f3dd56ee349",
+      "byteSize": 1858427,
+      "durationFrames": 8008,
+      "stage": "YOSHIS_STORY",
+      "characters": [
+        "BOWSER",
+        "FOX"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-a26f09e42f11fba64821e539577bf61028819b164be43d7d22b42b4adb856d6c",
+      "sampleCharacter": "BOWSER",
+      "sourcePath": "BOWSER/18_50_55 Roy + Bowser (FoD).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/BOWSER/18_50_55%20Roy%20%2B%20Bowser%20%28FoD%29.slp",
+      "localPath": "slp/a26f09e42f11fba64821e539577bf61028819b164be43d7d22b42b4adb856d6c.slp",
+      "sha256": "a26f09e42f11fba64821e539577bf61028819b164be43d7d22b42b4adb856d6c",
+      "byteSize": 1308358,
+      "durationFrames": 5637,
+      "stage": "FOUNTAIN_OF_DREAMS",
+      "characters": [
+        "ROY",
+        "BOWSER"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-a85f6b21074362511262e32014afb625a8c0c154b95be3c6a74a59ff97eb1f01",
+      "sampleCharacter": "BOWSER",
+      "sourcePath": "BOWSER/18_49_08 Bowser + Fox (PS).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/BOWSER/18_49_08%20Bowser%20%2B%20Fox%20%28PS%29.slp",
+      "localPath": "slp/a85f6b21074362511262e32014afb625a8c0c154b95be3c6a74a59ff97eb1f01.slp",
+      "sha256": "a85f6b21074362511262e32014afb625a8c0c154b95be3c6a74a59ff97eb1f01",
+      "byteSize": 3620003,
+      "durationFrames": 15601,
+      "stage": "POKEMON_STADIUM",
+      "characters": [
+        "BOWSER",
+        "FOX"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-ec7e2f1ee32979dd7266153ab73a13800377948d337056fe627a712033d89b6b",
+      "sampleCharacter": "BOWSER",
+      "sourcePath": "BOWSER/14_34_58 Bowser + Marth (DL).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/BOWSER/14_34_58%20Bowser%20%2B%20Marth%20%28DL%29.slp",
+      "localPath": "slp/ec7e2f1ee32979dd7266153ab73a13800377948d337056fe627a712033d89b6b.slp",
+      "sha256": "ec7e2f1ee32979dd7266153ab73a13800377948d337056fe627a712033d89b6b",
+      "byteSize": 1808778,
+      "durationFrames": 7794,
+      "stage": "DREAM_LAND_N64",
+      "characters": [
+        "BOWSER",
+        "MARTH"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-371900223fcb63f38be96d86360facc4ee0b93c9a1a038cb5b627313fecbff71",
+      "sampleCharacter": "CPTFALCON",
+      "sourcePath": "CPTFALCON/00_31_38 Captain Falcon + Fox (FD).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/CPTFALCON/00_31_38%20Captain%20Falcon%20%2B%20Fox%20%28FD%29.slp",
+      "localPath": "slp/371900223fcb63f38be96d86360facc4ee0b93c9a1a038cb5b627313fecbff71.slp",
+      "sha256": "371900223fcb63f38be96d86360facc4ee0b93c9a1a038cb5b627313fecbff71",
+      "byteSize": 2431466,
+      "durationFrames": 10478,
+      "stage": "FINAL_DESTINATION",
+      "characters": [
+        "CAPTAIN_FALCON",
+        "FOX"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-3fc070dcd2ccd9df5c560406740bf5c500a9142413aadfaa4a50252821887b0e",
+      "sampleCharacter": "CPTFALCON",
+      "sourcePath": "CPTFALCON/01_30_41.076Z Captain Falcon + [TITP] Captain Falcon (FD).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/CPTFALCON/01_30_41.076Z%20Captain%20Falcon%20%2B%20%5BTITP%5D%20Captain%20Falcon%20%28FD%29.slp",
+      "localPath": "slp/3fc070dcd2ccd9df5c560406740bf5c500a9142413aadfaa4a50252821887b0e.slp",
+      "sha256": "3fc070dcd2ccd9df5c560406740bf5c500a9142413aadfaa4a50252821887b0e",
+      "byteSize": 2166089,
+      "durationFrames": 9334,
+      "stage": "FINAL_DESTINATION",
+      "characters": [
+        "CAPTAIN_FALCON",
+        "CAPTAIN_FALCON"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-70fee3548c832f89e1b10fb3192e99a0972eee9b930dc3959c957247734fac75",
+      "sampleCharacter": "CPTFALCON",
+      "sourcePath": "CPTFALCON/01_03_47 Falco + Captain Falcon (BF).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/CPTFALCON/01_03_47%20Falco%20%2B%20Captain%20Falcon%20%28BF%29.slp",
+      "localPath": "slp/70fee3548c832f89e1b10fb3192e99a0972eee9b930dc3959c957247734fac75.slp",
+      "sha256": "70fee3548c832f89e1b10fb3192e99a0972eee9b930dc3959c957247734fac75",
+      "byteSize": 2447707,
+      "durationFrames": 10548,
+      "stage": "BATTLEFIELD",
+      "characters": [
+        "FALCO",
+        "CAPTAIN_FALCON"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-9a9f82882165ce72b67f472149fbfbad4ac207505bc6adcd6e74111e7a216cc1",
+      "sampleCharacter": "CPTFALCON",
+      "sourcePath": "CPTFALCON/01_38_56 [PPAP] Marth + [TITP] Captain Falcon (DL).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/CPTFALCON/01_38_56%20%5BPPAP%5D%20Marth%20%2B%20%5BTITP%5D%20Captain%20Falcon%20%28DL%29.slp",
+      "localPath": "slp/9a9f82882165ce72b67f472149fbfbad4ac207505bc6adcd6e74111e7a216cc1.slp",
+      "sha256": "9a9f82882165ce72b67f472149fbfbad4ac207505bc6adcd6e74111e7a216cc1",
+      "byteSize": 2208747,
+      "durationFrames": 9518,
+      "stage": "DREAM_LAND_N64",
+      "characters": [
+        "MARTH",
+        "CAPTAIN_FALCON"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-ebb0f53d521f18793530ebe73da75b3a532b768ab96da20ca51da8bdf33ba804",
+      "sampleCharacter": "CPTFALCON",
+      "sourcePath": "CPTFALCON/01_19_35 [TITP] Captain Falcon + Fox (BF).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/CPTFALCON/01_19_35%20%5BTITP%5D%20Captain%20Falcon%20%2B%20Fox%20%28BF%29.slp",
+      "localPath": "slp/ebb0f53d521f18793530ebe73da75b3a532b768ab96da20ca51da8bdf33ba804.slp",
+      "sha256": "ebb0f53d521f18793530ebe73da75b3a532b768ab96da20ca51da8bdf33ba804",
+      "byteSize": 2479720,
+      "durationFrames": 10686,
+      "stage": "BATTLEFIELD",
+      "characters": [
+        "CAPTAIN_FALCON",
+        "FOX"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-069fb800650ddf27928d224fd310f68d881abd6eb6701adff98ce66b8574177b",
+      "sampleCharacter": "FALCO",
+      "sourcePath": "FALCO/01_53_40 Falco + Marth (DL).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/FALCO/01_53_40%20Falco%20%2B%20Marth%20%28DL%29.slp",
+      "localPath": "slp/069fb800650ddf27928d224fd310f68d881abd6eb6701adff98ce66b8574177b.slp",
+      "sha256": "069fb800650ddf27928d224fd310f68d881abd6eb6701adff98ce66b8574177b",
+      "byteSize": 2176489,
+      "durationFrames": 9379,
+      "stage": "DREAM_LAND_N64",
+      "characters": [
+        "FALCO",
+        "MARTH"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-43eed72aba6ddf0363134c30cd75e457d8199b2836862408ab9a6f00c2b3ad0f",
+      "sampleCharacter": "FALCO",
+      "sourcePath": "FALCO/01_57_19 Falco + Marth (FoD).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/FALCO/01_57_19%20Falco%20%2B%20Marth%20%28FoD%29.slp",
+      "localPath": "slp/43eed72aba6ddf0363134c30cd75e457d8199b2836862408ab9a6f00c2b3ad0f.slp",
+      "sha256": "43eed72aba6ddf0363134c30cd75e457d8199b2836862408ab9a6f00c2b3ad0f",
+      "byteSize": 1786729,
+      "durationFrames": 7699,
+      "stage": "FOUNTAIN_OF_DREAMS",
+      "characters": [
+        "FALCO",
+        "MARTH"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-4afdd4f45274aa0976c0f7571939850c6543349ea5d27a4685e04a63e60ca96e",
+      "sampleCharacter": "FALCO",
+      "sourcePath": "FALCO/02_43_38 [RUDE] Marth + [INFP] Falco (YI).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/FALCO/02_43_38%20%5BRUDE%5D%20Marth%20%2B%20%5BINFP%5D%20Falco%20%28YI%29.slp",
+      "localPath": "slp/4afdd4f45274aa0976c0f7571939850c6543349ea5d27a4685e04a63e60ca96e.slp",
+      "sha256": "4afdd4f45274aa0976c0f7571939850c6543349ea5d27a4685e04a63e60ca96e",
+      "byteSize": 1622480,
+      "durationFrames": 6991,
+      "stage": "YOSHIS_STORY",
+      "characters": [
+        "MARTH",
+        "FALCO"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-e3762976e96e7c334e217a409d80a582cec6583c07176c314fa6bb32ecf610a4",
+      "sampleCharacter": "FALCO",
+      "sourcePath": "FALCO/02_39_54 Falco + Marth (FD).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/FALCO/02_39_54%20Falco%20%2B%20Marth%20%28FD%29.slp",
+      "localPath": "slp/e3762976e96e7c334e217a409d80a582cec6583c07176c314fa6bb32ecf610a4.slp",
+      "sha256": "e3762976e96e7c334e217a409d80a582cec6583c07176c314fa6bb32ecf610a4",
+      "byteSize": 2106193,
+      "durationFrames": 9076,
+      "stage": "FINAL_DESTINATION",
+      "characters": [
+        "FALCO",
+        "MARTH"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-f42efa038131813faf057ca6a839c08fd489c6474141f3bd87d670efcd329df5",
+      "sampleCharacter": "FALCO",
+      "sourcePath": "FALCO/02_53_53.408Z Falco + Falco (DL).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/FALCO/02_53_53.408Z%20Falco%20%2B%20Falco%20%28DL%29.slp",
+      "localPath": "slp/f42efa038131813faf057ca6a839c08fd489c6474141f3bd87d670efcd329df5.slp",
+      "sha256": "f42efa038131813faf057ca6a839c08fd489c6474141f3bd87d670efcd329df5",
+      "byteSize": 2578587,
+      "durationFrames": 11112,
+      "stage": "DREAM_LAND_N64",
+      "characters": [
+        "FALCO",
+        "FALCO"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-29862c3945074c73fd3ecf40af218d3951010de40a2e960c7a72dbca40dbafc7",
+      "sampleCharacter": "FOX",
+      "sourcePath": "FOX/03_29_13 [RUDE] Fox + [INFP] Marth (YI).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/FOX/03_29_13%20%5BRUDE%5D%20Fox%20%2B%20%5BINFP%5D%20Marth%20%28YI%29.slp",
+      "localPath": "slp/29862c3945074c73fd3ecf40af218d3951010de40a2e960c7a72dbca40dbafc7.slp",
+      "sha256": "29862c3945074c73fd3ecf40af218d3951010de40a2e960c7a72dbca40dbafc7",
+      "byteSize": 1981616,
+      "durationFrames": 8539,
+      "stage": "YOSHIS_STORY",
+      "characters": [
+        "FOX",
+        "MARTH"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-8781c6809774f72bfa83001bbd44bf0a77b30ad1c3be7950c4d5aa684810f8da",
+      "sampleCharacter": "FOX",
+      "sourcePath": "FOX/03_39_21 [RUDE] Fox + [INFP] Marth (DL).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/FOX/03_39_21%20%5BRUDE%5D%20Fox%20%2B%20%5BINFP%5D%20Marth%20%28DL%29.slp",
+      "localPath": "slp/8781c6809774f72bfa83001bbd44bf0a77b30ad1c3be7950c4d5aa684810f8da.slp",
+      "sha256": "8781c6809774f72bfa83001bbd44bf0a77b30ad1c3be7950c4d5aa684810f8da",
+      "byteSize": 2217792,
+      "durationFrames": 9557,
+      "stage": "DREAM_LAND_N64",
+      "characters": [
+        "FOX",
+        "MARTH"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-beb4673ded938ee472ad35290c96a73f45de5d3d4f5e1bdcf0f6f9cee097edc9",
+      "sampleCharacter": "FOX",
+      "sourcePath": "FOX/03_44_11 [RUDE] Fox + [INFP] Captain Falcon (BF).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/FOX/03_44_11%20%5BRUDE%5D%20Fox%20%2B%20%5BINFP%5D%20Captain%20Falcon%20%28BF%29.slp",
+      "localPath": "slp/beb4673ded938ee472ad35290c96a73f45de5d3d4f5e1bdcf0f6f9cee097edc9.slp",
+      "sha256": "beb4673ded938ee472ad35290c96a73f45de5d3d4f5e1bdcf0f6f9cee097edc9",
+      "byteSize": 2393184,
+      "durationFrames": 10313,
+      "stage": "BATTLEFIELD",
+      "characters": [
+        "FOX",
+        "CAPTAIN_FALCON"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-d0bdb38bbd6617f7df0cc0daed99125251b13d5b370478e0e0c3c6dd6b56d653",
+      "sampleCharacter": "FOX",
+      "sourcePath": "FOX/07_34_07 [NELL] Fox + Falco (FoD).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/FOX/07_34_07%20%5BNELL%5D%20Fox%20%2B%20Falco%20%28FoD%29.slp",
+      "localPath": "slp/d0bdb38bbd6617f7df0cc0daed99125251b13d5b370478e0e0c3c6dd6b56d653.slp",
+      "sha256": "d0bdb38bbd6617f7df0cc0daed99125251b13d5b370478e0e0c3c6dd6b56d653",
+      "byteSize": 2257230,
+      "durationFrames": 9727,
+      "stage": "FOUNTAIN_OF_DREAMS",
+      "characters": [
+        "FOX",
+        "FALCO"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-d86f54565f70d3b4ce61802943f3a082749f838bafbefa7d793dc6f0e0542f62",
+      "sampleCharacter": "FOX",
+      "sourcePath": "FOX/07_54_42 Falco + Fox (DL).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/FOX/07_54_42%20Falco%20%2B%20Fox%20%28DL%29.slp",
+      "localPath": "slp/d86f54565f70d3b4ce61802943f3a082749f838bafbefa7d793dc6f0e0542f62.slp",
+      "sha256": "d86f54565f70d3b4ce61802943f3a082749f838bafbefa7d793dc6f0e0542f62",
+      "byteSize": 1886734,
+      "durationFrames": 8130,
+      "stage": "DREAM_LAND_N64",
+      "characters": [
+        "FALCO",
+        "FOX"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-007a9df5857e8f3a7f5255834133181c77e30dcc85cabb2bdecdbeeeb313454a",
+      "sampleCharacter": "GANONDORF",
+      "sourcePath": "GANONDORF/12_27_02 Luigi + Ganondorf (FoD).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/GANONDORF/12_27_02%20Luigi%20%2B%20Ganondorf%20%28FoD%29.slp",
+      "localPath": "slp/007a9df5857e8f3a7f5255834133181c77e30dcc85cabb2bdecdbeeeb313454a.slp",
+      "sha256": "007a9df5857e8f3a7f5255834133181c77e30dcc85cabb2bdecdbeeeb313454a",
+      "byteSize": 1946119,
+      "durationFrames": 8386,
+      "stage": "FOUNTAIN_OF_DREAMS",
+      "characters": [
+        "LUIGI",
+        "GANONDORF"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-2190051807e58865f13000cb52b5ab5e340a3dbcfe789a9d4c05f08292510c0f",
+      "sampleCharacter": "GANONDORF",
+      "sourcePath": "GANONDORF/10_49_35 Ganondorf + Bowser (DL).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/GANONDORF/10_49_35%20Ganondorf%20%2B%20Bowser%20%28DL%29.slp",
+      "localPath": "slp/2190051807e58865f13000cb52b5ab5e340a3dbcfe789a9d4c05f08292510c0f.slp",
+      "sha256": "2190051807e58865f13000cb52b5ab5e340a3dbcfe789a9d4c05f08292510c0f",
+      "byteSize": 2946042,
+      "durationFrames": 12696,
+      "stage": "DREAM_LAND_N64",
+      "characters": [
+        "GANONDORF",
+        "BOWSER"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-33fbe9d5c3ecff52c4b50436f531faedcbd3b4f628e55450112a46075327aa7f",
+      "sampleCharacter": "GANONDORF",
+      "sourcePath": "GANONDORF/11_47_44 Ganondorf + Fox (BF).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/GANONDORF/11_47_44%20Ganondorf%20%2B%20Fox%20%28BF%29.slp",
+      "localPath": "slp/33fbe9d5c3ecff52c4b50436f531faedcbd3b4f628e55450112a46075327aa7f.slp",
+      "sha256": "33fbe9d5c3ecff52c4b50436f531faedcbd3b4f628e55450112a46075327aa7f",
+      "byteSize": 2184847,
+      "durationFrames": 9415,
+      "stage": "BATTLEFIELD",
+      "characters": [
+        "GANONDORF",
+        "FOX"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-48eea92b4dbefe652d95539c330e364fb5d43c7aaadc9526d3cd372e7fadc2c6",
+      "sampleCharacter": "GANONDORF",
+      "sourcePath": "GANONDORF/11_39_50 Ganondorf + Fox (FoD).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/GANONDORF/11_39_50%20Ganondorf%20%2B%20Fox%20%28FoD%29.slp",
+      "localPath": "slp/48eea92b4dbefe652d95539c330e364fb5d43c7aaadc9526d3cd372e7fadc2c6.slp",
+      "sha256": "48eea92b4dbefe652d95539c330e364fb5d43c7aaadc9526d3cd372e7fadc2c6",
+      "byteSize": 1860047,
+      "durationFrames": 8015,
+      "stage": "FOUNTAIN_OF_DREAMS",
+      "characters": [
+        "GANONDORF",
+        "FOX"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-b68a3b9e382104b9bb9781a97a9854dac4a15ca56c83fb955f99c8c0cb4edafb",
+      "sampleCharacter": "GANONDORF",
+      "sourcePath": "GANONDORF/09_58_12 Captain Falcon + Ganondorf (DL).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/GANONDORF/09_58_12%20Captain%20Falcon%20%2B%20Ganondorf%20%28DL%29.slp",
+      "localPath": "slp/b68a3b9e382104b9bb9781a97a9854dac4a15ca56c83fb955f99c8c0cb4edafb.slp",
+      "sha256": "b68a3b9e382104b9bb9781a97a9854dac4a15ca56c83fb955f99c8c0cb4edafb",
+      "byteSize": 1715050,
+      "durationFrames": 7390,
+      "stage": "DREAM_LAND_N64",
+      "characters": [
+        "CAPTAIN_FALCON",
+        "GANONDORF"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-029111df8270d188d38acbbe6d594322a6cfcfe43e9ecdf6ee240c70b69ff2eb",
+      "sampleCharacter": "ICE_CLIMBERS",
+      "sourcePath": "ICE_CLIMBERS/13_08_30 Captain Falcon + Ice Climbers (YS).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/ICE_CLIMBERS/13_08_30%20Captain%20Falcon%20%2B%20Ice%20Climbers%20%28YS%29.slp",
+      "localPath": "slp/029111df8270d188d38acbbe6d594322a6cfcfe43e9ecdf6ee240c70b69ff2eb.slp",
+      "sha256": "029111df8270d188d38acbbe6d594322a6cfcfe43e9ecdf6ee240c70b69ff2eb",
+      "byteSize": 3424774,
+      "durationFrames": 10156,
+      "stage": "YOSHIS_STORY",
+      "characters": [
+        "CAPTAIN_FALCON",
+        "ICE_CLIMBERS"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-476a46e95b1f57ee299ce0aa25944ab7e852f31e67cb6e1fbd7961cf41e90f94",
+      "sampleCharacter": "ICE_CLIMBERS",
+      "sourcePath": "ICE_CLIMBERS/10_50_28 Ice Climbers + Fox (YS).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/ICE_CLIMBERS/10_50_28%20Ice%20Climbers%20%2B%20Fox%20%28YS%29.slp",
+      "localPath": "slp/476a46e95b1f57ee299ce0aa25944ab7e852f31e67cb6e1fbd7961cf41e90f94.slp",
+      "sha256": "476a46e95b1f57ee299ce0aa25944ab7e852f31e67cb6e1fbd7961cf41e90f94",
+      "byteSize": 2794315,
+      "durationFrames": 8571,
+      "stage": "YOSHIS_STORY",
+      "characters": [
+        "ICE_CLIMBERS",
+        "FOX"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-5b556a87fc7634aca9085dd44e5cb7e84c2e4aad1c88e1b849f9425e7133662c",
+      "sampleCharacter": "ICE_CLIMBERS",
+      "sourcePath": "ICE_CLIMBERS/12_55_44 Captain Falcon + Ice Climbers (FD).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/ICE_CLIMBERS/12_55_44%20Captain%20Falcon%20%2B%20Ice%20Climbers%20%28FD%29.slp",
+      "localPath": "slp/5b556a87fc7634aca9085dd44e5cb7e84c2e4aad1c88e1b849f9425e7133662c.slp",
+      "sha256": "5b556a87fc7634aca9085dd44e5cb7e84c2e4aad1c88e1b849f9425e7133662c",
+      "byteSize": 2791878,
+      "durationFrames": 8369,
+      "stage": "FINAL_DESTINATION",
+      "characters": [
+        "CAPTAIN_FALCON",
+        "ICE_CLIMBERS"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-5e44501898e5cdbb990c98a9db41a336148b075ec31fbf364335d37dec308925",
+      "sampleCharacter": "ICE_CLIMBERS",
+      "sourcePath": "ICE_CLIMBERS/13_21_09 [C2] Marth + Ice Climbers (FoD).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/ICE_CLIMBERS/13_21_09%20%5BC2%5D%20Marth%20%2B%20Ice%20Climbers%20%28FoD%29.slp",
+      "localPath": "slp/5e44501898e5cdbb990c98a9db41a336148b075ec31fbf364335d37dec308925.slp",
+      "sha256": "5e44501898e5cdbb990c98a9db41a336148b075ec31fbf364335d37dec308925",
+      "byteSize": 3335454,
+      "durationFrames": 11199,
+      "stage": "FOUNTAIN_OF_DREAMS",
+      "characters": [
+        "MARTH",
+        "ICE_CLIMBERS"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-8a95a2ec3df52b0b28002c559247ec170c8aad5b76ee5bc711e3fa667d725bc3",
+      "sampleCharacter": "ICE_CLIMBERS",
+      "sourcePath": "ICE_CLIMBERS/00_46_28 [HGOD] Falco + Ice Climbers (BF).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/ICE_CLIMBERS/00_46_28%20%5BHGOD%5D%20Falco%20%2B%20Ice%20Climbers%20%28BF%29.slp",
+      "localPath": "slp/8a95a2ec3df52b0b28002c559247ec170c8aad5b76ee5bc711e3fa667d725bc3.slp",
+      "sha256": "8a95a2ec3df52b0b28002c559247ec170c8aad5b76ee5bc711e3fa667d725bc3",
+      "byteSize": 3473263,
+      "durationFrames": 12232,
+      "stage": "BATTLEFIELD",
+      "characters": [
+        "FALCO",
+        "ICE_CLIMBERS"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-2bf8d532914c52dfff68083c58bbc9976b4d7ae918c5dfe3a7914efed28e65e9",
+      "sampleCharacter": "JIGGLYPUFF",
+      "sourcePath": "JIGGLYPUFF/03_54_48 [RUDE] Captain Falcon + [INFP] Jigglypuff (FoD).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/JIGGLYPUFF/03_54_48%20%5BRUDE%5D%20Captain%20Falcon%20%2B%20%5BINFP%5D%20Jigglypuff%20%28FoD%29.slp",
+      "localPath": "slp/2bf8d532914c52dfff68083c58bbc9976b4d7ae918c5dfe3a7914efed28e65e9.slp",
+      "sha256": "2bf8d532914c52dfff68083c58bbc9976b4d7ae918c5dfe3a7914efed28e65e9",
+      "byteSize": 2192968,
+      "durationFrames": 9450,
+      "stage": "FOUNTAIN_OF_DREAMS",
+      "characters": [
+        "CAPTAIN_FALCON",
+        "JIGGLYPUFF"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-2c86e1d54dc7011b677a9d521d2cf5677eceb54c7c12a4bf7692a6658df8c0e6",
+      "sampleCharacter": "JIGGLYPUFF",
+      "sourcePath": "JIGGLYPUFF/10_58_56 Jigglypuff + Fox (YS).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/JIGGLYPUFF/10_58_56%20Jigglypuff%20%2B%20Fox%20%28YS%29.slp",
+      "localPath": "slp/2c86e1d54dc7011b677a9d521d2cf5677eceb54c7c12a4bf7692a6658df8c0e6.slp",
+      "sha256": "2c86e1d54dc7011b677a9d521d2cf5677eceb54c7c12a4bf7692a6658df8c0e6",
+      "byteSize": 1732218,
+      "durationFrames": 7464,
+      "stage": "YOSHIS_STORY",
+      "characters": [
+        "JIGGLYPUFF",
+        "FOX"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-5223bd87f7ecb9be3a22182268340d1cedc215aedecd93ced5e61e349fd5158c",
+      "sampleCharacter": "JIGGLYPUFF",
+      "sourcePath": "JIGGLYPUFF/11_20_37 Jigglypuff + Fox (PS).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/JIGGLYPUFF/11_20_37%20Jigglypuff%20%2B%20Fox%20%28PS%29.slp",
+      "localPath": "slp/5223bd87f7ecb9be3a22182268340d1cedc215aedecd93ced5e61e349fd5158c.slp",
+      "sha256": "5223bd87f7ecb9be3a22182268340d1cedc215aedecd93ced5e61e349fd5158c",
+      "byteSize": 2497819,
+      "durationFrames": 10764,
+      "stage": "POKEMON_STADIUM",
+      "characters": [
+        "JIGGLYPUFF",
+        "FOX"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-d41cbe2a49da81328d675e535ede16b679a42286543bf2860d7b524abd065e74",
+      "sampleCharacter": "JIGGLYPUFF",
+      "sourcePath": "JIGGLYPUFF/01_50_24 Jigglypuff + [TITP] Captain Falcon (DL).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/JIGGLYPUFF/01_50_24%20Jigglypuff%20%2B%20%5BTITP%5D%20Captain%20Falcon%20%28DL%29.slp",
+      "localPath": "slp/d41cbe2a49da81328d675e535ede16b679a42286543bf2860d7b524abd065e74.slp",
+      "sha256": "d41cbe2a49da81328d675e535ede16b679a42286543bf2860d7b524abd065e74",
+      "byteSize": 1695331,
+      "durationFrames": 7305,
+      "stage": "DREAM_LAND_N64",
+      "characters": [
+        "JIGGLYPUFF",
+        "CAPTAIN_FALCON"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-e46421ddc05a208c5d93ffaf46a0ca3eaf7286a91f8a4f1f0e8bdea0debb2f4c",
+      "sampleCharacter": "JIGGLYPUFF",
+      "sourcePath": "JIGGLYPUFF/01_35_05.141Z Jigglypuff + Sheik (YI).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/JIGGLYPUFF/01_35_05.141Z%20Jigglypuff%20%2B%20Sheik%20%28YI%29.slp",
+      "localPath": "slp/e46421ddc05a208c5d93ffaf46a0ca3eaf7286a91f8a4f1f0e8bdea0debb2f4c.slp",
+      "sha256": "e46421ddc05a208c5d93ffaf46a0ca3eaf7286a91f8a4f1f0e8bdea0debb2f4c",
+      "byteSize": 2838217,
+      "durationFrames": 12231,
+      "stage": "YOSHIS_STORY",
+      "characters": [
+        "JIGGLYPUFF",
+        "SHEIK"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-28b4e0a6f6093d5f1e498c6384fda2d459c36fbaafd913dfd402c6ef2ed46a8d",
+      "sampleCharacter": "MARTH",
+      "sourcePath": "MARTH/10_45_55 Marth + Fox (YS).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/MARTH/10_45_55%20Marth%20%2B%20Fox%20%28YS%29.slp",
+      "localPath": "slp/28b4e0a6f6093d5f1e498c6384fda2d459c36fbaafd913dfd402c6ef2ed46a8d.slp",
+      "sha256": "28b4e0a6f6093d5f1e498c6384fda2d459c36fbaafd913dfd402c6ef2ed46a8d",
+      "byteSize": 2670427,
+      "durationFrames": 11508,
+      "stage": "YOSHIS_STORY",
+      "characters": [
+        "MARTH",
+        "FOX"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-314f4ff2a4b96b7e542e50c33c8aa3fb4fb2baf39b3eaaadbce4f57afba48486",
+      "sampleCharacter": "MARTH",
+      "sourcePath": "MARTH/00_53_47 [RUDE] Marth + Fox (DL).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/MARTH/00_53_47%20%5BRUDE%5D%20Marth%20%2B%20Fox%20%28DL%29.slp",
+      "localPath": "slp/314f4ff2a4b96b7e542e50c33c8aa3fb4fb2baf39b3eaaadbce4f57afba48486.slp",
+      "sha256": "314f4ff2a4b96b7e542e50c33c8aa3fb4fb2baf39b3eaaadbce4f57afba48486",
+      "byteSize": 3487992,
+      "durationFrames": 15032,
+      "stage": "DREAM_LAND_N64",
+      "characters": [
+        "MARTH",
+        "FOX"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-557b38d265e7059aace590eb3fd0fe847d56f29a939efb99a78c23298918aff6",
+      "sampleCharacter": "MARTH",
+      "sourcePath": "MARTH/00_49_47.618Z Marth + [MS] Fox (DL).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/MARTH/00_49_47.618Z%20Marth%20%2B%20%5BMS%5D%20Fox%20%28DL%29.slp",
+      "localPath": "slp/557b38d265e7059aace590eb3fd0fe847d56f29a939efb99a78c23298918aff6.slp",
+      "sha256": "557b38d265e7059aace590eb3fd0fe847d56f29a939efb99a78c23298918aff6",
+      "byteSize": 2312505,
+      "durationFrames": 9965,
+      "stage": "DREAM_LAND_N64",
+      "characters": [
+        "MARTH",
+        "FOX"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-8c99828691dd9a01491ee9dd5992e6279120bb57977836774dae78f4d33b1cc8",
+      "sampleCharacter": "MARTH",
+      "sourcePath": "MARTH/10_42_04 Marth + Marth (PS).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/MARTH/10_42_04%20Marth%20%2B%20Marth%20%28PS%29.slp",
+      "localPath": "slp/8c99828691dd9a01491ee9dd5992e6279120bb57977836774dae78f4d33b1cc8.slp",
+      "sha256": "8c99828691dd9a01491ee9dd5992e6279120bb57977836774dae78f4d33b1cc8",
+      "byteSize": 2190882,
+      "durationFrames": 9441,
+      "stage": "POKEMON_STADIUM",
+      "characters": [
+        "MARTH",
+        "MARTH"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-b84bc016a22e62b2109d2df0d22a3a820cd439bf40d3a76758322994cd0e7bc5",
+      "sampleCharacter": "MARTH",
+      "sourcePath": "MARTH/03_56_07 Falco + Marth (DL).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/MARTH/03_56_07%20Falco%20%2B%20Marth%20%28DL%29.slp",
+      "localPath": "slp/b84bc016a22e62b2109d2df0d22a3a820cd439bf40d3a76758322994cd0e7bc5.slp",
+      "sha256": "b84bc016a22e62b2109d2df0d22a3a820cd439bf40d3a76758322994cd0e7bc5",
+      "byteSize": 2018033,
+      "durationFrames": 8696,
+      "stage": "DREAM_LAND_N64",
+      "characters": [
+        "FALCO",
+        "MARTH"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-17635bf63f4683d3ad0d56e64934f7b3e8188f1c9596aa3bda492e81138fff30",
+      "sampleCharacter": "PEACH",
+      "sourcePath": "PEACH/10_37_28 Peach + Captain Falcon (BF).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/PEACH/10_37_28%20Peach%20%2B%20Captain%20Falcon%20%28BF%29.slp",
+      "localPath": "slp/17635bf63f4683d3ad0d56e64934f7b3e8188f1c9596aa3bda492e81138fff30.slp",
+      "sha256": "17635bf63f4683d3ad0d56e64934f7b3e8188f1c9596aa3bda492e81138fff30",
+      "byteSize": 2519394,
+      "durationFrames": 10857,
+      "stage": "BATTLEFIELD",
+      "characters": [
+        "PEACH",
+        "CAPTAIN_FALCON"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-3aa702755b68706751d17ddd7681a56938437986b7f2ede9dd801570fa9b2a5a",
+      "sampleCharacter": "PEACH",
+      "sourcePath": "PEACH/11_57_36 Sheik + Peach (FoD).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/PEACH/11_57_36%20Sheik%20%2B%20Peach%20%28FoD%29.slp",
+      "localPath": "slp/3aa702755b68706751d17ddd7681a56938437986b7f2ede9dd801570fa9b2a5a.slp",
+      "sha256": "3aa702755b68706751d17ddd7681a56938437986b7f2ede9dd801570fa9b2a5a",
+      "byteSize": 2386923,
+      "durationFrames": 10286,
+      "stage": "FOUNTAIN_OF_DREAMS",
+      "characters": [
+        "SHEIK",
+        "PEACH"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-3da02a68f2cfa8a538d7150341b8a6f72aefd50040aa3c35eda2e59c198473e1",
+      "sampleCharacter": "PEACH",
+      "sourcePath": "PEACH/10_54_58 Ness + Peach (FD).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/PEACH/10_54_58%20Ness%20%2B%20Peach%20%28FD%29.slp",
+      "localPath": "slp/3da02a68f2cfa8a538d7150341b8a6f72aefd50040aa3c35eda2e59c198473e1.slp",
+      "sha256": "3da02a68f2cfa8a538d7150341b8a6f72aefd50040aa3c35eda2e59c198473e1",
+      "byteSize": 2897783,
+      "durationFrames": 12488,
+      "stage": "FINAL_DESTINATION",
+      "characters": [
+        "NESS",
+        "PEACH"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-bef0a4829316d7a19d404f4312829ed6530d9d0a3033882ad612f2f23def09da",
+      "sampleCharacter": "PEACH",
+      "sourcePath": "PEACH/11_07_39 Marth + Peach (FD).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/PEACH/11_07_39%20Marth%20%2B%20Peach%20%28FD%29.slp",
+      "localPath": "slp/bef0a4829316d7a19d404f4312829ed6530d9d0a3033882ad612f2f23def09da.slp",
+      "sha256": "bef0a4829316d7a19d404f4312829ed6530d9d0a3033882ad612f2f23def09da",
+      "byteSize": 1628975,
+      "durationFrames": 7019,
+      "stage": "FINAL_DESTINATION",
+      "characters": [
+        "MARTH",
+        "PEACH"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-ded446de5d7e6188b8871fbfa1047cc9e85ecfa7a427d93ada4acbeb3ada951c",
+      "sampleCharacter": "PEACH",
+      "sourcePath": "PEACH/10_54_33 Peach + Marth (FoD).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/PEACH/10_54_33%20Peach%20%2B%20Marth%20%28FoD%29.slp",
+      "localPath": "slp/ded446de5d7e6188b8871fbfa1047cc9e85ecfa7a427d93ada4acbeb3ada951c.slp",
+      "sha256": "ded446de5d7e6188b8871fbfa1047cc9e85ecfa7a427d93ada4acbeb3ada951c",
+      "byteSize": 2374162,
+      "durationFrames": 10231,
+      "stage": "FOUNTAIN_OF_DREAMS",
+      "characters": [
+        "PEACH",
+        "MARTH"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-1d33d900a0f649d39c25c0d17278d91c5adf8d18c86c1c9dfdbb7e0fd3fa5686",
+      "sampleCharacter": "SAMUS",
+      "sourcePath": "SAMUS/12_00_05 Falco + Samus (FD).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/SAMUS/12_00_05%20Falco%20%2B%20Samus%20%28FD%29.slp",
+      "localPath": "slp/1d33d900a0f649d39c25c0d17278d91c5adf8d18c86c1c9dfdbb7e0fd3fa5686.slp",
+      "sha256": "1d33d900a0f649d39c25c0d17278d91c5adf8d18c86c1c9dfdbb7e0fd3fa5686",
+      "byteSize": 2431467,
+      "durationFrames": 10478,
+      "stage": "FINAL_DESTINATION",
+      "characters": [
+        "FALCO",
+        "SAMUS"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-54eb0fe229be50cc501c2573e44eae7a591e0db7e15adc058e8b84c1378dea60",
+      "sampleCharacter": "SAMUS",
+      "sourcePath": "SAMUS/10_28_34 Samus + Captain Falcon (PS).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/SAMUS/10_28_34%20Samus%20%2B%20Captain%20Falcon%20%28PS%29.slp",
+      "localPath": "slp/54eb0fe229be50cc501c2573e44eae7a591e0db7e15adc058e8b84c1378dea60.slp",
+      "sha256": "54eb0fe229be50cc501c2573e44eae7a591e0db7e15adc058e8b84c1378dea60",
+      "byteSize": 3821146,
+      "durationFrames": 16468,
+      "stage": "POKEMON_STADIUM",
+      "characters": [
+        "SAMUS",
+        "CAPTAIN_FALCON"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-71e99b91ac9375be68ee98056429545c6fa3a090a1108295683ce69987a8b85a",
+      "sampleCharacter": "SAMUS",
+      "sourcePath": "SAMUS/13_01_52 Sheik + Samus (PS).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/SAMUS/13_01_52%20Sheik%20%2B%20Samus%20%28PS%29.slp",
+      "localPath": "slp/71e99b91ac9375be68ee98056429545c6fa3a090a1108295683ce69987a8b85a.slp",
+      "sha256": "71e99b91ac9375be68ee98056429545c6fa3a090a1108295683ce69987a8b85a",
+      "byteSize": 3098930,
+      "durationFrames": 13355,
+      "stage": "POKEMON_STADIUM",
+      "characters": [
+        "SHEIK",
+        "SAMUS"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-9e1cd5ba3eb8bbc063cfe9a9be28ab1db00bf80a993aad0855a7629a3f52436d",
+      "sampleCharacter": "SAMUS",
+      "sourcePath": "SAMUS/13_19_17 Captain Falcon + Samus (PS).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/SAMUS/13_19_17%20Captain%20Falcon%20%2B%20Samus%20%28PS%29.slp",
+      "localPath": "slp/9e1cd5ba3eb8bbc063cfe9a9be28ab1db00bf80a993aad0855a7629a3f52436d.slp",
+      "sha256": "9e1cd5ba3eb8bbc063cfe9a9be28ab1db00bf80a993aad0855a7629a3f52436d",
+      "byteSize": 1567498,
+      "durationFrames": 6754,
+      "stage": "POKEMON_STADIUM",
+      "characters": [
+        "CAPTAIN_FALCON",
+        "SAMUS"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-d6148c87a68a684a0799e7ea194820a595007a5de002eb30692f4a6c5726e080",
+      "sampleCharacter": "SAMUS",
+      "sourcePath": "SAMUS/13_20_46 Fox + Samus (BF).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/SAMUS/13_20_46%20Fox%20%2B%20Samus%20%28BF%29.slp",
+      "localPath": "slp/d6148c87a68a684a0799e7ea194820a595007a5de002eb30692f4a6c5726e080.slp",
+      "sha256": "d6148c87a68a684a0799e7ea194820a595007a5de002eb30692f4a6c5726e080",
+      "byteSize": 3627195,
+      "durationFrames": 15632,
+      "stage": "BATTLEFIELD",
+      "characters": [
+        "FOX",
+        "SAMUS"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-0f1a4f7a7c6141c0c8ee7ed7ed41c664c0e513641cc8d66601032a663fcc416d",
+      "sampleCharacter": "YOSHI",
+      "sourcePath": "YOSHI/09_25_12 Captain Falcon + Yoshi (YS).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/YOSHI/09_25_12%20Captain%20Falcon%20%2B%20Yoshi%20%28YS%29.slp",
+      "localPath": "slp/0f1a4f7a7c6141c0c8ee7ed7ed41c664c0e513641cc8d66601032a663fcc416d.slp",
+      "sha256": "0f1a4f7a7c6141c0c8ee7ed7ed41c664c0e513641cc8d66601032a663fcc416d",
+      "byteSize": 2443998,
+      "durationFrames": 10532,
+      "stage": "YOSHIS_STORY",
+      "characters": [
+        "CAPTAIN_FALCON",
+        "YOSHI"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-366cf0bfb6b55f3ca69b286f699a33306217ac713d172c03bd64f8021d0d2be6",
+      "sampleCharacter": "YOSHI",
+      "sourcePath": "YOSHI/09_22_19 Captain Falcon + Yoshi (DL).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/YOSHI/09_22_19%20Captain%20Falcon%20%2B%20Yoshi%20%28DL%29.slp",
+      "localPath": "slp/366cf0bfb6b55f3ca69b286f699a33306217ac713d172c03bd64f8021d0d2be6.slp",
+      "sha256": "366cf0bfb6b55f3ca69b286f699a33306217ac713d172c03bd64f8021d0d2be6",
+      "byteSize": 2307118,
+      "durationFrames": 9942,
+      "stage": "DREAM_LAND_N64",
+      "characters": [
+        "CAPTAIN_FALCON",
+        "YOSHI"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-7d571ba1feb30415da459e20339a8e946ea66ff2fd2f4f3f1ef23da0f99f9026",
+      "sampleCharacter": "YOSHI",
+      "sourcePath": "YOSHI/14_18_15 Sheik + Yoshi (YI).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/YOSHI/14_18_15%20Sheik%20%2B%20Yoshi%20%28YI%29.slp",
+      "localPath": "slp/7d571ba1feb30415da459e20339a8e946ea66ff2fd2f4f3f1ef23da0f99f9026.slp",
+      "sha256": "7d571ba1feb30415da459e20339a8e946ea66ff2fd2f4f3f1ef23da0f99f9026",
+      "byteSize": 2924934,
+      "durationFrames": 12605,
+      "stage": "YOSHIS_STORY",
+      "characters": [
+        "SHEIK",
+        "YOSHI"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-dd1b0b67153796a0640cd87620867918c9600438a2a473e94c060c1f70238289",
+      "sampleCharacter": "YOSHI",
+      "sourcePath": "YOSHI/09_28_18 Captain Falcon + Yoshi (PS).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/YOSHI/09_28_18%20Captain%20Falcon%20%2B%20Yoshi%20%28PS%29.slp",
+      "localPath": "slp/dd1b0b67153796a0640cd87620867918c9600438a2a473e94c060c1f70238289.slp",
+      "sha256": "dd1b0b67153796a0640cd87620867918c9600438a2a473e94c060c1f70238289",
+      "byteSize": 2124998,
+      "durationFrames": 9157,
+      "stage": "POKEMON_STADIUM",
+      "characters": [
+        "CAPTAIN_FALCON",
+        "YOSHI"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-fb9b1a889519b0986980eabc64cb9177428ac5e202049605a2d1aabd4a873c9f",
+      "sampleCharacter": "YOSHI",
+      "sourcePath": "YOSHI/12_24_06 Captain Falcon + Yoshi (YS).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/YOSHI/12_24_06%20Captain%20Falcon%20%2B%20Yoshi%20%28YS%29.slp",
+      "localPath": "slp/fb9b1a889519b0986980eabc64cb9177428ac5e202049605a2d1aabd4a873c9f.slp",
+      "sha256": "fb9b1a889519b0986980eabc64cb9177428ac5e202049605a2d1aabd4a873c9f",
+      "byteSize": 1953079,
+      "durationFrames": 8416,
+      "stage": "YOSHIS_STORY",
+      "characters": [
+        "CAPTAIN_FALCON",
+        "YOSHI"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-0c213247e8b5f5fcb98c01c398032f41c0810ddb62aa93713264e3a8eef309c8",
+      "sampleCharacter": "ZELDA_SHEIK",
+      "sourcePath": "ZELDA_SHEIK/10_38_20 Fox + Sheik (FD).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/ZELDA_SHEIK/10_38_20%20Fox%20%2B%20Sheik%20%28FD%29.slp",
+      "localPath": "slp/0c213247e8b5f5fcb98c01c398032f41c0810ddb62aa93713264e3a8eef309c8.slp",
+      "sha256": "0c213247e8b5f5fcb98c01c398032f41c0810ddb62aa93713264e3a8eef309c8",
+      "byteSize": 2051218,
+      "durationFrames": 8839,
+      "stage": "FINAL_DESTINATION",
+      "characters": [
+        "FOX",
+        "SHEIK"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-824842ac080ba89120b5539e18c9bed8b0fd9c6d6808816e0bfc8a16362253de",
+      "sampleCharacter": "ZELDA_SHEIK",
+      "sourcePath": "ZELDA_SHEIK/10_44_32 Fox + Sheik (FoD).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/ZELDA_SHEIK/10_44_32%20Fox%20%2B%20Sheik%20%28FoD%29.slp",
+      "localPath": "slp/824842ac080ba89120b5539e18c9bed8b0fd9c6d6808816e0bfc8a16362253de.slp",
+      "sha256": "824842ac080ba89120b5539e18c9bed8b0fd9c6d6808816e0bfc8a16362253de",
+      "byteSize": 2894306,
+      "durationFrames": 12473,
+      "stage": "FOUNTAIN_OF_DREAMS",
+      "characters": [
+        "FOX",
+        "SHEIK"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-8b230cb80762b455b89939b89c7410210138fe2e4499274bbb3b39fa98941966",
+      "sampleCharacter": "ZELDA_SHEIK",
+      "sourcePath": "ZELDA_SHEIK/10_37_27 Sheik + Fox (FoD).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/ZELDA_SHEIK/10_37_27%20Sheik%20%2B%20Fox%20%28FoD%29.slp",
+      "localPath": "slp/8b230cb80762b455b89939b89c7410210138fe2e4499274bbb3b39fa98941966.slp",
+      "sha256": "8b230cb80762b455b89939b89c7410210138fe2e4499274bbb3b39fa98941966",
+      "byteSize": 1393035,
+      "durationFrames": 6002,
+      "stage": "FOUNTAIN_OF_DREAMS",
+      "characters": [
+        "SHEIK",
+        "FOX"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-f872cd72bd5a814d7d84154fbd5ed94c5d136d980b8023a8392d04b91d9d56db",
+      "sampleCharacter": "ZELDA_SHEIK",
+      "sourcePath": "ZELDA_SHEIK/10_41_01 Fox + Sheik (DL).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/ZELDA_SHEIK/10_41_01%20Fox%20%2B%20Sheik%20%28DL%29.slp",
+      "localPath": "slp/f872cd72bd5a814d7d84154fbd5ed94c5d136d980b8023a8392d04b91d9d56db.slp",
+      "sha256": "f872cd72bd5a814d7d84154fbd5ed94c5d136d980b8023a8392d04b91d9d56db",
+      "byteSize": 2781090,
+      "durationFrames": 11985,
+      "stage": "DREAM_LAND_N64",
+      "characters": [
+        "FOX",
+        "SHEIK"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    },
+    {
+      "replayId": "slippi-public-v3-fb94bb0239eb733b26337b0d0be6f7a16f8c1f521ff1af939de59714e960c121",
+      "sampleCharacter": "ZELDA_SHEIK",
+      "sourcePath": "ZELDA_SHEIK/00_39_31.207Z Jigglypuff + Sheik (FoD).slp",
+      "sourceUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/ZELDA_SHEIK/00_39_31.207Z%20Jigglypuff%20%2B%20Sheik%20%28FoD%29.slp",
+      "localPath": "slp/fb94bb0239eb733b26337b0d0be6f7a16f8c1f521ff1af939de59714e960c121.slp",
+      "sha256": "fb94bb0239eb733b26337b0d0be6f7a16f8c1f521ff1af939de59714e960c121",
+      "byteSize": 3244449,
+      "durationFrames": 13982,
+      "stage": "FOUNTAIN_OF_DREAMS",
+      "characters": [
+        "JIGGLYPUFF",
+        "SHEIK"
+      ],
+      "slippiVersion": "2.0.1",
+      "endMethod": "GAME",
+      "verification": "LFS SHA-256 and size matched downloaded bytes; py-slippi parsed start, GAME end, metadata, two human players"
+    }
+  ]
+}

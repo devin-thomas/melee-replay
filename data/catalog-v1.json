@@ -1,0 +1,2139 @@
+{
+  "schemaVersion": 1,
+  "catalogRevision": "hf-v3-standalone-b9f637250074c236",
+  "generatedAt": "2026-09-24T03:38:51.904Z",
+  "sources": [
+    {
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "publisher": "erickfm, Hugging Face mirror of altf4's public Slippi dataset",
+      "evidenceUrls": [
+        "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7",
+        "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/tree/c82be5f6e43f3388555cfe0cf8652580601f396d",
+        "https://creativecommons.org/publicdomain/zero/1.0/"
+      ],
+      "accessConditions": "Public individual replay downloads through revision-pinned Hugging Face resolve URLs; no account was required during review.",
+      "useConditions": "The dataset card labels the replay collection CC0-1.0, credits altf4 with contributions from nikki and yashichi, and permits use. This is the publisher's stated license for replay data, not a license for Nintendo game assets.",
+      "reviewedAt": "2026-09-24T03:38:51.904Z",
+      "auditReference": "data/replay-batch.json: local SHA-256, byte size, and py-slippi 1.6.2 game-end validation; standalone classification only.",
+      "downloadScopes": [
+        {
+          "origin": "https://huggingface.co",
+          "pathPrefix": "/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/"
+        }
+      ],
+      "redirectScopes": [
+        {
+          "origin": "https://us.aws.cdn.hf.co",
+          "pathPrefix": "/xet-bridge-us/"
+        }
+      ],
+      "eligibility": "eligible"
+    }
+  ],
+  "assets": [
+    {
+      "assetId": "c713e159-2904-5d33-b006-b69ecf4107ad",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/GANONDORF/12_27_02%20Luigi%20%2B%20Ganondorf%20%28FoD%29.slp",
+      "sha256": "007a9df5857e8f3a7f5255834133181c77e30dcc85cabb2bdecdbeeeb313454a",
+      "byteSize": 1946119,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "fc2a4b19-9d90-5966-a83a-d5b453f5e76e",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/ICE_CLIMBERS/13_08_30%20Captain%20Falcon%20%2B%20Ice%20Climbers%20%28YS%29.slp",
+      "sha256": "029111df8270d188d38acbbe6d594322a6cfcfe43e9ecdf6ee240c70b69ff2eb",
+      "byteSize": 3424774,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "d56282c5-7ca2-56d2-8aed-3ec9a0f2f570",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/FALCO/01_53_40%20Falco%20%2B%20Marth%20%28DL%29.slp",
+      "sha256": "069fb800650ddf27928d224fd310f68d881abd6eb6701adff98ce66b8574177b",
+      "byteSize": 2176489,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "a222fe81-eeaa-5f39-9a1a-836dcac1259b",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/ZELDA_SHEIK/10_38_20%20Fox%20%2B%20Sheik%20%28FD%29.slp",
+      "sha256": "0c213247e8b5f5fcb98c01c398032f41c0810ddb62aa93713264e3a8eef309c8",
+      "byteSize": 2051218,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "5014c94d-34bf-5c55-9b72-e3fabfabe254",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/YOSHI/09_25_12%20Captain%20Falcon%20%2B%20Yoshi%20%28YS%29.slp",
+      "sha256": "0f1a4f7a7c6141c0c8ee7ed7ed41c664c0e513641cc8d66601032a663fcc416d",
+      "byteSize": 2443998,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "0d33929c-c783-5cde-91d7-05de7f4e8342",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/PEACH/10_37_28%20Peach%20%2B%20Captain%20Falcon%20%28BF%29.slp",
+      "sha256": "17635bf63f4683d3ad0d56e64934f7b3e8188f1c9596aa3bda492e81138fff30",
+      "byteSize": 2519394,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "03d01406-401a-596f-8e23-9e1d966a6c47",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/SAMUS/12_00_05%20Falco%20%2B%20Samus%20%28FD%29.slp",
+      "sha256": "1d33d900a0f649d39c25c0d17278d91c5adf8d18c86c1c9dfdbb7e0fd3fa5686",
+      "byteSize": 2431467,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "4aae942f-2944-57c3-88b7-a4f6d8eb1256",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/GANONDORF/10_49_35%20Ganondorf%20%2B%20Bowser%20%28DL%29.slp",
+      "sha256": "2190051807e58865f13000cb52b5ab5e340a3dbcfe789a9d4c05f08292510c0f",
+      "byteSize": 2946042,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "8ba978c1-6aeb-5906-b86c-ed4aa12a7e92",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/MARTH/10_45_55%20Marth%20%2B%20Fox%20%28YS%29.slp",
+      "sha256": "28b4e0a6f6093d5f1e498c6384fda2d459c36fbaafd913dfd402c6ef2ed46a8d",
+      "byteSize": 2670427,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "3d2c15d0-8188-5e93-bb75-e42331af3955",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/FOX/03_29_13%20%5BRUDE%5D%20Fox%20%2B%20%5BINFP%5D%20Marth%20%28YI%29.slp",
+      "sha256": "29862c3945074c73fd3ecf40af218d3951010de40a2e960c7a72dbca40dbafc7",
+      "byteSize": 1981616,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "0a671233-bbc8-56cb-9944-5d67198fa1ce",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/JIGGLYPUFF/03_54_48%20%5BRUDE%5D%20Captain%20Falcon%20%2B%20%5BINFP%5D%20Jigglypuff%20%28FoD%29.slp",
+      "sha256": "2bf8d532914c52dfff68083c58bbc9976b4d7ae918c5dfe3a7914efed28e65e9",
+      "byteSize": 2192968,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "4c04249d-e227-54fe-a1ec-61f27e38b90f",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/JIGGLYPUFF/10_58_56%20Jigglypuff%20%2B%20Fox%20%28YS%29.slp",
+      "sha256": "2c86e1d54dc7011b677a9d521d2cf5677eceb54c7c12a4bf7692a6658df8c0e6",
+      "byteSize": 1732218,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "963248b9-9353-5c67-ad02-8d3435765503",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/MARTH/00_53_47%20%5BRUDE%5D%20Marth%20%2B%20Fox%20%28DL%29.slp",
+      "sha256": "314f4ff2a4b96b7e542e50c33c8aa3fb4fb2baf39b3eaaadbce4f57afba48486",
+      "byteSize": 3487992,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "13f67855-268e-55c9-8598-0971331b5bbc",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/GANONDORF/11_47_44%20Ganondorf%20%2B%20Fox%20%28BF%29.slp",
+      "sha256": "33fbe9d5c3ecff52c4b50436f531faedcbd3b4f628e55450112a46075327aa7f",
+      "byteSize": 2184847,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "09285bc5-98f7-59e4-abfc-5a6fc374a8ce",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/YOSHI/09_22_19%20Captain%20Falcon%20%2B%20Yoshi%20%28DL%29.slp",
+      "sha256": "366cf0bfb6b55f3ca69b286f699a33306217ac713d172c03bd64f8021d0d2be6",
+      "byteSize": 2307118,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "c1a06ede-10b3-5b48-9a21-c1057a695bc1",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/CPTFALCON/00_31_38%20Captain%20Falcon%20%2B%20Fox%20%28FD%29.slp",
+      "sha256": "371900223fcb63f38be96d86360facc4ee0b93c9a1a038cb5b627313fecbff71",
+      "byteSize": 2431466,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "f9ce90fd-a7b8-56c0-958b-a1581522e339",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/BOWSER/16_56_35%20%5B314%5D%20Kirby%20%2B%20%5BCUMB%5D%20Bowser%20%28YS%29.slp",
+      "sha256": "375c0e32e68842da400f50f6e65b63f3cb20b878c3e55595663b345fb673b758",
+      "byteSize": 1423890,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "2080c802-4f50-53d9-b119-b57092d4908b",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/PEACH/11_57_36%20Sheik%20%2B%20Peach%20%28FoD%29.slp",
+      "sha256": "3aa702755b68706751d17ddd7681a56938437986b7f2ede9dd801570fa9b2a5a",
+      "byteSize": 2386923,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "37eb8d0a-0da7-5bc5-a8f0-7924277e908c",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/PEACH/10_54_58%20Ness%20%2B%20Peach%20%28FD%29.slp",
+      "sha256": "3da02a68f2cfa8a538d7150341b8a6f72aefd50040aa3c35eda2e59c198473e1",
+      "byteSize": 2897783,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "986cebff-a60e-53d2-9d84-25211c270b5d",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/CPTFALCON/01_30_41.076Z%20Captain%20Falcon%20%2B%20%5BTITP%5D%20Captain%20Falcon%20%28FD%29.slp",
+      "sha256": "3fc070dcd2ccd9df5c560406740bf5c500a9142413aadfaa4a50252821887b0e",
+      "byteSize": 2166089,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "a3186b71-3994-5dbb-9a9f-56f192bc2230",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/BOWSER/18_46_36%20Bowser%20%2B%20Fox%20%28YI%29.slp",
+      "sha256": "411a378da668c4cd810a73aeea55216b2cdb87068ff4b4a8d46f7f3dd56ee349",
+      "byteSize": 1858427,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "d7f21125-268d-505c-b58b-e53b365382d4",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/FALCO/01_57_19%20Falco%20%2B%20Marth%20%28FoD%29.slp",
+      "sha256": "43eed72aba6ddf0363134c30cd75e457d8199b2836862408ab9a6f00c2b3ad0f",
+      "byteSize": 1786729,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "f64272c4-bb41-53d1-b646-111158298ac9",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/ICE_CLIMBERS/10_50_28%20Ice%20Climbers%20%2B%20Fox%20%28YS%29.slp",
+      "sha256": "476a46e95b1f57ee299ce0aa25944ab7e852f31e67cb6e1fbd7961cf41e90f94",
+      "byteSize": 2794315,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "8284175e-9f72-50e3-bdd1-8f2448eebf85",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/GANONDORF/11_39_50%20Ganondorf%20%2B%20Fox%20%28FoD%29.slp",
+      "sha256": "48eea92b4dbefe652d95539c330e364fb5d43c7aaadc9526d3cd372e7fadc2c6",
+      "byteSize": 1860047,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "c29c3cf3-c656-5186-bb34-efb42675c5b8",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/FALCO/02_43_38%20%5BRUDE%5D%20Marth%20%2B%20%5BINFP%5D%20Falco%20%28YI%29.slp",
+      "sha256": "4afdd4f45274aa0976c0f7571939850c6543349ea5d27a4685e04a63e60ca96e",
+      "byteSize": 1622480,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "dca63eea-dca0-53f2-95a1-a075fb4e7491",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/JIGGLYPUFF/11_20_37%20Jigglypuff%20%2B%20Fox%20%28PS%29.slp",
+      "sha256": "5223bd87f7ecb9be3a22182268340d1cedc215aedecd93ced5e61e349fd5158c",
+      "byteSize": 2497819,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "ab279c4a-4f9d-5edd-a3bb-9b3a5a7ad6f0",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/SAMUS/10_28_34%20Samus%20%2B%20Captain%20Falcon%20%28PS%29.slp",
+      "sha256": "54eb0fe229be50cc501c2573e44eae7a591e0db7e15adc058e8b84c1378dea60",
+      "byteSize": 3821146,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "bd5af9f1-f893-561a-b250-4cda00c497e3",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/MARTH/00_49_47.618Z%20Marth%20%2B%20%5BMS%5D%20Fox%20%28DL%29.slp",
+      "sha256": "557b38d265e7059aace590eb3fd0fe847d56f29a939efb99a78c23298918aff6",
+      "byteSize": 2312505,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "7565242b-8321-5978-a83d-913127ca065e",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/ICE_CLIMBERS/12_55_44%20Captain%20Falcon%20%2B%20Ice%20Climbers%20%28FD%29.slp",
+      "sha256": "5b556a87fc7634aca9085dd44e5cb7e84c2e4aad1c88e1b849f9425e7133662c",
+      "byteSize": 2791878,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "cacb9be5-cb88-5b87-936b-b80a20c2b6ac",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/ICE_CLIMBERS/13_21_09%20%5BC2%5D%20Marth%20%2B%20Ice%20Climbers%20%28FoD%29.slp",
+      "sha256": "5e44501898e5cdbb990c98a9db41a336148b075ec31fbf364335d37dec308925",
+      "byteSize": 3335454,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "1dd0c4a3-2687-5b12-aa13-859d7daa18c6",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/CPTFALCON/01_03_47%20Falco%20%2B%20Captain%20Falcon%20%28BF%29.slp",
+      "sha256": "70fee3548c832f89e1b10fb3192e99a0972eee9b930dc3959c957247734fac75",
+      "byteSize": 2447707,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "5962297f-5c59-5157-be83-277bb27540a8",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/SAMUS/13_01_52%20Sheik%20%2B%20Samus%20%28PS%29.slp",
+      "sha256": "71e99b91ac9375be68ee98056429545c6fa3a090a1108295683ce69987a8b85a",
+      "byteSize": 3098930,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "5c01cca7-ee16-5e73-8320-ab99947bb515",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/YOSHI/14_18_15%20Sheik%20%2B%20Yoshi%20%28YI%29.slp",
+      "sha256": "7d571ba1feb30415da459e20339a8e946ea66ff2fd2f4f3f1ef23da0f99f9026",
+      "byteSize": 2924934,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "264e9998-ce4a-51bd-9ab6-34027f70ef13",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/ZELDA_SHEIK/10_44_32%20Fox%20%2B%20Sheik%20%28FoD%29.slp",
+      "sha256": "824842ac080ba89120b5539e18c9bed8b0fd9c6d6808816e0bfc8a16362253de",
+      "byteSize": 2894306,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "2df253d2-2c76-531b-8098-dd78b72f7876",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/FOX/03_39_21%20%5BRUDE%5D%20Fox%20%2B%20%5BINFP%5D%20Marth%20%28DL%29.slp",
+      "sha256": "8781c6809774f72bfa83001bbd44bf0a77b30ad1c3be7950c4d5aa684810f8da",
+      "byteSize": 2217792,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "ef69d45e-c318-55e0-a6c9-59ef28e91418",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/ICE_CLIMBERS/00_46_28%20%5BHGOD%5D%20Falco%20%2B%20Ice%20Climbers%20%28BF%29.slp",
+      "sha256": "8a95a2ec3df52b0b28002c559247ec170c8aad5b76ee5bc711e3fa667d725bc3",
+      "byteSize": 3473263,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "81ed26df-cd9a-5c24-9c11-8965b0ad49e4",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/ZELDA_SHEIK/10_37_27%20Sheik%20%2B%20Fox%20%28FoD%29.slp",
+      "sha256": "8b230cb80762b455b89939b89c7410210138fe2e4499274bbb3b39fa98941966",
+      "byteSize": 1393035,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "2cc3a41e-b08a-5cd3-845e-41127c3e9235",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/MARTH/10_42_04%20Marth%20%2B%20Marth%20%28PS%29.slp",
+      "sha256": "8c99828691dd9a01491ee9dd5992e6279120bb57977836774dae78f4d33b1cc8",
+      "byteSize": 2190882,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "0c53fa38-44f8-5f3b-92ef-ffe4a7513fc4",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/CPTFALCON/01_38_56%20%5BPPAP%5D%20Marth%20%2B%20%5BTITP%5D%20Captain%20Falcon%20%28DL%29.slp",
+      "sha256": "9a9f82882165ce72b67f472149fbfbad4ac207505bc6adcd6e74111e7a216cc1",
+      "byteSize": 2208747,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "8d2b8caf-f6c5-526f-9f05-895b34a10e97",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/SAMUS/13_19_17%20Captain%20Falcon%20%2B%20Samus%20%28PS%29.slp",
+      "sha256": "9e1cd5ba3eb8bbc063cfe9a9be28ab1db00bf80a993aad0855a7629a3f52436d",
+      "byteSize": 1567498,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "e020e9e8-9f10-5288-afe1-a3494594d1fa",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/BOWSER/18_50_55%20Roy%20%2B%20Bowser%20%28FoD%29.slp",
+      "sha256": "a26f09e42f11fba64821e539577bf61028819b164be43d7d22b42b4adb856d6c",
+      "byteSize": 1308358,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "4475ac08-bb13-5b17-ba05-1e84cb44dfbb",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/BOWSER/18_49_08%20Bowser%20%2B%20Fox%20%28PS%29.slp",
+      "sha256": "a85f6b21074362511262e32014afb625a8c0c154b95be3c6a74a59ff97eb1f01",
+      "byteSize": 3620003,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "d857d03b-04e7-5e9d-8de9-2d864b75089a",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/GANONDORF/09_58_12%20Captain%20Falcon%20%2B%20Ganondorf%20%28DL%29.slp",
+      "sha256": "b68a3b9e382104b9bb9781a97a9854dac4a15ca56c83fb955f99c8c0cb4edafb",
+      "byteSize": 1715050,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "3e51fa39-bbdd-5f9e-a9f8-2466f5ce45ee",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/MARTH/03_56_07%20Falco%20%2B%20Marth%20%28DL%29.slp",
+      "sha256": "b84bc016a22e62b2109d2df0d22a3a820cd439bf40d3a76758322994cd0e7bc5",
+      "byteSize": 2018033,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "f8562e10-e39a-5e31-934c-1cc295be1a2e",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/FOX/03_44_11%20%5BRUDE%5D%20Fox%20%2B%20%5BINFP%5D%20Captain%20Falcon%20%28BF%29.slp",
+      "sha256": "beb4673ded938ee472ad35290c96a73f45de5d3d4f5e1bdcf0f6f9cee097edc9",
+      "byteSize": 2393184,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "0f6781f9-de68-5437-ae01-e3e27341060d",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/PEACH/11_07_39%20Marth%20%2B%20Peach%20%28FD%29.slp",
+      "sha256": "bef0a4829316d7a19d404f4312829ed6530d9d0a3033882ad612f2f23def09da",
+      "byteSize": 1628975,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "26e86426-04d0-5b80-ae2b-231d1b417b57",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/FOX/07_34_07%20%5BNELL%5D%20Fox%20%2B%20Falco%20%28FoD%29.slp",
+      "sha256": "d0bdb38bbd6617f7df0cc0daed99125251b13d5b370478e0e0c3c6dd6b56d653",
+      "byteSize": 2257230,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "3e6d86a5-5228-58a5-9e8f-66aec11a56bc",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/JIGGLYPUFF/01_50_24%20Jigglypuff%20%2B%20%5BTITP%5D%20Captain%20Falcon%20%28DL%29.slp",
+      "sha256": "d41cbe2a49da81328d675e535ede16b679a42286543bf2860d7b524abd065e74",
+      "byteSize": 1695331,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "a7de8400-4ce2-5590-832f-71bb3248047e",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/SAMUS/13_20_46%20Fox%20%2B%20Samus%20%28BF%29.slp",
+      "sha256": "d6148c87a68a684a0799e7ea194820a595007a5de002eb30692f4a6c5726e080",
+      "byteSize": 3627195,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "18aa7b86-3675-5d2b-a287-4753e6a57d05",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/FOX/07_54_42%20Falco%20%2B%20Fox%20%28DL%29.slp",
+      "sha256": "d86f54565f70d3b4ce61802943f3a082749f838bafbefa7d793dc6f0e0542f62",
+      "byteSize": 1886734,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "2159350e-cbcb-5ceb-9551-bb92096caf89",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/YOSHI/09_28_18%20Captain%20Falcon%20%2B%20Yoshi%20%28PS%29.slp",
+      "sha256": "dd1b0b67153796a0640cd87620867918c9600438a2a473e94c060c1f70238289",
+      "byteSize": 2124998,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "6a4d245b-9096-58d3-b81d-84476f605cae",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/PEACH/10_54_33%20Peach%20%2B%20Marth%20%28FoD%29.slp",
+      "sha256": "ded446de5d7e6188b8871fbfa1047cc9e85ecfa7a427d93ada4acbeb3ada951c",
+      "byteSize": 2374162,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "7c969c18-4caf-5950-afe4-3cc6579c231e",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/FALCO/02_39_54%20Falco%20%2B%20Marth%20%28FD%29.slp",
+      "sha256": "e3762976e96e7c334e217a409d80a582cec6583c07176c314fa6bb32ecf610a4",
+      "byteSize": 2106193,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "6aba3f83-aa44-5e72-b557-6009522ba438",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/JIGGLYPUFF/01_35_05.141Z%20Jigglypuff%20%2B%20Sheik%20%28YI%29.slp",
+      "sha256": "e46421ddc05a208c5d93ffaf46a0ca3eaf7286a91f8a4f1f0e8bdea0debb2f4c",
+      "byteSize": 2838217,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "b81c7b86-a49f-5817-b6f3-daf2fb571a08",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/CPTFALCON/01_19_35%20%5BTITP%5D%20Captain%20Falcon%20%2B%20Fox%20%28BF%29.slp",
+      "sha256": "ebb0f53d521f18793530ebe73da75b3a532b768ab96da20ca51da8bdf33ba804",
+      "byteSize": 2479720,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "b2c642ae-d8e5-5ba8-b2c7-12bcf6210a2b",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/BOWSER/14_34_58%20Bowser%20%2B%20Marth%20%28DL%29.slp",
+      "sha256": "ec7e2f1ee32979dd7266153ab73a13800377948d337056fe627a712033d89b6b",
+      "byteSize": 1808778,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "9e41c1ab-5e7d-5248-9e97-3234bfb237bc",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/FALCO/02_53_53.408Z%20Falco%20%2B%20Falco%20%28DL%29.slp",
+      "sha256": "f42efa038131813faf057ca6a839c08fd489c6474141f3bd87d670efcd329df5",
+      "byteSize": 2578587,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "d1eb57b9-1d21-5e9e-9bec-042598457db9",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/ZELDA_SHEIK/10_41_01%20Fox%20%2B%20Sheik%20%28DL%29.slp",
+      "sha256": "f872cd72bd5a814d7d84154fbd5ed94c5d136d980b8023a8392d04b91d9d56db",
+      "byteSize": 2781090,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "3b5dc975-387e-5bd1-969c-b877da5b14db",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/ZELDA_SHEIK/00_39_31.207Z%20Jigglypuff%20%2B%20Sheik%20%28FoD%29.slp",
+      "sha256": "fb94bb0239eb733b26337b0d0be6f7a16f8c1f521ff1af939de59714e960c121",
+      "byteSize": 3244449,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    },
+    {
+      "assetId": "13fb8ca3-c268-5f4a-8b6a-0373c9fcc445",
+      "sourceId": "huggingface-slippi-public-v3.7",
+      "format": "slp",
+      "fetchUrl": "https://huggingface.co/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/YOSHI/12_24_06%20Captain%20Falcon%20%2B%20Yoshi%20%28YS%29.slp",
+      "sha256": "fb9b1a889519b0986980eabc64cb9177428ac5e202049605a2d1aabd4a873c9f",
+      "byteSize": 1953079,
+      "objectRevision": "c82be5f6e43f3388555cfe0cf8652580601f396d"
+    }
+  ],
+  "replays": [
+    {
+      "replayId": "9000ee9e-05ad-5a72-ba83-4ad833f956ea",
+      "assetId": "c713e159-2904-5d33-b006-b69ecf4107ad",
+      "sha256": "007a9df5857e8f3a7f5255834133181c77e30dcc85cabb2bdecdbeeeb313454a",
+      "byteSize": 1946119,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:GANONDORF/12_27_02 Luigi + Ganondorf (FoD).slp",
+      "aliases": [
+        "GANONDORF/12_27_02 Luigi + Ganondorf (FoD).slp"
+      ]
+    },
+    {
+      "replayId": "7636bcf9-56d9-587f-8689-22100df108fe",
+      "assetId": "fc2a4b19-9d90-5966-a83a-d5b453f5e76e",
+      "sha256": "029111df8270d188d38acbbe6d594322a6cfcfe43e9ecdf6ee240c70b69ff2eb",
+      "byteSize": 3424774,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:ICE_CLIMBERS/13_08_30 Captain Falcon + Ice Climbers (YS).slp",
+      "aliases": [
+        "ICE_CLIMBERS/13_08_30 Captain Falcon + Ice Climbers (YS).slp"
+      ]
+    },
+    {
+      "replayId": "f34df78d-17ce-597c-b509-e6373e82a8db",
+      "assetId": "d56282c5-7ca2-56d2-8aed-3ec9a0f2f570",
+      "sha256": "069fb800650ddf27928d224fd310f68d881abd6eb6701adff98ce66b8574177b",
+      "byteSize": 2176489,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:FALCO/01_53_40 Falco + Marth (DL).slp",
+      "aliases": [
+        "FALCO/01_53_40 Falco + Marth (DL).slp"
+      ]
+    },
+    {
+      "replayId": "e00634e6-dd73-5464-8056-09f3e7f1e510",
+      "assetId": "a222fe81-eeaa-5f39-9a1a-836dcac1259b",
+      "sha256": "0c213247e8b5f5fcb98c01c398032f41c0810ddb62aa93713264e3a8eef309c8",
+      "byteSize": 2051218,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:ZELDA_SHEIK/10_38_20 Fox + Sheik (FD).slp",
+      "aliases": [
+        "ZELDA_SHEIK/10_38_20 Fox + Sheik (FD).slp"
+      ]
+    },
+    {
+      "replayId": "eff4e417-6558-5c3a-81eb-09079a89b9b3",
+      "assetId": "5014c94d-34bf-5c55-9b72-e3fabfabe254",
+      "sha256": "0f1a4f7a7c6141c0c8ee7ed7ed41c664c0e513641cc8d66601032a663fcc416d",
+      "byteSize": 2443998,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:YOSHI/09_25_12 Captain Falcon + Yoshi (YS).slp",
+      "aliases": [
+        "YOSHI/09_25_12 Captain Falcon + Yoshi (YS).slp"
+      ]
+    },
+    {
+      "replayId": "6e00b53d-3394-505f-ae84-9742e00546d9",
+      "assetId": "0d33929c-c783-5cde-91d7-05de7f4e8342",
+      "sha256": "17635bf63f4683d3ad0d56e64934f7b3e8188f1c9596aa3bda492e81138fff30",
+      "byteSize": 2519394,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:PEACH/10_37_28 Peach + Captain Falcon (BF).slp",
+      "aliases": [
+        "PEACH/10_37_28 Peach + Captain Falcon (BF).slp"
+      ]
+    },
+    {
+      "replayId": "6c39e525-8672-5f96-8591-a27bb7618fca",
+      "assetId": "03d01406-401a-596f-8e23-9e1d966a6c47",
+      "sha256": "1d33d900a0f649d39c25c0d17278d91c5adf8d18c86c1c9dfdbb7e0fd3fa5686",
+      "byteSize": 2431467,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:SAMUS/12_00_05 Falco + Samus (FD).slp",
+      "aliases": [
+        "SAMUS/12_00_05 Falco + Samus (FD).slp"
+      ]
+    },
+    {
+      "replayId": "64144563-b75a-5871-95be-895f02870bf8",
+      "assetId": "4aae942f-2944-57c3-88b7-a4f6d8eb1256",
+      "sha256": "2190051807e58865f13000cb52b5ab5e340a3dbcfe789a9d4c05f08292510c0f",
+      "byteSize": 2946042,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:GANONDORF/10_49_35 Ganondorf + Bowser (DL).slp",
+      "aliases": [
+        "GANONDORF/10_49_35 Ganondorf + Bowser (DL).slp"
+      ]
+    },
+    {
+      "replayId": "ccff8941-7c47-59ce-b05f-9c0c43e5b882",
+      "assetId": "8ba978c1-6aeb-5906-b86c-ed4aa12a7e92",
+      "sha256": "28b4e0a6f6093d5f1e498c6384fda2d459c36fbaafd913dfd402c6ef2ed46a8d",
+      "byteSize": 2670427,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:MARTH/10_45_55 Marth + Fox (YS).slp",
+      "aliases": [
+        "MARTH/10_45_55 Marth + Fox (YS).slp"
+      ]
+    },
+    {
+      "replayId": "7c744e19-5584-5e3e-9134-6cba8f396197",
+      "assetId": "3d2c15d0-8188-5e93-bb75-e42331af3955",
+      "sha256": "29862c3945074c73fd3ecf40af218d3951010de40a2e960c7a72dbca40dbafc7",
+      "byteSize": 1981616,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:FOX/03_29_13 [RUDE] Fox + [INFP] Marth (YI).slp",
+      "aliases": [
+        "FOX/03_29_13 [RUDE] Fox + [INFP] Marth (YI).slp"
+      ]
+    },
+    {
+      "replayId": "58b868c8-6116-52b4-803e-0a1e36dd64bf",
+      "assetId": "0a671233-bbc8-56cb-9944-5d67198fa1ce",
+      "sha256": "2bf8d532914c52dfff68083c58bbc9976b4d7ae918c5dfe3a7914efed28e65e9",
+      "byteSize": 2192968,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:JIGGLYPUFF/03_54_48 [RUDE] Captain Falcon + [INFP] Jigglypuff (FoD).slp",
+      "aliases": [
+        "JIGGLYPUFF/03_54_48 [RUDE] Captain Falcon + [INFP] Jigglypuff (FoD).slp"
+      ]
+    },
+    {
+      "replayId": "26057fe8-85c5-5000-8437-3de54fff4841",
+      "assetId": "4c04249d-e227-54fe-a1ec-61f27e38b90f",
+      "sha256": "2c86e1d54dc7011b677a9d521d2cf5677eceb54c7c12a4bf7692a6658df8c0e6",
+      "byteSize": 1732218,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:JIGGLYPUFF/10_58_56 Jigglypuff + Fox (YS).slp",
+      "aliases": [
+        "JIGGLYPUFF/10_58_56 Jigglypuff + Fox (YS).slp"
+      ]
+    },
+    {
+      "replayId": "0204491e-fe8a-50b7-8e27-6a80b7d7a688",
+      "assetId": "963248b9-9353-5c67-ad02-8d3435765503",
+      "sha256": "314f4ff2a4b96b7e542e50c33c8aa3fb4fb2baf39b3eaaadbce4f57afba48486",
+      "byteSize": 3487992,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:MARTH/00_53_47 [RUDE] Marth + Fox (DL).slp",
+      "aliases": [
+        "MARTH/00_53_47 [RUDE] Marth + Fox (DL).slp"
+      ]
+    },
+    {
+      "replayId": "77e78b77-451d-5625-8aa4-6a07c4868812",
+      "assetId": "13f67855-268e-55c9-8598-0971331b5bbc",
+      "sha256": "33fbe9d5c3ecff52c4b50436f531faedcbd3b4f628e55450112a46075327aa7f",
+      "byteSize": 2184847,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:GANONDORF/11_47_44 Ganondorf + Fox (BF).slp",
+      "aliases": [
+        "GANONDORF/11_47_44 Ganondorf + Fox (BF).slp"
+      ]
+    },
+    {
+      "replayId": "d80058ce-c7db-519f-a5b7-757b03bdf1a9",
+      "assetId": "09285bc5-98f7-59e4-abfc-5a6fc374a8ce",
+      "sha256": "366cf0bfb6b55f3ca69b286f699a33306217ac713d172c03bd64f8021d0d2be6",
+      "byteSize": 2307118,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:YOSHI/09_22_19 Captain Falcon + Yoshi (DL).slp",
+      "aliases": [
+        "YOSHI/09_22_19 Captain Falcon + Yoshi (DL).slp"
+      ]
+    },
+    {
+      "replayId": "2dafb84c-9e1a-5837-84b0-c840c04ab795",
+      "assetId": "c1a06ede-10b3-5b48-9a21-c1057a695bc1",
+      "sha256": "371900223fcb63f38be96d86360facc4ee0b93c9a1a038cb5b627313fecbff71",
+      "byteSize": 2431466,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:CPTFALCON/00_31_38 Captain Falcon + Fox (FD).slp",
+      "aliases": [
+        "CPTFALCON/00_31_38 Captain Falcon + Fox (FD).slp"
+      ]
+    },
+    {
+      "replayId": "49aafcff-82c0-516d-81aa-0abda829b4e1",
+      "assetId": "f9ce90fd-a7b8-56c0-958b-a1581522e339",
+      "sha256": "375c0e32e68842da400f50f6e65b63f3cb20b878c3e55595663b345fb673b758",
+      "byteSize": 1423890,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:BOWSER/16_56_35 [314] Kirby + [CUMB] Bowser (YS).slp",
+      "aliases": [
+        "BOWSER/16_56_35 [314] Kirby + [CUMB] Bowser (YS).slp"
+      ]
+    },
+    {
+      "replayId": "016395d2-f579-5a56-a184-8eb2747a0da4",
+      "assetId": "2080c802-4f50-53d9-b119-b57092d4908b",
+      "sha256": "3aa702755b68706751d17ddd7681a56938437986b7f2ede9dd801570fa9b2a5a",
+      "byteSize": 2386923,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:PEACH/11_57_36 Sheik + Peach (FoD).slp",
+      "aliases": [
+        "PEACH/11_57_36 Sheik + Peach (FoD).slp"
+      ]
+    },
+    {
+      "replayId": "c728dbba-5e7c-5d52-94fa-ce70d742a093",
+      "assetId": "37eb8d0a-0da7-5bc5-a8f0-7924277e908c",
+      "sha256": "3da02a68f2cfa8a538d7150341b8a6f72aefd50040aa3c35eda2e59c198473e1",
+      "byteSize": 2897783,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:PEACH/10_54_58 Ness + Peach (FD).slp",
+      "aliases": [
+        "PEACH/10_54_58 Ness + Peach (FD).slp"
+      ]
+    },
+    {
+      "replayId": "4486ad31-6e06-53af-b657-eb29a9c1c187",
+      "assetId": "986cebff-a60e-53d2-9d84-25211c270b5d",
+      "sha256": "3fc070dcd2ccd9df5c560406740bf5c500a9142413aadfaa4a50252821887b0e",
+      "byteSize": 2166089,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:CPTFALCON/01_30_41.076Z Captain Falcon + [TITP] Captain Falcon (FD).slp",
+      "aliases": [
+        "CPTFALCON/01_30_41.076Z Captain Falcon + [TITP] Captain Falcon (FD).slp"
+      ]
+    },
+    {
+      "replayId": "704a591c-5420-51f5-af60-73a5e6055b2e",
+      "assetId": "a3186b71-3994-5dbb-9a9f-56f192bc2230",
+      "sha256": "411a378da668c4cd810a73aeea55216b2cdb87068ff4b4a8d46f7f3dd56ee349",
+      "byteSize": 1858427,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:BOWSER/18_46_36 Bowser + Fox (YI).slp",
+      "aliases": [
+        "BOWSER/18_46_36 Bowser + Fox (YI).slp"
+      ]
+    },
+    {
+      "replayId": "7d6c3d06-44a8-5f87-8e1e-2608ccaaa0e5",
+      "assetId": "d7f21125-268d-505c-b58b-e53b365382d4",
+      "sha256": "43eed72aba6ddf0363134c30cd75e457d8199b2836862408ab9a6f00c2b3ad0f",
+      "byteSize": 1786729,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:FALCO/01_57_19 Falco + Marth (FoD).slp",
+      "aliases": [
+        "FALCO/01_57_19 Falco + Marth (FoD).slp"
+      ]
+    },
+    {
+      "replayId": "ab3ad795-04b5-5186-9aeb-9d7c91b25e98",
+      "assetId": "f64272c4-bb41-53d1-b646-111158298ac9",
+      "sha256": "476a46e95b1f57ee299ce0aa25944ab7e852f31e67cb6e1fbd7961cf41e90f94",
+      "byteSize": 2794315,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:ICE_CLIMBERS/10_50_28 Ice Climbers + Fox (YS).slp",
+      "aliases": [
+        "ICE_CLIMBERS/10_50_28 Ice Climbers + Fox (YS).slp"
+      ]
+    },
+    {
+      "replayId": "6f15b81e-09d2-5541-b18c-cce50c06514a",
+      "assetId": "8284175e-9f72-50e3-bdd1-8f2448eebf85",
+      "sha256": "48eea92b4dbefe652d95539c330e364fb5d43c7aaadc9526d3cd372e7fadc2c6",
+      "byteSize": 1860047,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:GANONDORF/11_39_50 Ganondorf + Fox (FoD).slp",
+      "aliases": [
+        "GANONDORF/11_39_50 Ganondorf + Fox (FoD).slp"
+      ]
+    },
+    {
+      "replayId": "6043e149-1f9a-51a7-a943-322f7346fdb4",
+      "assetId": "c29c3cf3-c656-5186-bb34-efb42675c5b8",
+      "sha256": "4afdd4f45274aa0976c0f7571939850c6543349ea5d27a4685e04a63e60ca96e",
+      "byteSize": 1622480,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:FALCO/02_43_38 [RUDE] Marth + [INFP] Falco (YI).slp",
+      "aliases": [
+        "FALCO/02_43_38 [RUDE] Marth + [INFP] Falco (YI).slp"
+      ]
+    },
+    {
+      "replayId": "b864f322-1e87-5b54-9fc3-40d4ddcdd662",
+      "assetId": "dca63eea-dca0-53f2-95a1-a075fb4e7491",
+      "sha256": "5223bd87f7ecb9be3a22182268340d1cedc215aedecd93ced5e61e349fd5158c",
+      "byteSize": 2497819,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:JIGGLYPUFF/11_20_37 Jigglypuff + Fox (PS).slp",
+      "aliases": [
+        "JIGGLYPUFF/11_20_37 Jigglypuff + Fox (PS).slp"
+      ]
+    },
+    {
+      "replayId": "3c707211-f118-5626-83bd-52c2365d0b69",
+      "assetId": "ab279c4a-4f9d-5edd-a3bb-9b3a5a7ad6f0",
+      "sha256": "54eb0fe229be50cc501c2573e44eae7a591e0db7e15adc058e8b84c1378dea60",
+      "byteSize": 3821146,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:SAMUS/10_28_34 Samus + Captain Falcon (PS).slp",
+      "aliases": [
+        "SAMUS/10_28_34 Samus + Captain Falcon (PS).slp"
+      ]
+    },
+    {
+      "replayId": "c158971d-4464-5273-b419-86c008e00ebc",
+      "assetId": "bd5af9f1-f893-561a-b250-4cda00c497e3",
+      "sha256": "557b38d265e7059aace590eb3fd0fe847d56f29a939efb99a78c23298918aff6",
+      "byteSize": 2312505,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:MARTH/00_49_47.618Z Marth + [MS] Fox (DL).slp",
+      "aliases": [
+        "MARTH/00_49_47.618Z Marth + [MS] Fox (DL).slp"
+      ]
+    },
+    {
+      "replayId": "232cb98f-3c6b-52ab-a719-ccf888770a30",
+      "assetId": "7565242b-8321-5978-a83d-913127ca065e",
+      "sha256": "5b556a87fc7634aca9085dd44e5cb7e84c2e4aad1c88e1b849f9425e7133662c",
+      "byteSize": 2791878,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:ICE_CLIMBERS/12_55_44 Captain Falcon + Ice Climbers (FD).slp",
+      "aliases": [
+        "ICE_CLIMBERS/12_55_44 Captain Falcon + Ice Climbers (FD).slp"
+      ]
+    },
+    {
+      "replayId": "437e42cf-9d2b-5754-8fe4-9ba33ea7fed8",
+      "assetId": "cacb9be5-cb88-5b87-936b-b80a20c2b6ac",
+      "sha256": "5e44501898e5cdbb990c98a9db41a336148b075ec31fbf364335d37dec308925",
+      "byteSize": 3335454,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:ICE_CLIMBERS/13_21_09 [C2] Marth + Ice Climbers (FoD).slp",
+      "aliases": [
+        "ICE_CLIMBERS/13_21_09 [C2] Marth + Ice Climbers (FoD).slp"
+      ]
+    },
+    {
+      "replayId": "0630c7cd-327d-5e6b-971b-6ce6a66ebff3",
+      "assetId": "1dd0c4a3-2687-5b12-aa13-859d7daa18c6",
+      "sha256": "70fee3548c832f89e1b10fb3192e99a0972eee9b930dc3959c957247734fac75",
+      "byteSize": 2447707,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:CPTFALCON/01_03_47 Falco + Captain Falcon (BF).slp",
+      "aliases": [
+        "CPTFALCON/01_03_47 Falco + Captain Falcon (BF).slp"
+      ]
+    },
+    {
+      "replayId": "cbdedffc-2b90-50ca-9fb3-7176f7e28d66",
+      "assetId": "5962297f-5c59-5157-be83-277bb27540a8",
+      "sha256": "71e99b91ac9375be68ee98056429545c6fa3a090a1108295683ce69987a8b85a",
+      "byteSize": 3098930,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:SAMUS/13_01_52 Sheik + Samus (PS).slp",
+      "aliases": [
+        "SAMUS/13_01_52 Sheik + Samus (PS).slp"
+      ]
+    },
+    {
+      "replayId": "73502ac3-dc75-50d2-8b0b-760836f7a8a5",
+      "assetId": "5c01cca7-ee16-5e73-8320-ab99947bb515",
+      "sha256": "7d571ba1feb30415da459e20339a8e946ea66ff2fd2f4f3f1ef23da0f99f9026",
+      "byteSize": 2924934,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:YOSHI/14_18_15 Sheik + Yoshi (YI).slp",
+      "aliases": [
+        "YOSHI/14_18_15 Sheik + Yoshi (YI).slp"
+      ]
+    },
+    {
+      "replayId": "550f4c9d-9169-54e6-9580-eed0f7cb6ea5",
+      "assetId": "264e9998-ce4a-51bd-9ab6-34027f70ef13",
+      "sha256": "824842ac080ba89120b5539e18c9bed8b0fd9c6d6808816e0bfc8a16362253de",
+      "byteSize": 2894306,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:ZELDA_SHEIK/10_44_32 Fox + Sheik (FoD).slp",
+      "aliases": [
+        "ZELDA_SHEIK/10_44_32 Fox + Sheik (FoD).slp"
+      ]
+    },
+    {
+      "replayId": "574b8ab7-0e3c-5304-b2ef-b15172dda3c5",
+      "assetId": "2df253d2-2c76-531b-8098-dd78b72f7876",
+      "sha256": "8781c6809774f72bfa83001bbd44bf0a77b30ad1c3be7950c4d5aa684810f8da",
+      "byteSize": 2217792,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:FOX/03_39_21 [RUDE] Fox + [INFP] Marth (DL).slp",
+      "aliases": [
+        "FOX/03_39_21 [RUDE] Fox + [INFP] Marth (DL).slp"
+      ]
+    },
+    {
+      "replayId": "f14abc2b-9d2b-5474-bd6f-68964e80b2d8",
+      "assetId": "ef69d45e-c318-55e0-a6c9-59ef28e91418",
+      "sha256": "8a95a2ec3df52b0b28002c559247ec170c8aad5b76ee5bc711e3fa667d725bc3",
+      "byteSize": 3473263,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:ICE_CLIMBERS/00_46_28 [HGOD] Falco + Ice Climbers (BF).slp",
+      "aliases": [
+        "ICE_CLIMBERS/00_46_28 [HGOD] Falco + Ice Climbers (BF).slp"
+      ]
+    },
+    {
+      "replayId": "60246b7e-39c2-5893-912a-c80361b6350a",
+      "assetId": "81ed26df-cd9a-5c24-9c11-8965b0ad49e4",
+      "sha256": "8b230cb80762b455b89939b89c7410210138fe2e4499274bbb3b39fa98941966",
+      "byteSize": 1393035,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:ZELDA_SHEIK/10_37_27 Sheik + Fox (FoD).slp",
+      "aliases": [
+        "ZELDA_SHEIK/10_37_27 Sheik + Fox (FoD).slp"
+      ]
+    },
+    {
+      "replayId": "dcdea923-c4cf-531d-bcd4-feb6010be5ce",
+      "assetId": "2cc3a41e-b08a-5cd3-845e-41127c3e9235",
+      "sha256": "8c99828691dd9a01491ee9dd5992e6279120bb57977836774dae78f4d33b1cc8",
+      "byteSize": 2190882,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:MARTH/10_42_04 Marth + Marth (PS).slp",
+      "aliases": [
+        "MARTH/10_42_04 Marth + Marth (PS).slp"
+      ]
+    },
+    {
+      "replayId": "08a49d5d-7c75-5504-a41b-0b37fcd9c367",
+      "assetId": "0c53fa38-44f8-5f3b-92ef-ffe4a7513fc4",
+      "sha256": "9a9f82882165ce72b67f472149fbfbad4ac207505bc6adcd6e74111e7a216cc1",
+      "byteSize": 2208747,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:CPTFALCON/01_38_56 [PPAP] Marth + [TITP] Captain Falcon (DL).slp",
+      "aliases": [
+        "CPTFALCON/01_38_56 [PPAP] Marth + [TITP] Captain Falcon (DL).slp"
+      ]
+    },
+    {
+      "replayId": "3a28e8ff-013d-5796-a28e-05b6845fcfc7",
+      "assetId": "8d2b8caf-f6c5-526f-9f05-895b34a10e97",
+      "sha256": "9e1cd5ba3eb8bbc063cfe9a9be28ab1db00bf80a993aad0855a7629a3f52436d",
+      "byteSize": 1567498,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:SAMUS/13_19_17 Captain Falcon + Samus (PS).slp",
+      "aliases": [
+        "SAMUS/13_19_17 Captain Falcon + Samus (PS).slp"
+      ]
+    },
+    {
+      "replayId": "57aef650-175f-5a5a-a914-c6a50a9529e9",
+      "assetId": "e020e9e8-9f10-5288-afe1-a3494594d1fa",
+      "sha256": "a26f09e42f11fba64821e539577bf61028819b164be43d7d22b42b4adb856d6c",
+      "byteSize": 1308358,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:BOWSER/18_50_55 Roy + Bowser (FoD).slp",
+      "aliases": [
+        "BOWSER/18_50_55 Roy + Bowser (FoD).slp"
+      ]
+    },
+    {
+      "replayId": "75ab162d-a500-5967-ae9c-45107dec0d52",
+      "assetId": "4475ac08-bb13-5b17-ba05-1e84cb44dfbb",
+      "sha256": "a85f6b21074362511262e32014afb625a8c0c154b95be3c6a74a59ff97eb1f01",
+      "byteSize": 3620003,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:BOWSER/18_49_08 Bowser + Fox (PS).slp",
+      "aliases": [
+        "BOWSER/18_49_08 Bowser + Fox (PS).slp"
+      ]
+    },
+    {
+      "replayId": "6000d9b3-f478-5dc4-aee5-5f5a116c0699",
+      "assetId": "d857d03b-04e7-5e9d-8de9-2d864b75089a",
+      "sha256": "b68a3b9e382104b9bb9781a97a9854dac4a15ca56c83fb955f99c8c0cb4edafb",
+      "byteSize": 1715050,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:GANONDORF/09_58_12 Captain Falcon + Ganondorf (DL).slp",
+      "aliases": [
+        "GANONDORF/09_58_12 Captain Falcon + Ganondorf (DL).slp"
+      ]
+    },
+    {
+      "replayId": "2e16e243-f15f-5bb6-98f5-f09f57843ccd",
+      "assetId": "3e51fa39-bbdd-5f9e-a9f8-2466f5ce45ee",
+      "sha256": "b84bc016a22e62b2109d2df0d22a3a820cd439bf40d3a76758322994cd0e7bc5",
+      "byteSize": 2018033,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:MARTH/03_56_07 Falco + Marth (DL).slp",
+      "aliases": [
+        "MARTH/03_56_07 Falco + Marth (DL).slp"
+      ]
+    },
+    {
+      "replayId": "4a961744-8ce8-5606-927d-71873a03d8a8",
+      "assetId": "f8562e10-e39a-5e31-934c-1cc295be1a2e",
+      "sha256": "beb4673ded938ee472ad35290c96a73f45de5d3d4f5e1bdcf0f6f9cee097edc9",
+      "byteSize": 2393184,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:FOX/03_44_11 [RUDE] Fox + [INFP] Captain Falcon (BF).slp",
+      "aliases": [
+        "FOX/03_44_11 [RUDE] Fox + [INFP] Captain Falcon (BF).slp"
+      ]
+    },
+    {
+      "replayId": "19f3396d-c032-57dc-b826-c10915d27d21",
+      "assetId": "0f6781f9-de68-5437-ae01-e3e27341060d",
+      "sha256": "bef0a4829316d7a19d404f4312829ed6530d9d0a3033882ad612f2f23def09da",
+      "byteSize": 1628975,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:PEACH/11_07_39 Marth + Peach (FD).slp",
+      "aliases": [
+        "PEACH/11_07_39 Marth + Peach (FD).slp"
+      ]
+    },
+    {
+      "replayId": "3133de4a-5117-5d66-aefe-2d24998a8206",
+      "assetId": "26e86426-04d0-5b80-ae2b-231d1b417b57",
+      "sha256": "d0bdb38bbd6617f7df0cc0daed99125251b13d5b370478e0e0c3c6dd6b56d653",
+      "byteSize": 2257230,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:FOX/07_34_07 [NELL] Fox + Falco (FoD).slp",
+      "aliases": [
+        "FOX/07_34_07 [NELL] Fox + Falco (FoD).slp"
+      ]
+    },
+    {
+      "replayId": "97e23b80-c98e-507d-badb-4f9bace8e99d",
+      "assetId": "3e6d86a5-5228-58a5-9e8f-66aec11a56bc",
+      "sha256": "d41cbe2a49da81328d675e535ede16b679a42286543bf2860d7b524abd065e74",
+      "byteSize": 1695331,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:JIGGLYPUFF/01_50_24 Jigglypuff + [TITP] Captain Falcon (DL).slp",
+      "aliases": [
+        "JIGGLYPUFF/01_50_24 Jigglypuff + [TITP] Captain Falcon (DL).slp"
+      ]
+    },
+    {
+      "replayId": "c775329a-689c-5fc9-99c5-9d5e4dd24b81",
+      "assetId": "a7de8400-4ce2-5590-832f-71bb3248047e",
+      "sha256": "d6148c87a68a684a0799e7ea194820a595007a5de002eb30692f4a6c5726e080",
+      "byteSize": 3627195,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:SAMUS/13_20_46 Fox + Samus (BF).slp",
+      "aliases": [
+        "SAMUS/13_20_46 Fox + Samus (BF).slp"
+      ]
+    },
+    {
+      "replayId": "f3dc5a0e-833b-5b51-86da-369c747e3b3a",
+      "assetId": "18aa7b86-3675-5d2b-a287-4753e6a57d05",
+      "sha256": "d86f54565f70d3b4ce61802943f3a082749f838bafbefa7d793dc6f0e0542f62",
+      "byteSize": 1886734,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:FOX/07_54_42 Falco + Fox (DL).slp",
+      "aliases": [
+        "FOX/07_54_42 Falco + Fox (DL).slp"
+      ]
+    },
+    {
+      "replayId": "17e14f7c-ba27-5f54-9c3a-f86701ec70ce",
+      "assetId": "2159350e-cbcb-5ceb-9551-bb92096caf89",
+      "sha256": "dd1b0b67153796a0640cd87620867918c9600438a2a473e94c060c1f70238289",
+      "byteSize": 2124998,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:YOSHI/09_28_18 Captain Falcon + Yoshi (PS).slp",
+      "aliases": [
+        "YOSHI/09_28_18 Captain Falcon + Yoshi (PS).slp"
+      ]
+    },
+    {
+      "replayId": "8575719c-5be9-5a37-8e38-0a3e1e00a46e",
+      "assetId": "6a4d245b-9096-58d3-b81d-84476f605cae",
+      "sha256": "ded446de5d7e6188b8871fbfa1047cc9e85ecfa7a427d93ada4acbeb3ada951c",
+      "byteSize": 2374162,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:PEACH/10_54_33 Peach + Marth (FoD).slp",
+      "aliases": [
+        "PEACH/10_54_33 Peach + Marth (FoD).slp"
+      ]
+    },
+    {
+      "replayId": "d8d78033-4286-5de6-8cea-859413366997",
+      "assetId": "7c969c18-4caf-5950-afe4-3cc6579c231e",
+      "sha256": "e3762976e96e7c334e217a409d80a582cec6583c07176c314fa6bb32ecf610a4",
+      "byteSize": 2106193,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:FALCO/02_39_54 Falco + Marth (FD).slp",
+      "aliases": [
+        "FALCO/02_39_54 Falco + Marth (FD).slp"
+      ]
+    },
+    {
+      "replayId": "2ca4fc16-b543-5cb7-9a68-5f6c8b61642a",
+      "assetId": "6aba3f83-aa44-5e72-b557-6009522ba438",
+      "sha256": "e46421ddc05a208c5d93ffaf46a0ca3eaf7286a91f8a4f1f0e8bdea0debb2f4c",
+      "byteSize": 2838217,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:JIGGLYPUFF/01_35_05.141Z Jigglypuff + Sheik (YI).slp",
+      "aliases": [
+        "JIGGLYPUFF/01_35_05.141Z Jigglypuff + Sheik (YI).slp"
+      ]
+    },
+    {
+      "replayId": "f8844a0c-8a21-5798-922f-08e2d507c9f8",
+      "assetId": "b81c7b86-a49f-5817-b6f3-daf2fb571a08",
+      "sha256": "ebb0f53d521f18793530ebe73da75b3a532b768ab96da20ca51da8bdf33ba804",
+      "byteSize": 2479720,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:CPTFALCON/01_19_35 [TITP] Captain Falcon + Fox (BF).slp",
+      "aliases": [
+        "CPTFALCON/01_19_35 [TITP] Captain Falcon + Fox (BF).slp"
+      ]
+    },
+    {
+      "replayId": "06154756-dfed-5339-aab2-4232338a3f43",
+      "assetId": "b2c642ae-d8e5-5ba8-b2c7-12bcf6210a2b",
+      "sha256": "ec7e2f1ee32979dd7266153ab73a13800377948d337056fe627a712033d89b6b",
+      "byteSize": 1808778,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:BOWSER/14_34_58 Bowser + Marth (DL).slp",
+      "aliases": [
+        "BOWSER/14_34_58 Bowser + Marth (DL).slp"
+      ]
+    },
+    {
+      "replayId": "1b5e3bdf-e094-54ea-a63e-0745172637a1",
+      "assetId": "9e41c1ab-5e7d-5248-9e97-3234bfb237bc",
+      "sha256": "f42efa038131813faf057ca6a839c08fd489c6474141f3bd87d670efcd329df5",
+      "byteSize": 2578587,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:FALCO/02_53_53.408Z Falco + Falco (DL).slp",
+      "aliases": [
+        "FALCO/02_53_53.408Z Falco + Falco (DL).slp"
+      ]
+    },
+    {
+      "replayId": "1c73af2a-a274-59cd-a2c6-afeb7bbca08f",
+      "assetId": "d1eb57b9-1d21-5e9e-9bec-042598457db9",
+      "sha256": "f872cd72bd5a814d7d84154fbd5ed94c5d136d980b8023a8392d04b91d9d56db",
+      "byteSize": 2781090,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:ZELDA_SHEIK/10_41_01 Fox + Sheik (DL).slp",
+      "aliases": [
+        "ZELDA_SHEIK/10_41_01 Fox + Sheik (DL).slp"
+      ]
+    },
+    {
+      "replayId": "bde15228-77c6-5a19-84f6-8692bbafe2f1",
+      "assetId": "3b5dc975-387e-5bd1-969c-b877da5b14db",
+      "sha256": "fb94bb0239eb733b26337b0d0be6f7a16f8c1f521ff1af939de59714e960c121",
+      "byteSize": 3244449,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:ZELDA_SHEIK/00_39_31.207Z Jigglypuff + Sheik (FoD).slp",
+      "aliases": [
+        "ZELDA_SHEIK/00_39_31.207Z Jigglypuff + Sheik (FoD).slp"
+      ]
+    },
+    {
+      "replayId": "f852afba-be23-5d63-867d-7b561c68dbeb",
+      "assetId": "13fb8ca3-c268-5f4a-8b6a-0373c9fcc445",
+      "sha256": "fb9b1a889519b0986980eabc64cb9177428ac5e202049605a2d1aabd4a873c9f",
+      "byteSize": 1953079,
+      "formatEvidence": "Slippi 2.0.1 .slp; py-slippi 1.6.2 parsed start, GAME end, and metadata; two human players, non-team.",
+      "participants": {
+        "player1": "Unknown Player 1",
+        "player2": "Unknown Player 2"
+      },
+      "sourceIdentity": "erickfm/slippi-public-dataset-v3.7@c82be5f6e43f3388555cfe0cf8652580601f396d:YOSHI/12_24_06 Captain Falcon + Yoshi (YS).slp",
+      "aliases": [
+        "YOSHI/12_24_06 Captain Falcon + Yoshi (YS).slp"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "itemId": "db7cfe0a-58fd-5159-8421-88314700229b",
+      "kind": "standalone",
+      "replayId": "9000ee9e-05ad-5a72-ba83-4ad833f956ea",
+      "openingCharacters": [
+        "Luigi",
+        "Ganondorf"
+      ],
+      "safeContext": "Standalone game: Luigi vs Ganondorf",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "bae16ad4-a156-5d9c-8252-b8ae6671febd",
+      "kind": "standalone",
+      "replayId": "7636bcf9-56d9-587f-8689-22100df108fe",
+      "openingCharacters": [
+        "Captain Falcon",
+        "Ice Climbers"
+      ],
+      "safeContext": "Standalone game: Captain Falcon vs Ice Climbers",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "63a8c4f2-7b4c-5c90-b303-b3a813b5dac2",
+      "kind": "standalone",
+      "replayId": "f34df78d-17ce-597c-b509-e6373e82a8db",
+      "openingCharacters": [
+        "Falco",
+        "Marth"
+      ],
+      "safeContext": "Standalone game: Falco vs Marth",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "af6312d2-b689-55d9-8cd6-3440947da9bc",
+      "kind": "standalone",
+      "replayId": "e00634e6-dd73-5464-8056-09f3e7f1e510",
+      "openingCharacters": [
+        "Fox",
+        "Sheik"
+      ],
+      "safeContext": "Standalone game: Fox vs Sheik",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "3dfd5369-b0bd-5b92-a793-0cf3e943cc94",
+      "kind": "standalone",
+      "replayId": "eff4e417-6558-5c3a-81eb-09079a89b9b3",
+      "openingCharacters": [
+        "Captain Falcon",
+        "Yoshi"
+      ],
+      "safeContext": "Standalone game: Captain Falcon vs Yoshi",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "d1d714d9-ae15-542c-8dce-0602ffc41cb3",
+      "kind": "standalone",
+      "replayId": "6e00b53d-3394-505f-ae84-9742e00546d9",
+      "openingCharacters": [
+        "Peach",
+        "Captain Falcon"
+      ],
+      "safeContext": "Standalone game: Peach vs Captain Falcon",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "216908e8-0682-5e3f-a2a6-959ddad93b23",
+      "kind": "standalone",
+      "replayId": "6c39e525-8672-5f96-8591-a27bb7618fca",
+      "openingCharacters": [
+        "Falco",
+        "Samus"
+      ],
+      "safeContext": "Standalone game: Falco vs Samus",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "8c7fff14-a2c9-518e-bdb3-bc67c61421aa",
+      "kind": "standalone",
+      "replayId": "64144563-b75a-5871-95be-895f02870bf8",
+      "openingCharacters": [
+        "Ganondorf",
+        "Bowser"
+      ],
+      "safeContext": "Standalone game: Ganondorf vs Bowser",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "729a28d4-04bf-53d2-90d4-2ac6dc10837f",
+      "kind": "standalone",
+      "replayId": "ccff8941-7c47-59ce-b05f-9c0c43e5b882",
+      "openingCharacters": [
+        "Marth",
+        "Fox"
+      ],
+      "safeContext": "Standalone game: Marth vs Fox",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "2e84b30e-a968-5691-ace4-1c821e1eed9d",
+      "kind": "standalone",
+      "replayId": "7c744e19-5584-5e3e-9134-6cba8f396197",
+      "openingCharacters": [
+        "Fox",
+        "Marth"
+      ],
+      "safeContext": "Standalone game: Fox vs Marth",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "de97e13f-b14d-5709-b7c4-a68582988b01",
+      "kind": "standalone",
+      "replayId": "58b868c8-6116-52b4-803e-0a1e36dd64bf",
+      "openingCharacters": [
+        "Captain Falcon",
+        "Jigglypuff"
+      ],
+      "safeContext": "Standalone game: Captain Falcon vs Jigglypuff",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "c88853b7-7021-5b6f-ac36-8f569322ba0f",
+      "kind": "standalone",
+      "replayId": "26057fe8-85c5-5000-8437-3de54fff4841",
+      "openingCharacters": [
+        "Jigglypuff",
+        "Fox"
+      ],
+      "safeContext": "Standalone game: Jigglypuff vs Fox",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "088fa9db-f475-5538-ba8e-383628f23e8c",
+      "kind": "standalone",
+      "replayId": "0204491e-fe8a-50b7-8e27-6a80b7d7a688",
+      "openingCharacters": [
+        "Marth",
+        "Fox"
+      ],
+      "safeContext": "Standalone game: Marth vs Fox",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "cdae31e5-ddd9-531e-b8b2-8d3ad2aa23ab",
+      "kind": "standalone",
+      "replayId": "77e78b77-451d-5625-8aa4-6a07c4868812",
+      "openingCharacters": [
+        "Ganondorf",
+        "Fox"
+      ],
+      "safeContext": "Standalone game: Ganondorf vs Fox",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "b4aa8ae8-ee08-52f4-bbaf-9c0012a07772",
+      "kind": "standalone",
+      "replayId": "d80058ce-c7db-519f-a5b7-757b03bdf1a9",
+      "openingCharacters": [
+        "Captain Falcon",
+        "Yoshi"
+      ],
+      "safeContext": "Standalone game: Captain Falcon vs Yoshi",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "73201dff-0b00-57a1-9f1c-f4e159f26871",
+      "kind": "standalone",
+      "replayId": "2dafb84c-9e1a-5837-84b0-c840c04ab795",
+      "openingCharacters": [
+        "Captain Falcon",
+        "Fox"
+      ],
+      "safeContext": "Standalone game: Captain Falcon vs Fox",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "38af01cc-ff76-5317-b5e4-406d3c8fc989",
+      "kind": "standalone",
+      "replayId": "49aafcff-82c0-516d-81aa-0abda829b4e1",
+      "openingCharacters": [
+        "Kirby",
+        "Bowser"
+      ],
+      "safeContext": "Standalone game: Kirby vs Bowser",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "977f0767-f4b5-5429-b385-9ddf470f08db",
+      "kind": "standalone",
+      "replayId": "016395d2-f579-5a56-a184-8eb2747a0da4",
+      "openingCharacters": [
+        "Sheik",
+        "Peach"
+      ],
+      "safeContext": "Standalone game: Sheik vs Peach",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "7d59774f-dfce-5f60-ab6d-fbfae39ae3c2",
+      "kind": "standalone",
+      "replayId": "c728dbba-5e7c-5d52-94fa-ce70d742a093",
+      "openingCharacters": [
+        "Ness",
+        "Peach"
+      ],
+      "safeContext": "Standalone game: Ness vs Peach",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "47dfc224-22f3-5353-b8b9-d563f5704beb",
+      "kind": "standalone",
+      "replayId": "4486ad31-6e06-53af-b657-eb29a9c1c187",
+      "openingCharacters": [
+        "Captain Falcon",
+        "Captain Falcon"
+      ],
+      "safeContext": "Standalone game: Captain Falcon vs Captain Falcon",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "7fded80e-3f22-560a-a400-ab6a2a52743e",
+      "kind": "standalone",
+      "replayId": "704a591c-5420-51f5-af60-73a5e6055b2e",
+      "openingCharacters": [
+        "Bowser",
+        "Fox"
+      ],
+      "safeContext": "Standalone game: Bowser vs Fox",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "b33281fd-68d3-5dad-93b7-00c1c40fb66b",
+      "kind": "standalone",
+      "replayId": "7d6c3d06-44a8-5f87-8e1e-2608ccaaa0e5",
+      "openingCharacters": [
+        "Falco",
+        "Marth"
+      ],
+      "safeContext": "Standalone game: Falco vs Marth",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "6f681a0d-bb5b-5364-85e1-f0ba1f1a2b10",
+      "kind": "standalone",
+      "replayId": "ab3ad795-04b5-5186-9aeb-9d7c91b25e98",
+      "openingCharacters": [
+        "Ice Climbers",
+        "Fox"
+      ],
+      "safeContext": "Standalone game: Ice Climbers vs Fox",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "1d87bc10-a8d2-5ccc-9c2e-5e72a98cd295",
+      "kind": "standalone",
+      "replayId": "6f15b81e-09d2-5541-b18c-cce50c06514a",
+      "openingCharacters": [
+        "Ganondorf",
+        "Fox"
+      ],
+      "safeContext": "Standalone game: Ganondorf vs Fox",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "fd7df569-724f-556b-8b7d-db9809ea371c",
+      "kind": "standalone",
+      "replayId": "6043e149-1f9a-51a7-a943-322f7346fdb4",
+      "openingCharacters": [
+        "Marth",
+        "Falco"
+      ],
+      "safeContext": "Standalone game: Marth vs Falco",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "df445b33-2cac-587a-a0f1-30be7a06a130",
+      "kind": "standalone",
+      "replayId": "b864f322-1e87-5b54-9fc3-40d4ddcdd662",
+      "openingCharacters": [
+        "Jigglypuff",
+        "Fox"
+      ],
+      "safeContext": "Standalone game: Jigglypuff vs Fox",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "340a01f0-4650-5ae5-b49b-b9ef14738e78",
+      "kind": "standalone",
+      "replayId": "3c707211-f118-5626-83bd-52c2365d0b69",
+      "openingCharacters": [
+        "Samus",
+        "Captain Falcon"
+      ],
+      "safeContext": "Standalone game: Samus vs Captain Falcon",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "f5806bf5-d78e-5d1c-a4ee-2589022fb1bf",
+      "kind": "standalone",
+      "replayId": "c158971d-4464-5273-b419-86c008e00ebc",
+      "openingCharacters": [
+        "Marth",
+        "Fox"
+      ],
+      "safeContext": "Standalone game: Marth vs Fox",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "73e13776-1f18-5f6e-875b-4d8555cbe1f8",
+      "kind": "standalone",
+      "replayId": "232cb98f-3c6b-52ab-a719-ccf888770a30",
+      "openingCharacters": [
+        "Captain Falcon",
+        "Ice Climbers"
+      ],
+      "safeContext": "Standalone game: Captain Falcon vs Ice Climbers",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "588b15c5-3390-5a70-931b-8514b636d438",
+      "kind": "standalone",
+      "replayId": "437e42cf-9d2b-5754-8fe4-9ba33ea7fed8",
+      "openingCharacters": [
+        "Marth",
+        "Ice Climbers"
+      ],
+      "safeContext": "Standalone game: Marth vs Ice Climbers",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "d023ddaa-efd4-5a7f-9f46-a1c2dbdb3851",
+      "kind": "standalone",
+      "replayId": "0630c7cd-327d-5e6b-971b-6ce6a66ebff3",
+      "openingCharacters": [
+        "Falco",
+        "Captain Falcon"
+      ],
+      "safeContext": "Standalone game: Falco vs Captain Falcon",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "809a06e0-44e8-5b62-997b-d3eff71295aa",
+      "kind": "standalone",
+      "replayId": "cbdedffc-2b90-50ca-9fb3-7176f7e28d66",
+      "openingCharacters": [
+        "Sheik",
+        "Samus"
+      ],
+      "safeContext": "Standalone game: Sheik vs Samus",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "3d92df81-1a64-5069-81b8-64d377d9a3e3",
+      "kind": "standalone",
+      "replayId": "73502ac3-dc75-50d2-8b0b-760836f7a8a5",
+      "openingCharacters": [
+        "Sheik",
+        "Yoshi"
+      ],
+      "safeContext": "Standalone game: Sheik vs Yoshi",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "fe481aa9-4fbf-50a9-9cd3-ff0eea4e2ffb",
+      "kind": "standalone",
+      "replayId": "550f4c9d-9169-54e6-9580-eed0f7cb6ea5",
+      "openingCharacters": [
+        "Fox",
+        "Sheik"
+      ],
+      "safeContext": "Standalone game: Fox vs Sheik",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "8f22d230-0e95-5e69-8c2d-1c2483483ceb",
+      "kind": "standalone",
+      "replayId": "574b8ab7-0e3c-5304-b2ef-b15172dda3c5",
+      "openingCharacters": [
+        "Fox",
+        "Marth"
+      ],
+      "safeContext": "Standalone game: Fox vs Marth",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "ab1c70e4-f73f-5f20-9123-55a5d05e4a13",
+      "kind": "standalone",
+      "replayId": "f14abc2b-9d2b-5474-bd6f-68964e80b2d8",
+      "openingCharacters": [
+        "Falco",
+        "Ice Climbers"
+      ],
+      "safeContext": "Standalone game: Falco vs Ice Climbers",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "eba1bf8e-b3ad-567c-b27b-87fd8052893f",
+      "kind": "standalone",
+      "replayId": "60246b7e-39c2-5893-912a-c80361b6350a",
+      "openingCharacters": [
+        "Sheik",
+        "Fox"
+      ],
+      "safeContext": "Standalone game: Sheik vs Fox",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "545e02ec-36b8-548d-b0fd-4288e167f5ed",
+      "kind": "standalone",
+      "replayId": "dcdea923-c4cf-531d-bcd4-feb6010be5ce",
+      "openingCharacters": [
+        "Marth",
+        "Marth"
+      ],
+      "safeContext": "Standalone game: Marth vs Marth",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "c3dcaa4c-1048-5a7d-8d13-e4937b56bb06",
+      "kind": "standalone",
+      "replayId": "08a49d5d-7c75-5504-a41b-0b37fcd9c367",
+      "openingCharacters": [
+        "Marth",
+        "Captain Falcon"
+      ],
+      "safeContext": "Standalone game: Marth vs Captain Falcon",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "ebd9a5f3-9e6c-5037-b0f3-1f2820dc7b9f",
+      "kind": "standalone",
+      "replayId": "3a28e8ff-013d-5796-a28e-05b6845fcfc7",
+      "openingCharacters": [
+        "Captain Falcon",
+        "Samus"
+      ],
+      "safeContext": "Standalone game: Captain Falcon vs Samus",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "70eacedf-e6ec-5c00-b551-e0121649f5dd",
+      "kind": "standalone",
+      "replayId": "57aef650-175f-5a5a-a914-c6a50a9529e9",
+      "openingCharacters": [
+        "Roy",
+        "Bowser"
+      ],
+      "safeContext": "Standalone game: Roy vs Bowser",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "c8435758-88a6-58d8-80c2-7c9baec7f79f",
+      "kind": "standalone",
+      "replayId": "75ab162d-a500-5967-ae9c-45107dec0d52",
+      "openingCharacters": [
+        "Bowser",
+        "Fox"
+      ],
+      "safeContext": "Standalone game: Bowser vs Fox",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "b5882971-87a5-504b-8b06-64be58a03a0e",
+      "kind": "standalone",
+      "replayId": "6000d9b3-f478-5dc4-aee5-5f5a116c0699",
+      "openingCharacters": [
+        "Captain Falcon",
+        "Ganondorf"
+      ],
+      "safeContext": "Standalone game: Captain Falcon vs Ganondorf",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "d36c1f99-3545-5dc1-b3e9-abff25611013",
+      "kind": "standalone",
+      "replayId": "2e16e243-f15f-5bb6-98f5-f09f57843ccd",
+      "openingCharacters": [
+        "Falco",
+        "Marth"
+      ],
+      "safeContext": "Standalone game: Falco vs Marth",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "39cb74fb-4ea1-5ca2-8bbc-3b3795660ff3",
+      "kind": "standalone",
+      "replayId": "4a961744-8ce8-5606-927d-71873a03d8a8",
+      "openingCharacters": [
+        "Fox",
+        "Captain Falcon"
+      ],
+      "safeContext": "Standalone game: Fox vs Captain Falcon",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "c68ed936-4cd8-5960-937d-543048d4ca1c",
+      "kind": "standalone",
+      "replayId": "19f3396d-c032-57dc-b826-c10915d27d21",
+      "openingCharacters": [
+        "Marth",
+        "Peach"
+      ],
+      "safeContext": "Standalone game: Marth vs Peach",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "a03d6d37-9844-56e8-8110-cad124d9ee6b",
+      "kind": "standalone",
+      "replayId": "3133de4a-5117-5d66-aefe-2d24998a8206",
+      "openingCharacters": [
+        "Fox",
+        "Falco"
+      ],
+      "safeContext": "Standalone game: Fox vs Falco",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "2354148d-d3c8-576a-9039-353f88ab61a9",
+      "kind": "standalone",
+      "replayId": "97e23b80-c98e-507d-badb-4f9bace8e99d",
+      "openingCharacters": [
+        "Jigglypuff",
+        "Captain Falcon"
+      ],
+      "safeContext": "Standalone game: Jigglypuff vs Captain Falcon",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "5a42b79f-1041-5c93-9dac-aece66ed1ba5",
+      "kind": "standalone",
+      "replayId": "c775329a-689c-5fc9-99c5-9d5e4dd24b81",
+      "openingCharacters": [
+        "Fox",
+        "Samus"
+      ],
+      "safeContext": "Standalone game: Fox vs Samus",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "b6136866-a877-5dc0-b1c7-d3f4e2f77043",
+      "kind": "standalone",
+      "replayId": "f3dc5a0e-833b-5b51-86da-369c747e3b3a",
+      "openingCharacters": [
+        "Falco",
+        "Fox"
+      ],
+      "safeContext": "Standalone game: Falco vs Fox",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "8138df9e-6195-58bb-b3f3-765f35090bd8",
+      "kind": "standalone",
+      "replayId": "17e14f7c-ba27-5f54-9c3a-f86701ec70ce",
+      "openingCharacters": [
+        "Captain Falcon",
+        "Yoshi"
+      ],
+      "safeContext": "Standalone game: Captain Falcon vs Yoshi",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "60d89f3c-10b0-5fec-8ffd-e00def1c1abb",
+      "kind": "standalone",
+      "replayId": "8575719c-5be9-5a37-8e38-0a3e1e00a46e",
+      "openingCharacters": [
+        "Peach",
+        "Marth"
+      ],
+      "safeContext": "Standalone game: Peach vs Marth",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "5470e391-e287-5a65-8127-538436549ca6",
+      "kind": "standalone",
+      "replayId": "d8d78033-4286-5de6-8cea-859413366997",
+      "openingCharacters": [
+        "Falco",
+        "Marth"
+      ],
+      "safeContext": "Standalone game: Falco vs Marth",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "7bc42c29-b2aa-5b3b-90ca-dfa03f5a1409",
+      "kind": "standalone",
+      "replayId": "2ca4fc16-b543-5cb7-9a68-5f6c8b61642a",
+      "openingCharacters": [
+        "Jigglypuff",
+        "Sheik"
+      ],
+      "safeContext": "Standalone game: Jigglypuff vs Sheik",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "fd5dd111-09ab-5318-a4eb-9ae529c15045",
+      "kind": "standalone",
+      "replayId": "f8844a0c-8a21-5798-922f-08e2d507c9f8",
+      "openingCharacters": [
+        "Captain Falcon",
+        "Fox"
+      ],
+      "safeContext": "Standalone game: Captain Falcon vs Fox",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "9e65dcf5-11ab-52d4-82ac-d1120085ffc8",
+      "kind": "standalone",
+      "replayId": "06154756-dfed-5339-aab2-4232338a3f43",
+      "openingCharacters": [
+        "Bowser",
+        "Marth"
+      ],
+      "safeContext": "Standalone game: Bowser vs Marth",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "110e264c-7fff-53cc-8cf7-42945115ebd6",
+      "kind": "standalone",
+      "replayId": "1b5e3bdf-e094-54ea-a63e-0745172637a1",
+      "openingCharacters": [
+        "Falco",
+        "Falco"
+      ],
+      "safeContext": "Standalone game: Falco vs Falco",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "052046e3-32e1-5161-8f31-a91c8c30db98",
+      "kind": "standalone",
+      "replayId": "1c73af2a-a274-59cd-a2c6-afeb7bbca08f",
+      "openingCharacters": [
+        "Fox",
+        "Sheik"
+      ],
+      "safeContext": "Standalone game: Fox vs Sheik",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "a990cbae-e18c-5ad7-a658-2e8fd966edeb",
+      "kind": "standalone",
+      "replayId": "bde15228-77c6-5a19-84f6-8692bbafe2f1",
+      "openingCharacters": [
+        "Jigglypuff",
+        "Sheik"
+      ],
+      "safeContext": "Standalone game: Jigglypuff vs Sheik",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    },
+    {
+      "itemId": "576d1261-ec71-53de-9ff0-272398d6de5b",
+      "kind": "standalone",
+      "replayId": "f852afba-be23-5d63-867d-7b561c68dbeb",
+      "openingCharacters": [
+        "Captain Falcon",
+        "Yoshi"
+      ],
+      "safeContext": "Standalone game: Captain Falcon vs Yoshi",
+      "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified."
+    }
+  ]
+}
