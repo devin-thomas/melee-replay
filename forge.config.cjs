@@ -1,8 +1,12 @@
 module.exports = {
   packagerConfig: {
-    asar: true,
+    asar: { unpack: '**/node_modules/@slippi/slippi-js/**' },
     executableName: 'Melee Replay',
+    extraResource: ['third-party'],
     ignore: (file) => Boolean(file) && !file.startsWith('/.vite') && !file.startsWith('/node_modules')
+  },
+  hooks: {
+    prePackage: async () => { await import('./scripts/generate-third-party-notices.mjs'); }
   },
   rebuildConfig: {},
   makers: [
