@@ -233,7 +233,10 @@ function parseItem(value: unknown, revision: string, replays: Map<string, Replay
     const player1Entrant = choice(raw.player1Entrant, ['A', 'B']);
     const player2Entrant = choice(raw.player2Entrant, ['A', 'B']);
     if (player1Entrant === player2Entrant) invalid();
+    const characters = array(raw.openingCharacters);
+    if (characters.length !== 2) invalid();
     return { replayId, order, group: id(raw.group), player1Entrant, player2Entrant,
+      openingCharacters: [text(characters[0], 100), text(characters[1], 100)],
       scoreEffect: choice(raw.scoreEffect, ['none', 'entrantA', 'entrantB']) };
   });
   unique(segments.map((s) => s.replayId));

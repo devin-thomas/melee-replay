@@ -154,7 +154,7 @@ export function transitionSession(
     if (state.phase === "intermission-countdown") {
       return { state: { ...state, phase: "intermission-held", deadlineMs: undefined }, effects: [] };
     }
-    if (state.phase === "playing" || state.phase === "starting") {
+    if (state.phase === "preparing" || state.phase === "playing" || state.phase === "starting") {
       return transitionSession(state, { type: "STOP" }, nowMs);
     }
     return unchanged(state);

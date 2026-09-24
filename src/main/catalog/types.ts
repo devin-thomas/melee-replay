@@ -57,6 +57,8 @@ export interface SetSegment {
   group: string;
   player1Entrant: 'A' | 'B';
   player2Entrant: 'A' | 'B';
+  /** Opening character labels in entrant A/B order, independent of replay ports. */
+  openingCharacters: [string, string];
   scoreEffect: 'none' | 'entrantA' | 'entrantB';
 }
 

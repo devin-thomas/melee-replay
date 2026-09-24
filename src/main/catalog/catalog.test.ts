@@ -29,6 +29,13 @@ const archiveApproval: ApprovedSourceScope = {
     pathPrefix: '/slippi.appspot.com/replays/bundles/' }],
   redirectScopes: [],
 };
+const shortSetApproval: ApprovedSourceScope = {
+  sourceId: 'ausmash-public-results',
+  downloadScopes: [{ origin: 'https://ausmashstorage.blob.core.windows.net',
+    pathPrefix: '/ausmash-content/' }],
+  redirectScopes: [],
+};
+const packagedApprovals = [packagedApproval, archiveApproval, shortSetApproval];
 
 function fixture() {
   return {
@@ -57,7 +64,7 @@ function fixture() {
 
 describe('curated catalog boundary', () => {
   it('admits the packaged reviewed replay catalog', () => {
-    const catalog = validateCatalogManifest(packagedCatalog, [packagedApproval, archiveApproval]);
+    const catalog = validateCatalogManifest(packagedCatalog, packagedApprovals);
     expect(catalog.items.length).toBeGreaterThanOrEqual(60);
     expect(catalog.items.some((item) => item.kind === 'set')).toBe(true);
   });
@@ -144,7 +151,7 @@ it('acquires only the selected cached asset and verifies its bytes', async () =>
 
 it.skipIf(process.env.MELEE_LIVE_CATALOG_TEST !== '1')(
   'downloads one selected replay through the approved signed redirect', async () => {
-    const catalog = validateCatalogManifest(packagedCatalog, [packagedApproval, archiveApproval]);
+    const catalog = validateCatalogManifest(packagedCatalog, packagedApprovals);
     const dir = await mkdtemp(join(tmpdir(), 'melee-catalog-live-'));
     directories.push(dir);
     const result = await acquireSelectedItem(catalog, catalog.items[0].itemId, dir, [packagedApproval]);
@@ -154,8 +161,11 @@ it.skipIf(process.env.MELEE_LIVE_CATALOG_TEST !== '1')(
 
 const localArchive = join(process.cwd(), 'data', 'archives', 'Summit-11.zip');
 it.skipIf(!existsSync(localArchive))('extracts every reviewed set from the original archive', async () => {
-  const catalog = validateCatalogManifest(packagedCatalog, [packagedApproval, archiveApproval]);
-  const sets = catalog.items.filter((entry) => entry.kind === 'set');
+  const catalog = validateCatalogManifest(packagedCatalog, packagedApprovals);
+  const sets = catalog.items.filter((entry): entry is Extract<typeof entry, { kind: 'set' }> => entry.kind === 'set' && entry.segments.every((segment) => {
+    const replay = catalog.replays.find((candidate) => candidate.replayId === segment.replayId)!;
+    return catalog.assets.find((asset) => asset.assetId === replay.assetId)?.sourceId === 'slippi-official-summit-11';
+  }));
   if (sets.length !== 9) throw new Error('Reviewed set batch is incomplete');
   const dir = await mkdtemp(join(tmpdir(), 'melee-archive-test-'));
   directories.push(dir);

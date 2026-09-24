@@ -22,6 +22,9 @@ export interface ReplaySegment {
   officialGameNumber: number;
   stage?: string;
   characters: readonly [string | null, string | null];
+  /** Backstage mapping from replay ports to the verified set entrants. */
+  player1Entrant?: "A" | "B";
+  player2Entrant?: "A" | "B";
   scoreEffect: ScoreEffect;
 }
 

@@ -13,6 +13,7 @@ export interface ParsedReplay {
   stage: string;
   playedAt: string | null;
   slpVersion: string;
+  lastFrame: number;
 }
 
 const MAX_REPLAY_BYTES = 256 * 1024 * 1024;
@@ -48,6 +49,10 @@ async function parseReplay(filePath: string): Promise<ParsedReplay> {
   }
 
   const metadata = game.getMetadata();
+  const lastFrame = metadata?.lastFrame;
+  if (typeof lastFrame !== 'number' || !Number.isSafeInteger(lastFrame) || lastFrame < 0) {
+    throw new Error('Replay does not declare a terminal frame.');
+  }
   const playedAt = metadata?.startAt && !Number.isNaN(Date.parse(metadata.startAt))
     ? new Date(metadata.startAt).toISOString()
     : null;
@@ -61,7 +66,8 @@ async function parseReplay(filePath: string): Promise<ParsedReplay> {
     characterB: b.characterId === undefined ? 'Unknown' : characters.getCharacterName(b.characterId),
     stage: settings.stageId === undefined ? 'Unknown Stage' : stages.getStageName(settings.stageId),
     playedAt,
-    slpVersion: settings.slpVersion || 'unknown'
+    slpVersion: settings.slpVersion || 'unknown',
+    lastFrame
   };
 }
 
