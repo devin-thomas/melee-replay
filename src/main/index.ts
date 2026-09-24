@@ -1,5 +1,5 @@
 import { app, BrowserWindow, dialog, ipcMain, shell } from 'electron';
-import { basename, extname, isAbsolute, join, relative, sep } from 'node:path';
+import { basename, dirname, extname, isAbsolute, join, relative, sep } from 'node:path';
 import { lstat, readdir, realpath } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { Library } from './library';
@@ -7,6 +7,7 @@ import { parseReplayInWorker } from './replay-import';
 import sampleCatalog from '../../data/catalog-v1.json';
 import { createPracticeCard, type PracticeItem as DomainPracticeItem } from '../core';
 import { acquireSelectedItem, CatalogAcquisitionError } from './catalog/acquire';
+import { extractSelectedReplays } from './catalog/extract';
 import { validateCatalogManifest } from './catalog/manifest';
 import type { ApprovedSourceScope, PracticeItem as CatalogPracticeItem } from './catalog/types';
 import type { AppSnapshot, ImportSummary, ReplayCard, SetupView } from '../shared/api';
@@ -27,6 +28,13 @@ const approvedSources: readonly ApprovedSourceScope[] = [{
     pathPrefix: '/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/'
   }],
   redirectScopes: [{ origin: 'https://us.aws.cdn.hf.co', pathPrefix: '/xet-bridge-us/' }]
+}, {
+  sourceId: 'slippi-official-summit-11',
+  downloadScopes: [{
+    origin: 'https://storage.googleapis.com',
+    pathPrefix: '/slippi.appspot.com/replays/bundles/'
+  }],
+  redirectScopes: []
 }];
 const catalog = validateCatalogManifest(sampleCatalog, approvedSources);
 const catalogReplays = new Map(catalog.replays.map((replay) => [replay.replayId, replay]));
@@ -62,7 +70,8 @@ function domainItem(item: CatalogPracticeItem): DomainPracticeItem {
   };
 }
 
-function sharedCard(item: DomainPracticeItem, availability: 'ready' | 'downloadable' | 'unavailable'): ReplayCard {
+function sharedCard(item: DomainPracticeItem, availability: 'ready' | 'downloadable' | 'unavailable',
+  sourceArchiveMiB?: number): ReplayCard {
   const card = createPracticeCard(item, [], [], availability);
   return {
     id: card.itemId, kind: card.kind,
@@ -71,7 +80,8 @@ function sharedCard(item: DomainPracticeItem, availability: 'ready' | 'downloada
     openingB: card.context.openingCharacters[1] || 'Unknown',
     event: card.context.event || null, playedAt: card.context.date || null,
     availability: card.availability === 'unavailable' ? 'missing' : card.availability,
-    practiceStatus: card.status
+    practiceStatus: card.status,
+    ...(sourceArchiveMiB === undefined ? {} : { sourceArchiveMiB })
   };
 }
 
@@ -97,7 +107,10 @@ function snapshot(): AppSnapshot {
   const cards: ReplayCard[] = catalog.items.map((item) => {
     const replayIds = item.kind === 'standalone' ? [item.replayId] : item.segments.map((segment) => segment.replayId);
     const ready = replayIds.every((id) => localByHash.get(catalogReplays.get(id)!.sha256)?.available);
-    return sharedCard(domainItem(item), ready ? 'ready' : 'downloadable');
+    const sourceArchiveMiB = item.kind === 'set'
+      ? Math.ceil(catalogAssets.get(catalogReplays.get(item.segments[0].replayId)!.assetId)!.byteSize / 1048576)
+      : undefined;
+    return sharedCard(domainItem(item), ready ? 'ready' : 'downloadable', sourceArchiveMiB);
   });
   for (const record of local) {
     if (catalogHashes.has(record.hash)) continue;
@@ -187,6 +200,10 @@ function registerIpc(): void {
     if (acquisition) throw new Error('A replay is already being prepared.');
     acquisition = new AbortController();
     try {
+      const item = catalog.items.find((entry) => entry.itemId === itemId)!;
+      const replayIds = item.kind === 'standalone' ? [item.replayId]
+        : item.segments.map((segment) => segment.replayId);
+      const selectedReplays = replayIds.map((id) => catalogReplays.get(id)!);
       const files = await acquireSelectedItem(catalog, itemId, join(app.getPath('userData'), 'managed'), approvedSources, {
         signal: acquisition.signal,
         onPhase: (phase) => { if (phase !== 'ready') mainWindow.webContents.send('catalog:phase', phase); }
@@ -194,13 +211,18 @@ function registerIpc(): void {
       mainWindow.webContents.send('catalog:phase', 'verifying');
       for (const file of files) {
         const asset = catalogAssets.get(file.assetId)!;
-        if (asset.format !== 'slp') throw new Error('This archive format is not ready for playback.');
-        const parsed = await parseReplayInWorker(file.path);
-        const replay = catalog.replays.find((candidate) => candidate.assetId === asset.assetId);
-        if (!replay || parsed.hash !== replay.sha256 || parsed.size !== replay.byteSize) {
-          throw new Error('Downloaded replay did not pass playback validation.');
+        const relevant = selectedReplays.filter((replay) => replay.assetId === file.assetId);
+        const extracted = asset.format === 'zip'
+          ? await extractSelectedReplays(file.path, relevant, dirname(file.path), acquisition.signal)
+          : relevant.map((replay) => ({ replayId: replay.replayId, path: file.path }));
+        for (const entry of extracted) {
+          const replay = catalogReplays.get(entry.replayId)!;
+          const parsed = await parseReplayInWorker(entry.path);
+          if (parsed.hash !== replay.sha256 || parsed.size !== replay.byteSize) {
+            throw new Error('Downloaded replay did not pass playback validation.');
+          }
+          library.addReference(entry.path, parsed, 'managed');
         }
-        library.addReference(file.path, parsed, 'managed');
       }
       mainWindow.webContents.send('catalog:phase', 'ready');
     } catch (error) {

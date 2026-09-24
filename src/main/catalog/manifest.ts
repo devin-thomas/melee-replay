@@ -189,10 +189,10 @@ function parseReplay(value: unknown, assets: Map<string, AssetRecord>): ReplayRe
 }
 
 function parseVerification(value: unknown, revision: string, segments: SetSegment[],
-  replays: Map<string, ReplayRecord>, assets: Map<string, AssetRecord>): VerificationRecord {
+  replays: Map<string, ReplayRecord>): VerificationRecord {
   const data = object(value);
   const orderedAssetHashes = list(data.orderedAssetHashes, hash, 256);
-  const expected = segments.map((segment) => assets.get(replays.get(segment.replayId)!.assetId)!.sha256);
+  const expected = segments.map((segment) => replays.get(segment.replayId)!.sha256);
   if (data.manifestRevision !== revision || orderedAssetHashes.length !== expected.length ||
       orderedAssetHashes.some((value, index) => value !== expected[index])) invalid();
   const sourceReferences = list(data.sourceReferences, (v) => safeHttpsUrl(v, true).toString(), 20);
@@ -261,7 +261,7 @@ function parseItem(value: unknown, revision: string, replays: Map<string, Replay
     }
   }
   if (new Set(segments.map((s) => assets.get(replays.get(s.replayId)!.assetId)!.sourceId)).size !== 1) invalid();
-  const verification = parseVerification(data.verification, revision, segments, replays, assets);
+  const verification = parseVerification(data.verification, revision, segments, replays);
   return {
     itemId, kind,
     sourceSetIdentity: text(data.sourceSetIdentity, 500),

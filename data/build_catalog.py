@@ -1,4 +1,4 @@
-"""Build the standalone-only curated-v1 catalog from the validated replay batch."""
+"""Build the curated-v1 catalog from reviewed replay evidence."""
 
 from __future__ import annotations
 
@@ -12,6 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 SOURCE = ROOT / "replay-batch.json"
 OUTPUT = ROOT / "catalog-v1.json"
+SET_RECORDS = ROOT / "sets" / "summit11-records.json"
 SOURCE_ID = "huggingface-slippi-public-v3.7"
 NAMESPACE = uuid.UUID("f8cbf661-8ead-491b-b637-e869300b69f5")
 
@@ -45,8 +46,15 @@ def main() -> None:
 
     generated_at = datetime.fromisoformat(batch["sampledAt"]).astimezone(timezone.utc)
     timestamp = generated_at.isoformat(timespec="milliseconds").replace("+00:00", "Z")
+    set_records = json.loads(SET_RECORDS.read_text(encoding="utf-8"))
     content_key = revision + "\n" + "\n".join(record["sha256"] for record in records)
-    catalog_revision = "hf-v3-standalone-" + hashlib.sha256(content_key.encode()).hexdigest()[:16]
+    content_key += "\n" + set_records["asset"]["sha256"]
+    catalog_set = set_records["items"][0]
+    catalog_replay_ids = {segment["replayId"] for segment in catalog_set["segments"]}
+    catalog_set_replays = [replay for replay in set_records["replays"]
+                           if replay["replayId"] in catalog_replay_ids]
+    content_key += "\n" + "\n".join(replay["sha256"] for replay in catalog_set_replays)
+    catalog_revision = "curated-v1-" + hashlib.sha256(content_key.encode()).hexdigest()[:16]
     download_scope = {
         "origin": "https://huggingface.co",
         "pathPrefix": f"/datasets/{source['dataset']}/resolve/{revision}/",
@@ -111,8 +119,13 @@ def main() -> None:
             "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified.",
         })
 
+    catalog["sources"].append(set_records["source"])
+    catalog["assets"].append(set_records["asset"])
+    catalog["replays"].extend(catalog_set_replays)
+    catalog_set["verification"]["manifestRevision"] = catalog_revision
+    catalog["items"].append(catalog_set)
     OUTPUT.write_text(json.dumps(catalog, indent=2, ensure_ascii=True) + "\n", encoding="utf-8")
-    print(f"Wrote {OUTPUT}: {len(catalog['items'])} standalone items ({catalog_revision})")
+    print("Wrote curated catalog from reviewed standalone and set evidence.")
 
 
 if __name__ == "__main__":

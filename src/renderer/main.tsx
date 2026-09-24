@@ -164,9 +164,10 @@ function App(): React.JSX.Element {
               <div className="detail-field"><span>Event</span><strong>{selected.event || 'Unknown'}</strong></div>
               <div className="detail-field"><span>Recorded</span><strong>{selected.playedAt ? new Date(selected.playedAt).toLocaleDateString() : 'Unknown'}</strong></div>
               <div className="detail-field"><span>Practice</span><strong className="capitalize">{selected.practiceStatus}</strong></div>
+              {selected.sourceArchiveMiB && <div className="detail-field"><span>Publisher archive</span><strong>About {selected.sourceArchiveMiB} MiB, shared cache</strong></div>}
               <div className="detail-bottom">
                 {selected.availability === 'downloadable' ? <>
-                  <button className="button primary wide" disabled={!!acquisitionPhase} onClick={() => acquire(selected.id)}>{acquisitionPhase ? `${acquisitionPhase[0].toUpperCase()}${acquisitionPhase.slice(1)}…` : 'Download replay'}</button>
+                  <button className="button primary wide" disabled={!!acquisitionPhase} onClick={() => acquire(selected.id)}>{acquisitionPhase ? `${acquisitionPhase[0].toUpperCase()}${acquisitionPhase.slice(1)}…` : selected.kind === 'set' ? 'Download set' : 'Download replay'}</button>
                   {acquisitionPhase && <button className="text-button" onClick={() => window.melee.cancelAcquisition()}>Cancel download</button>}
                 </> : <button className="button primary wide" disabled>Practice unavailable in this build</button>}
               </div>

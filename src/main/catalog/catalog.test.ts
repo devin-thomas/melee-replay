@@ -1,10 +1,12 @@
 import { createHash } from 'node:crypto';
+import { existsSync } from 'node:fs';
 import { mkdtemp, mkdir, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { afterEach, describe, expect, it } from 'vitest';
 import packagedCatalog from '../../../data/catalog-v1.json';
 import { acquireSelectedItem } from './acquire.js';
+import { extractSelectedReplays } from './extract.js';
 import { assertApprovedUrl, CatalogValidationError, validateCatalogManifest } from './manifest.js';
 import type { ApprovedSourceScope, SourcePolicy } from './types.js';
 
@@ -20,6 +22,12 @@ const packagedApproval: ApprovedSourceScope = {
   downloadScopes: [{ origin: 'https://huggingface.co',
     pathPrefix: '/datasets/erickfm/slippi-public-dataset-v3.7/resolve/c82be5f6e43f3388555cfe0cf8652580601f396d/' }],
   redirectScopes: [{ origin: 'https://us.aws.cdn.hf.co', pathPrefix: '/xet-bridge-us/' }],
+};
+const archiveApproval: ApprovedSourceScope = {
+  sourceId: 'slippi-official-summit-11',
+  downloadScopes: [{ origin: 'https://storage.googleapis.com',
+    pathPrefix: '/slippi.appspot.com/replays/bundles/' }],
+  redirectScopes: [],
 };
 
 function fixture() {
@@ -48,10 +56,10 @@ function fixture() {
 }
 
 describe('curated catalog boundary', () => {
-  it('admits the packaged standalone replay batch', () => {
-    const catalog = validateCatalogManifest(packagedCatalog, [packagedApproval]);
+  it('admits the packaged reviewed replay catalog', () => {
+    const catalog = validateCatalogManifest(packagedCatalog, [packagedApproval, archiveApproval]);
     expect(catalog.items.length).toBeGreaterThanOrEqual(60);
-    expect(catalog.items.every((item) => item.kind === 'standalone')).toBe(true);
+    expect(catalog.items.some((item) => item.kind === 'set')).toBe(true);
   });
   it('accepts a reviewed, internally consistent manifest', () => {
     const catalog = validateCatalogManifest(fixture(), approved);
@@ -136,10 +144,26 @@ it('acquires only the selected cached asset and verifies its bytes', async () =>
 
 it.skipIf(process.env.MELEE_LIVE_CATALOG_TEST !== '1')(
   'downloads one selected replay through the approved signed redirect', async () => {
-    const catalog = validateCatalogManifest(packagedCatalog, [packagedApproval]);
+    const catalog = validateCatalogManifest(packagedCatalog, [packagedApproval, archiveApproval]);
     const dir = await mkdtemp(join(tmpdir(), 'melee-catalog-live-'));
     directories.push(dir);
     const result = await acquireSelectedItem(catalog, catalog.items[0].itemId, dir, [packagedApproval]);
     expect(result).toHaveLength(1);
   }, 120_000,
 );
+
+const localArchive = join(process.cwd(), 'data', 'archives', 'Summit-11.zip');
+it.skipIf(!existsSync(localArchive))('extracts only selected, reviewed members from the original archive', async () => {
+  const catalog = validateCatalogManifest(packagedCatalog, [packagedApproval, archiveApproval]);
+  const item = catalog.items.find((entry) => entry.kind === 'set');
+  if (!item || item.kind !== 'set') throw new Error('Reviewed set fixture is missing');
+  const replays = item.segments.map((segment) =>
+    catalog.replays.find((replay) => replay.replayId === segment.replayId)!);
+  const dir = await mkdtemp(join(tmpdir(), 'melee-archive-test-'));
+  directories.push(dir);
+  const result = await extractSelectedReplays(localArchive, replays, dir);
+  expect(result).toHaveLength(replays.length);
+  expect(result.every((entry) => entry.path.startsWith(dir))).toBe(true);
+  await expect(extractSelectedReplays(localArchive, [{ ...replays[0], sha256: digest }], dir))
+    .rejects.toMatchObject({ code: 'integrity' });
+}, 30_000);

@@ -1,0 +1,350 @@
+{
+  "source": {
+    "sourceId": "slippi-official-summit-11",
+    "publisher": "Project Slippi / Fizzi",
+    "evidenceUrls": [
+      "https://www.reddit.com/r/SSBM/comments/oozzcb/",
+      "https://storage.googleapis.com/slippi.appspot.com/replays/bundles/Summit-11.zip",
+      "https://www.reddit.com/r/smashbros/comments/on64vr/",
+      "https://www.youtube.com/watch?v=P4gNB3Cfai4"
+    ],
+    "accessConditions": "The publisher's original event archive was publicly downloadable without an account during review.",
+    "useConditions": "The application downloads from the original publisher URL and does not redistribute replay bytes. No explicit replay redistribution license was identified; release permission review remains open.",
+    "reviewedAt": "2026-09-24T04:59:46.689Z",
+    "auditReference": "data/sets/summit11-records.json: exact archive and member hashes, parsed game endings, stage/order and result cross-check.",
+    "downloadScopes": [
+      {
+        "origin": "https://storage.googleapis.com",
+        "pathPrefix": "/slippi.appspot.com/replays/bundles/"
+      }
+    ],
+    "redirectScopes": [],
+    "eligibility": "eligible"
+  },
+  "asset": {
+    "assetId": "dff7c8a6-92e5-5e39-bb8c-dcc1d74bae92",
+    "sourceId": "slippi-official-summit-11",
+    "format": "zip",
+    "fetchUrl": "https://storage.googleapis.com/slippi.appspot.com/replays/bundles/Summit-11.zip",
+    "sha256": "3831c276c2c5e4492ea955abf1ee080667d2c7252afb8771e2e97659d989f7c4",
+    "byteSize": 208987744
+  },
+  "replays": [
+    {
+      "replayId": "53f8acc4-94a9-576d-8a5c-9e2deba2d752",
+      "assetId": "dff7c8a6-92e5-5e39-bb8c-dcc1d74bae92",
+      "zipEntryPath": "Day 3/Game_20210718T091414.slp",
+      "sha256": "90ba49ae207dfc4c0a8c6c02a01b905d56cb89ae02981c46a27c53a89057a0bd",
+      "byteSize": 3909474,
+      "formatEvidence": "Parsed .slp with two human singles players, complete GAME ending, final stock state and reviewed stage.",
+      "participants": {
+        "player1": "Zain",
+        "player2": "Mang0"
+      },
+      "sourceIdentity": "https://storage.googleapis.com/slippi.appspot.com/replays/bundles/Summit-11.zip#Day 3/Game_20210718T091414.slp",
+      "aliases": [
+        "Day 3/Game_20210718T091414.slp"
+      ]
+    },
+    {
+      "replayId": "1f64a728-e9ce-5a53-931a-232ed79f1d9d",
+      "assetId": "dff7c8a6-92e5-5e39-bb8c-dcc1d74bae92",
+      "zipEntryPath": "Day 3/Game_20210718T091908.slp",
+      "sha256": "173ffe74008365149ed58cd7dd53bd57aeae6ae9bb5bdffde979f063ac1af299",
+      "byteSize": 2372706,
+      "formatEvidence": "Parsed .slp with two human singles players, complete GAME ending, final stock state and reviewed stage.",
+      "participants": {
+        "player1": "Zain",
+        "player2": "Mang0"
+      },
+      "sourceIdentity": "https://storage.googleapis.com/slippi.appspot.com/replays/bundles/Summit-11.zip#Day 3/Game_20210718T091908.slp",
+      "aliases": [
+        "Day 3/Game_20210718T091908.slp"
+      ]
+    },
+    {
+      "replayId": "ea59a700-5442-58a7-a1fb-dd2c7e2c09b0",
+      "assetId": "dff7c8a6-92e5-5e39-bb8c-dcc1d74bae92",
+      "zipEntryPath": "Day 3/Game_20210718T092212.slp",
+      "sha256": "fbe7a673761322f1b6ccc592366f7224bdfde7ad312ef3b230d01661fb4397e3",
+      "byteSize": 2498914,
+      "formatEvidence": "Parsed .slp with two human singles players, complete GAME ending, final stock state and reviewed stage.",
+      "participants": {
+        "player1": "Zain",
+        "player2": "Mang0"
+      },
+      "sourceIdentity": "https://storage.googleapis.com/slippi.appspot.com/replays/bundles/Summit-11.zip#Day 3/Game_20210718T092212.slp",
+      "aliases": [
+        "Day 3/Game_20210718T092212.slp"
+      ]
+    },
+    {
+      "replayId": "fb1d3c37-0982-5c82-84d7-f4d38ef2566f",
+      "assetId": "dff7c8a6-92e5-5e39-bb8c-dcc1d74bae92",
+      "zipEntryPath": "Day 3/Game_20210718T092524.slp",
+      "sha256": "1a870e8bff108df1d3ed73adb7f91cdb919eb6fd3e84b714583e447b7616312e",
+      "byteSize": 3119978,
+      "formatEvidence": "Parsed .slp with two human singles players, complete GAME ending, final stock state and reviewed stage.",
+      "participants": {
+        "player1": "Zain",
+        "player2": "Mang0"
+      },
+      "sourceIdentity": "https://storage.googleapis.com/slippi.appspot.com/replays/bundles/Summit-11.zip#Day 3/Game_20210718T092524.slp",
+      "aliases": [
+        "Day 3/Game_20210718T092524.slp"
+      ]
+    },
+    {
+      "replayId": "9ff8f772-0b91-51e3-b05d-0a823bc6eab7",
+      "assetId": "dff7c8a6-92e5-5e39-bb8c-dcc1d74bae92",
+      "zipEntryPath": "Day 3/Game_20210718T092921.slp",
+      "sha256": "c91c1d6f9ca8f54e256a807cf5765ffbd68c51558c5b24198ea9f65bcaf50cf4",
+      "byteSize": 1467674,
+      "formatEvidence": "Parsed .slp with two human singles players, complete GAME ending, final stock state and reviewed stage.",
+      "participants": {
+        "player1": "Zain",
+        "player2": "Mang0"
+      },
+      "sourceIdentity": "https://storage.googleapis.com/slippi.appspot.com/replays/bundles/Summit-11.zip#Day 3/Game_20210718T092921.slp",
+      "aliases": [
+        "Day 3/Game_20210718T092921.slp"
+      ]
+    },
+    {
+      "replayId": "3a6e7023-a03f-5cf3-919c-b3b219cdd164",
+      "assetId": "dff7c8a6-92e5-5e39-bb8c-dcc1d74bae92",
+      "zipEntryPath": "Day 3/Game_20210718T093151.slp",
+      "sha256": "49597b0da0cd5da5974d391114829eb1dae4ba2c71eba949448e4ecf8bc12d06",
+      "byteSize": 2629762,
+      "formatEvidence": "Parsed .slp with two human singles players, complete GAME ending, final stock state and reviewed stage.",
+      "participants": {
+        "player1": "Zain",
+        "player2": "Mang0"
+      },
+      "sourceIdentity": "https://storage.googleapis.com/slippi.appspot.com/replays/bundles/Summit-11.zip#Day 3/Game_20210718T093151.slp",
+      "aliases": [
+        "Day 3/Game_20210718T093151.slp"
+      ]
+    },
+    {
+      "replayId": "c52bb225-391b-5bfc-be56-5ee88f9f27d0",
+      "assetId": "dff7c8a6-92e5-5e39-bb8c-dcc1d74bae92",
+      "zipEntryPath": "Day 3/Game_20210718T093513.slp",
+      "sha256": "85ad49699934b57526ff3bc049a8c35e0923c6dbf52cba2dcc0a60acdd3d8255",
+      "byteSize": 2740658,
+      "formatEvidence": "Parsed .slp with two human singles players, complete GAME ending, final stock state and reviewed stage.",
+      "participants": {
+        "player1": "Zain",
+        "player2": "Mang0"
+      },
+      "sourceIdentity": "https://storage.googleapis.com/slippi.appspot.com/replays/bundles/Summit-11.zip#Day 3/Game_20210718T093513.slp",
+      "aliases": [
+        "Day 3/Game_20210718T093513.slp"
+      ]
+    },
+    {
+      "replayId": "11d7c1b1-d053-5a80-a0e4-5213b9c72bb9",
+      "assetId": "dff7c8a6-92e5-5e39-bb8c-dcc1d74bae92",
+      "zipEntryPath": "Day 3/Game_20210718T093842.slp",
+      "sha256": "e8d47e6aaa4fed86b7a59abcfb92c248b571670d69dce7280548e83ead2da7a6",
+      "byteSize": 2776850,
+      "formatEvidence": "Parsed .slp with two human singles players, complete GAME ending, final stock state and reviewed stage.",
+      "participants": {
+        "player1": "Zain",
+        "player2": "Mang0"
+      },
+      "sourceIdentity": "https://storage.googleapis.com/slippi.appspot.com/replays/bundles/Summit-11.zip#Day 3/Game_20210718T093842.slp",
+      "aliases": [
+        "Day 3/Game_20210718T093842.slp"
+      ]
+    },
+    {
+      "replayId": "cdf4218a-4721-5e93-ae99-e54130b6cfbc",
+      "assetId": "dff7c8a6-92e5-5e39-bb8c-dcc1d74bae92",
+      "zipEntryPath": "Day 3/Game_20210718T094215.slp",
+      "sha256": "15a83529fbb739dcff2f0a2900e701976cce48e5a9b3ffcdf26e1a64771ae940",
+      "byteSize": 1955570,
+      "formatEvidence": "Parsed .slp with two human singles players, complete GAME ending, final stock state and reviewed stage.",
+      "participants": {
+        "player1": "Zain",
+        "player2": "Mang0"
+      },
+      "sourceIdentity": "https://storage.googleapis.com/slippi.appspot.com/replays/bundles/Summit-11.zip#Day 3/Game_20210718T094215.slp",
+      "aliases": [
+        "Day 3/Game_20210718T094215.slp"
+      ]
+    },
+    {
+      "replayId": "7a6e4f84-6e22-5d3b-9098-3c045def2f5a",
+      "assetId": "dff7c8a6-92e5-5e39-bb8c-dcc1d74bae92",
+      "zipEntryPath": "Day 3/Game_20210718T094500.slp",
+      "sha256": "39034c232ba8cb32e4c055aeb25c8e40e259fe60528ed2b9132bbba82bd02fbb",
+      "byteSize": 2946906,
+      "formatEvidence": "Parsed .slp with two human singles players, complete GAME ending, final stock state and reviewed stage.",
+      "participants": {
+        "player1": "Zain",
+        "player2": "Mang0"
+      },
+      "sourceIdentity": "https://storage.googleapis.com/slippi.appspot.com/replays/bundles/Summit-11.zip#Day 3/Game_20210718T094500.slp",
+      "aliases": [
+        "Day 3/Game_20210718T094500.slp"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "itemId": "6d9726e9-5e4e-5af3-828d-a992a58b3554",
+      "kind": "set",
+      "sourceSetIdentity": "Smash Summit 11 Grand Finals set 1",
+      "eventContext": "Smash Summit 11 - Grand Finals",
+      "entrantA": "Zain",
+      "entrantB": "Mang0",
+      "bestOf": 5,
+      "completionRule": "target-wins",
+      "segments": [
+        {
+          "replayId": "53f8acc4-94a9-576d-8a5c-9e2deba2d752",
+          "order": 1,
+          "group": "main",
+          "player1Entrant": "A",
+          "player2Entrant": "B",
+          "scoreEffect": "entrantA"
+        },
+        {
+          "replayId": "1f64a728-e9ce-5a53-931a-232ed79f1d9d",
+          "order": 2,
+          "group": "main",
+          "player1Entrant": "A",
+          "player2Entrant": "B",
+          "scoreEffect": "entrantA"
+        },
+        {
+          "replayId": "ea59a700-5442-58a7-a1fb-dd2c7e2c09b0",
+          "order": 3,
+          "group": "main",
+          "player1Entrant": "A",
+          "player2Entrant": "B",
+          "scoreEffect": "entrantB"
+        },
+        {
+          "replayId": "fb1d3c37-0982-5c82-84d7-f4d38ef2566f",
+          "order": 4,
+          "group": "main",
+          "player1Entrant": "A",
+          "player2Entrant": "B",
+          "scoreEffect": "entrantB"
+        },
+        {
+          "replayId": "9ff8f772-0b91-51e3-b05d-0a823bc6eab7",
+          "order": 5,
+          "group": "main",
+          "player1Entrant": "A",
+          "player2Entrant": "B",
+          "scoreEffect": "entrantB"
+        }
+      ],
+      "verification": {
+        "method": "reviewed-source-crosscheck",
+        "sourceReferences": [
+          "https://www.reddit.com/r/SSBM/comments/oozzcb/",
+          "https://storage.googleapis.com/slippi.appspot.com/replays/bundles/Summit-11.zip",
+          "https://www.reddit.com/r/smashbros/comments/on64vr/",
+          "https://www.youtube.com/watch?v=P4gNB3Cfai4"
+        ],
+        "reviewer": "Melee Replay curation",
+        "verifiedAt": "2026-09-24T04:59:46.689Z",
+        "manifestRevision": "filled-by-catalog-builder",
+        "orderedAssetHashes": [
+          "90ba49ae207dfc4c0a8c6c02a01b905d56cb89ae02981c46a27c53a89057a0bd",
+          "173ffe74008365149ed58cd7dd53bd57aeae6ae9bb5bdffde979f063ac1af299",
+          "fbe7a673761322f1b6ccc592366f7224bdfde7ad312ef3b230d01661fb4397e3",
+          "1a870e8bff108df1d3ed73adb7f91cdb919eb6fd3e84b714583e447b7616312e",
+          "c91c1d6f9ca8f54e256a807cf5765ffbd68c51558c5b24198ea9f65bcaf50cf4"
+        ],
+        "completenessEvidence": "The publisher's archive supplies these ordered game files; their stages and scoring outcomes match both independent bracket rows. Adjacent warmup and no-contest material is excluded.",
+        "decisions": "Two bracket contests are represented separately. Only the cross-checked scoring games are admitted; no file proximity alone creates set membership."
+      },
+      "sourceResult": {
+        "entrantA": 2,
+        "entrantB": 3
+      }
+    },
+    {
+      "itemId": "f3202e32-d541-51e9-93c9-10c76c7a64bc",
+      "kind": "set",
+      "sourceSetIdentity": "Smash Summit 11 Grand Finals set 2",
+      "eventContext": "Smash Summit 11 - Grand Finals",
+      "entrantA": "Zain",
+      "entrantB": "Mang0",
+      "bestOf": 5,
+      "completionRule": "target-wins",
+      "segments": [
+        {
+          "replayId": "3a6e7023-a03f-5cf3-919c-b3b219cdd164",
+          "order": 1,
+          "group": "main",
+          "player1Entrant": "A",
+          "player2Entrant": "B",
+          "scoreEffect": "entrantA"
+        },
+        {
+          "replayId": "c52bb225-391b-5bfc-be56-5ee88f9f27d0",
+          "order": 2,
+          "group": "main",
+          "player1Entrant": "A",
+          "player2Entrant": "B",
+          "scoreEffect": "entrantB"
+        },
+        {
+          "replayId": "11d7c1b1-d053-5a80-a0e4-5213b9c72bb9",
+          "order": 3,
+          "group": "main",
+          "player1Entrant": "A",
+          "player2Entrant": "B",
+          "scoreEffect": "entrantA"
+        },
+        {
+          "replayId": "cdf4218a-4721-5e93-ae99-e54130b6cfbc",
+          "order": 4,
+          "group": "main",
+          "player1Entrant": "A",
+          "player2Entrant": "B",
+          "scoreEffect": "entrantB"
+        },
+        {
+          "replayId": "7a6e4f84-6e22-5d3b-9098-3c045def2f5a",
+          "order": 5,
+          "group": "main",
+          "player1Entrant": "A",
+          "player2Entrant": "B",
+          "scoreEffect": "entrantB"
+        }
+      ],
+      "verification": {
+        "method": "reviewed-source-crosscheck",
+        "sourceReferences": [
+          "https://www.reddit.com/r/SSBM/comments/oozzcb/",
+          "https://storage.googleapis.com/slippi.appspot.com/replays/bundles/Summit-11.zip",
+          "https://www.reddit.com/r/smashbros/comments/on64vr/",
+          "https://www.youtube.com/watch?v=P4gNB3Cfai4"
+        ],
+        "reviewer": "Melee Replay curation",
+        "verifiedAt": "2026-09-24T04:59:46.689Z",
+        "manifestRevision": "filled-by-catalog-builder",
+        "orderedAssetHashes": [
+          "49597b0da0cd5da5974d391114829eb1dae4ba2c71eba949448e4ecf8bc12d06",
+          "85ad49699934b57526ff3bc049a8c35e0923c6dbf52cba2dcc0a60acdd3d8255",
+          "e8d47e6aaa4fed86b7a59abcfb92c248b571670d69dce7280548e83ead2da7a6",
+          "15a83529fbb739dcff2f0a2900e701976cce48e5a9b3ffcdf26e1a64771ae940",
+          "39034c232ba8cb32e4c055aeb25c8e40e259fe60528ed2b9132bbba82bd02fbb"
+        ],
+        "completenessEvidence": "The publisher's archive supplies these ordered game files; their stages and scoring outcomes match both independent bracket rows. Adjacent warmup and no-contest material is excluded.",
+        "decisions": "Two bracket contests are represented separately. Only the cross-checked scoring games are admitted; no file proximity alone creates set membership."
+      },
+      "sourceResult": {
+        "entrantA": 2,
+        "entrantB": 3
+      }
+    }
+  ]
+}

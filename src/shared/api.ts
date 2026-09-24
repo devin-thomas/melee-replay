@@ -9,6 +9,7 @@ export interface ReplayCard {
   playedAt: string | null;
   availability: 'ready' | 'missing' | 'downloadable';
   practiceStatus: 'unseen' | 'incomplete' | 'completed';
+  sourceArchiveMiB?: number;
 }
 
 export interface SetupView {

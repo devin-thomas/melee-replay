@@ -19,9 +19,9 @@ try {
   await page.getByRole('heading', { name: 'Browse replays' }).waitFor();
   await page.locator('.replay-row').first().waitFor();
   const count = await page.locator('.replay-row').count();
-  if (count !== 60) throw new Error(`Expected 60 catalog games, found ${count}`);
+  if (count < 60) throw new Error(`Expected the reviewed catalog, found ${count} items`);
   await page.screenshot({ path: join(output, 'packaged-browse.png') });
-  console.log(`Packaged catalog rendered ${count} games. Screenshot: ${join(output, 'packaged-browse.png')}`);
+  console.log(`Packaged catalog rendered ${count} items. Screenshot: ${join(output, 'packaged-browse.png')}`);
 
   if (process.argv.includes('--download')) {
     await page.locator('.replay-row').first().click();
@@ -31,6 +31,29 @@ try {
     const ready = snapshot.cards.filter((card) => card.availability === 'ready');
     if (ready.length !== 1) throw new Error(`Expected one acquired replay, found ${ready.length}`);
     console.log('Selected replay downloaded, parsed, and entered the packaged library.');
+  }
+  if (process.argv.includes('--download-set')) {
+    const initial = await page.evaluate(() => window.melee.snapshot());
+    const index = initial.cards.findIndex((card) => card.kind === 'set');
+    if (index < 0) throw new Error('Reviewed set is missing');
+    await page.locator('.replay-row').nth(index).click();
+    await page.getByRole('button', { name: 'Download set' }).click();
+    await page.getByRole('status').filter({ hasText: 'Replay ready.' }).waitFor({ timeout: 180_000 });
+    const after = await page.evaluate(() => window.melee.snapshot());
+    if (after.cards[index].availability !== 'ready') {
+      throw new Error('Selected set did not enter the packaged library');
+    }
+    const other = after.cards.findIndex((card, cardIndex) => card.kind === 'set' && cardIndex !== index);
+    if (other >= 0) {
+      await page.locator('.replay-row').nth(other).click();
+      await page.getByRole('button', { name: 'Download set' }).click();
+      await page.getByRole('status').filter({ hasText: 'Replay ready.' }).waitFor({ timeout: 180_000 });
+      const final = await page.evaluate(() => window.melee.snapshot());
+      if (final.cards[index].availability !== 'ready' || final.cards[other].availability !== 'ready') {
+        throw new Error('Shared archive did not prepare both selected sets');
+      }
+    }
+    console.log('Selected publisher archive and reviewed members verified in the packaged app.');
   }
   if (process.argv.includes('--import-folder')) {
     const sourceFolder = resolve('data/slp');
