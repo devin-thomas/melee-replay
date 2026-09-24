@@ -222,34 +222,11 @@ export class PracticeController {
       await image.close();
     }
     const item = this.state.item!;
-    const segments = item.kind === 'set' ? item.segments : [item.segment];
+    const opening = item.kind === 'set' ? item.segments[0] : item.segment;
     this.prepared.clear();
-    for (const segment of segments) {
-      if (this.operationAbort?.signal.aborted) return;
-      const path = await this.options.library.verifiedPath(segment.exposureKey);
-      if (!path) throw new PreflightError('asset-unavailable');
-      const parsed = await parseReplayInWorker(path).catch(() => null);
-      if (!parsed || parsed.hash !== segment.exposureKey) throw new PreflightError('asset-unavailable');
-      const characters = segment.player1Entrant && segment.player2Entrant
-        ? entrantOrderedCharacters({ player1Entrant: segment.player1Entrant,
-            player2Entrant: segment.player2Entrant }, [parsed.characterA, parsed.characterB])
-        : [parsed.characterA, parsed.characterB] as const;
-      if (segment.player1Entrant && (characters[0] !== segment.characters[0] ||
-          characters[1] !== segment.characters[1])) throw new PreflightError('asset-unavailable');
-      this.prepared.set(segment.replayId, { path, hash: parsed.hash, lastFrame: parsed.lastFrame,
-        stage: parsed.stage, characters });
-    }
     if (this.operationAbort?.signal.aborted) return;
-    if (item.kind === 'set') {
-      this.state = { ...this.state, item: { ...item, segments: item.segments.map((segment) => {
-        const parsed = this.prepared.get(segment.replayId)!;
-        return { ...segment, stage: parsed.stage, characters: parsed.characters };
-      }) } };
-    } else {
-      const parsed = this.prepared.get(item.segment.replayId)!;
-      this.state = { ...this.state, item: { ...item,
-        segment: { ...item.segment, stage: parsed.stage, characters: parsed.characters } } };
-    }
+    await this.prepareSegment(opening.replayId);
+    if (this.operationAbort?.signal.aborted) return;
     const adapter = new PlaybackDolphin({
       executablePath: runtime.executablePath,
       imagePath: runtime.imagePath,
@@ -270,9 +247,38 @@ export class PracticeController {
     this.adapter = adapter;
   }
 
+  private async prepareSegment(replayId: string): Promise<PreparedReplay> {
+    const item = this.state.item!;
+    const segment = item.kind === 'set' ? item.segments[this.state.segmentIndex] : item.segment;
+    if (!segment || segment.replayId !== replayId) throw new PreflightError('asset-unavailable');
+    const path = await this.options.library.verifiedPath(segment.exposureKey);
+    if (!path) throw new PreflightError('asset-unavailable');
+    const parsed = await parseReplayInWorker(path).catch(() => null);
+    if (!parsed || parsed.hash !== segment.exposureKey) throw new PreflightError('asset-unavailable');
+    const characters = segment.player1Entrant && segment.player2Entrant
+      ? entrantOrderedCharacters({ player1Entrant: segment.player1Entrant,
+          player2Entrant: segment.player2Entrant }, [parsed.characterA, parsed.characterB])
+      : [parsed.characterA, parsed.characterB] as const;
+    if (segment.player1Entrant && (characters[0] !== segment.characters[0] ||
+        characters[1] !== segment.characters[1])) throw new PreflightError('asset-unavailable');
+    const prepared = { path, hash: parsed.hash, lastFrame: parsed.lastFrame,
+      stage: parsed.stage, characters };
+    this.prepared.set(replayId, prepared);
+    if (item.kind === 'set') {
+      const index = this.state.segmentIndex;
+      this.state = { ...this.state, item: { ...item, segments: item.segments.map((current, at) =>
+        at === index ? { ...current, stage: parsed.stage, characters } : current) } };
+    } else {
+      this.state = { ...this.state, item: { ...item,
+        segment: { ...segment, stage: parsed.stage, characters } } };
+    }
+    return prepared;
+  }
+
   private async launch(replayId: string): Promise<void> {
-    const prepared = this.prepared.get(replayId);
-    if (!prepared || !this.adapter) throw new PreflightError('asset-unavailable');
+    if (!this.adapter) throw new PreflightError('asset-unavailable');
+    const prepared = this.prepared.get(replayId) ?? await this.prepareSegment(replayId);
+    if (this.operationAbort?.signal.aborted) return;
     const current = await this.options.library.verifiedPath(prepared.hash);
     if (current !== prepared.path) throw new PreflightError('asset-unavailable');
     const parsed = await parseReplayInWorker(current).catch(() => null);

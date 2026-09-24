@@ -10,6 +10,7 @@ const bridge: MeleeBridge = {
   removeIndexedReplay: (replayId) => ipcRenderer.invoke('library:remove-indexed', replayId),
   relinkReplay: (replayId) => ipcRenderer.invoke('library:relink', replayId),
   findReplayInFolder: (replayId) => ipcRenderer.invoke('library:rescan', replayId),
+  clearDownloadCache: () => ipcRenderer.invoke('library:clear-download-cache'),
   acquireCatalogItem: (itemId) => ipcRenderer.invoke('catalog:acquire', itemId),
   cancelAcquisition: () => ipcRenderer.invoke('catalog:cancel'),
   onAcquisitionPhase: (callback) => {

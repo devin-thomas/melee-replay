@@ -35,6 +35,7 @@ export interface AppSnapshot {
   history: PracticeHistoryEntry[];
   setup: SetupView;
   session: SessionView;
+  managedStorage: { totalBytes: number; downloadCacheBytes: number };
 }
 
 export interface ImportSummary {
@@ -53,6 +54,7 @@ export interface MeleeBridge {
   removeIndexedReplay(replayId: string): Promise<void>;
   relinkReplay(replayId: string): Promise<boolean>;
   findReplayInFolder(replayId: string): Promise<boolean>;
+  clearDownloadCache(): Promise<number>;
   acquireCatalogItem(itemId: string): Promise<void>;
   cancelAcquisition(): Promise<void>;
   onAcquisitionPhase(callback: (phase: 'preparing' | 'downloading' | 'verifying' | 'ready') => void): () => void;

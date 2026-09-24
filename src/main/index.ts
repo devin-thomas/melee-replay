@@ -3,6 +3,7 @@ import { basename, dirname, extname, isAbsolute, join, relative, sep } from 'nod
 import { lstat, open, readFile, readdir, realpath } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { Library } from './library';
+import { clearDownloadCache, managedStorage } from './managed-storage';
 import { PracticeController } from './practice-controller';
 import { parseReplayInWorker } from './replay-import';
 import { extractReporterPackage } from './reporter-package';
@@ -10,6 +11,7 @@ import sampleCatalog from '../../data/catalog-v1.json';
 import { createPracticeCard, type AttemptRecord, type ExposureRecord,
   type PracticeItem as DomainPracticeItem } from '../core';
 import { acquireSelectedItem, CatalogAcquisitionError } from './catalog/acquire';
+import { catalogOpeningReady } from './catalog/availability';
 import { extractSelectedReplays } from './catalog/extract';
 import { validateCatalogManifest } from './catalog/manifest';
 import type { ApprovedSourceScope, PracticeItem as CatalogPracticeItem } from './catalog/types';
@@ -21,6 +23,8 @@ const squirrelStartup: boolean = process.platform === 'win32' && require('electr
 if (process.platform === 'win32') app.setAppUserModelId('com.squirrel.MeleeReplay.Melee Replay');
 
 const MAX_IMPORT_FILES = 500;
+const approvedArchiveNames = new Set(sampleCatalog.assets.filter((asset) => asset.format === 'zip')
+  .map((asset) => `${asset.sha256}.zip`));
 let mainWindow: BrowserWindow;
 let library: Library;
 let practice: PracticeController;
@@ -180,15 +184,15 @@ function resolvePracticeItem(itemId: string): DomainPracticeItem | null {
   return local ? localDomainItem(local) : null;
 }
 
-function snapshot(): AppSnapshot {
+async function snapshot(): Promise<AppSnapshot> {
   const local = library.list();
   const attempts = library.attempts();
   const exposures = library.exposures();
   const localByHash = new Map(local.map((record) => [record.hash, record]));
   const catalogHashes = new Set(catalog.replays.map((replay) => replay.sha256));
   const cards: ReplayCard[] = catalog.items.map((item) => {
-    const replayIds = item.kind === 'standalone' ? [item.replayId] : item.segments.map((segment) => segment.replayId);
-    const ready = replayIds.every((id) => localByHash.get(catalogReplays.get(id)!.sha256)?.available);
+    const ready = catalogOpeningReady(item, (replayId) =>
+      localByHash.get(catalogReplays.get(replayId)!.sha256)?.available === true);
     return sharedCard(domainItem(item), ready ? 'ready' : 'downloadable', attempts, exposures, 'catalog');
   });
   for (const record of local) {
@@ -211,7 +215,9 @@ function snapshot(): AppSnapshot {
       endedAt: attempt.endedAt ?? null,
     }];
   });
-  return { cards, setup: setupView(), session: practice.view(), history };
+  return { cards, setup: setupView(), session: practice.view(), history,
+    managedStorage: await managedStorage(join(app.getPath('userData'), 'managed'),
+      approvedArchiveNames, library.protectedManagedPaths()) };
 }
 
 async function enumerateFiles(root: string): Promise<string[]> {
@@ -250,9 +256,9 @@ async function importPaths(paths: string[]): Promise<ImportSummary> {
         if (!(await library.verifiedPath(parsed.hash))) throw new Error('Imported replay changed during validation.');
         if (knownHashes.has(parsed.hash)) summary.duplicates += 1;
         else { summary.imported += 1; knownHashes.add(parsed.hash); }
-      } catch (error) {
+      } catch {
         summary.rejected += 1;
-        console.warn('Replay import rejected:', error instanceof Error ? error.message : 'Unknown parsing failure');
+        console.warn('Replay import rejected.');
       }
     }
     return summary;
@@ -265,6 +271,14 @@ function registerIpc(): void {
   ipcMain.handle('library:snapshot', (event) => {
     requireMainFrame(event);
     return snapshot();
+  });
+  ipcMain.handle('library:clear-download-cache', async (event) => {
+    requireMainFrame(event);
+    if (acquisition || importing || practice.activeItemId()) {
+      throw new Error('Finish the current import or practice session before clearing downloads.');
+    }
+    return clearDownloadCache(join(app.getPath('userData'), 'managed'),
+      approvedArchiveNames, library.protectedManagedPaths());
   });
   ipcMain.handle('library:import-files', async (event) => {
     requireMainFrame(event);
@@ -308,9 +322,9 @@ function registerIpc(): void {
           library.recordManagedProvenance(parsed.hash, file.archivePath, file.entryPath);
           if (knownHashes.has(parsed.hash)) summary.duplicates += 1;
           else { summary.imported += 1; knownHashes.add(parsed.hash); }
-        } catch (error) {
+        } catch {
           summary.rejected += 1;
-          console.warn('Package replay rejected:', error instanceof Error ? error.message : 'Unknown parsing failure');
+          console.warn('Package replay rejected.');
         }
       }
       return summary;
@@ -395,7 +409,7 @@ function registerIpc(): void {
       mainWindow.webContents.send('catalog:phase', 'ready');
     } catch (error) {
       if (error instanceof CatalogAcquisitionError) throw error;
-      console.warn('Catalog preparation failed:', error);
+      console.warn('Catalog preparation failed: internal-error');
       throw new Error('The selected replay could not be prepared.');
     } finally {
       acquisition = null;
@@ -513,7 +527,8 @@ if (!squirrelStartup) app.whenReady().then(async () => {
   powerMonitor.on('suspend', () => practice.suspend());
   app.on('activate', () => { if (BrowserWindow.getAllWindows().length === 0) createWindow(); });
 }).catch((error: unknown) => {
-  dialog.showErrorBox('Melee Replay could not start', error instanceof Error ? error.message : 'Unknown startup error.');
+  console.error('Melee Replay startup failed:', error instanceof Error ? error.name : 'unknown');
+  dialog.showErrorBox('Melee Replay could not start', 'Check that local app storage is available, then restart.');
   app.quit();
 });
 

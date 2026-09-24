@@ -336,6 +336,13 @@ export class Library {
       .run(replayHash, archivePath, entryPath, now());
   }
 
+  protectedManagedPaths(): string[] {
+    const locations = this.db.prepare('SELECT path FROM locations').all() as { path: string }[];
+    const sources = this.db.prepare('SELECT DISTINCT archive_path AS path FROM managed_replay_sources')
+      .all() as { path: string }[];
+    return [...locations, ...sources].map(({ path }) => path);
+  }
+
   attempts(): AttemptRecord[] {
     const rows = this.db.prepare(`SELECT id, item_id AS itemId, revision, requested_at AS requestedAt,
       started_at AS startedAt, ended_at AS endedAt, status
