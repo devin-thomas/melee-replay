@@ -153,17 +153,21 @@ it.skipIf(process.env.MELEE_LIVE_CATALOG_TEST !== '1')(
 );
 
 const localArchive = join(process.cwd(), 'data', 'archives', 'Summit-11.zip');
-it.skipIf(!existsSync(localArchive))('extracts only selected, reviewed members from the original archive', async () => {
+it.skipIf(!existsSync(localArchive))('extracts every reviewed set from the original archive', async () => {
   const catalog = validateCatalogManifest(packagedCatalog, [packagedApproval, archiveApproval]);
-  const item = catalog.items.find((entry) => entry.kind === 'set');
-  if (!item || item.kind !== 'set') throw new Error('Reviewed set fixture is missing');
-  const replays = item.segments.map((segment) =>
-    catalog.replays.find((replay) => replay.replayId === segment.replayId)!);
+  const sets = catalog.items.filter((entry) => entry.kind === 'set');
+  if (sets.length !== 9) throw new Error('Reviewed set batch is incomplete');
   const dir = await mkdtemp(join(tmpdir(), 'melee-archive-test-'));
   directories.push(dir);
-  const result = await extractSelectedReplays(localArchive, replays, dir);
-  expect(result).toHaveLength(replays.length);
-  expect(result.every((entry) => entry.path.startsWith(dir))).toBe(true);
-  await expect(extractSelectedReplays(localArchive, [{ ...replays[0], sha256: digest }], dir))
+  for (const item of sets) {
+    const replays = item.segments.map((segment) =>
+      catalog.replays.find((replay) => replay.replayId === segment.replayId)!);
+    const result = await extractSelectedReplays(localArchive, replays, dir);
+    expect(result).toHaveLength(replays.length);
+    expect(result.every((entry) => entry.path.startsWith(dir))).toBe(true);
+  }
+  const first = catalog.replays.find((replay) => replay.zipEntryPath);
+  if (!first) throw new Error('Reviewed archive member is missing');
+  await expect(extractSelectedReplays(localArchive, [{ ...first, sha256: digest }], dir))
     .rejects.toMatchObject({ code: 'integrity' });
-}, 30_000);
+}, 60_000);

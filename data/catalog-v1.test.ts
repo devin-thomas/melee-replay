@@ -28,7 +28,9 @@ describe('reviewed catalog data', () => {
     const standalone = catalog.items.filter((item) => item.kind === 'standalone');
     const sets = catalog.items.filter((item) => item.kind === 'set');
     expect(standalone).toHaveLength(60);
-    expect(sets).toHaveLength(1);
+    expect(sets).toHaveLength(9);
+    const setReplayIds = sets.flatMap((item) => item.segments.map((segment) => segment.replayId));
+    expect(new Set(setReplayIds).size).toBe(setReplayIds.length);
     expect(standalone.every((item) =>
       item.openingCharacters.length === 2 &&
       item.openingCharacters.every((character) => character.length > 0))).toBe(true);

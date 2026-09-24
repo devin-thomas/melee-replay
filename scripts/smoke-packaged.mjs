@@ -1,5 +1,5 @@
 import { _electron as electron } from 'playwright-core';
-import { mkdtemp, mkdir } from 'node:fs/promises';
+import { mkdtemp, mkdir, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 
@@ -34,26 +34,20 @@ try {
   }
   if (process.argv.includes('--download-set')) {
     const initial = await page.evaluate(() => window.melee.snapshot());
-    const index = initial.cards.findIndex((card) => card.kind === 'set');
-    if (index < 0) throw new Error('Reviewed set is missing');
-    await page.locator('.replay-row').nth(index).click();
-    await page.getByRole('button', { name: 'Download set' }).click();
-    await page.getByRole('status').filter({ hasText: 'Replay ready.' }).waitFor({ timeout: 180_000 });
-    const after = await page.evaluate(() => window.melee.snapshot());
-    if (after.cards[index].availability !== 'ready') {
-      throw new Error('Selected set did not enter the packaged library');
-    }
-    const other = after.cards.findIndex((card, cardIndex) => card.kind === 'set' && cardIndex !== index);
-    if (other >= 0) {
-      await page.locator('.replay-row').nth(other).click();
+    const indices = initial.cards.flatMap((card, index) => card.kind === 'set' ? [index] : []);
+    if (indices.length !== 9) throw new Error('Reviewed set batch is incomplete');
+    for (const index of indices) {
+      await page.locator('.replay-row').nth(index).click();
       await page.getByRole('button', { name: 'Download set' }).click();
       await page.getByRole('status').filter({ hasText: 'Replay ready.' }).waitFor({ timeout: 180_000 });
-      const final = await page.evaluate(() => window.melee.snapshot());
-      if (final.cards[index].availability !== 'ready' || final.cards[other].availability !== 'ready') {
-        throw new Error('Shared archive did not prepare both selected sets');
-      }
+      const after = await page.evaluate(() => window.melee.snapshot());
+      if (after.cards[index].availability !== 'ready') throw new Error('Selected set did not enter the packaged library');
     }
-    console.log('Selected publisher archive and reviewed members verified in the packaged app.');
+    const final = await page.evaluate(() => window.melee.snapshot());
+    if (indices.some((index) => final.cards[index].availability !== 'ready')) {
+      throw new Error('A reviewed set is missing after shared-archive preparation');
+    }
+    console.log('All reviewed sets verified and prepared through the packaged app.');
   }
   if (process.argv.includes('--import-folder')) {
     const sourceFolder = resolve('data/slp');
@@ -69,5 +63,9 @@ try {
     console.log('Imported all 60 local samples by reference and merged them with catalog cards.');
   }
 } finally {
-  await app.close();
+  try {
+    await app.close();
+  } finally {
+    await rm(profile, { recursive: true, force: true });
+  }
 }

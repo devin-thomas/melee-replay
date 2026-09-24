@@ -6,16 +6,21 @@ archive](https://www.reddit.com/r/SSBM/comments/oozzcb/) and noted that it is an
 unfiltered event dump. We inspected the original ZIP rather than treating
 adjacent files as a set.
 
-Grand Finals material has now been cross-checked against an [independent
+Grand Finals material has been cross-checked against an [independent
 game-by-game bracket record](https://www.reddit.com/r/smashbros/comments/on64vr/)
 and the [publisher's match video](https://www.youtube.com/watch?v=P4gNB3Cfai4).
-The backstage `summit11-records.json` records exact ZIP and member hashes,
-ordered membership, parsed endings, and source evidence. It contains results;
-do not display it in the app's browse or pre-play views. Only one contest is
-shown as a catalog item, so the browse list does not disclose later bracket
-progression. Nearby warmup and no-contest files are excluded.
-`review_summit11.py` reproduces the byte and
-parser review from the original archive in `data/archives/`.
+Eight early pool matchups were checked against the organizer videos and
+independent match records linked in `summit11-pool-selections.json`. The pool
+matchups cover distinct entrants, so listing them together does not reveal
+progression between those matches. The replay windows match the independent
+records' ordered stages and terminal set scores. `summit11-records.json` and
+`summit11-pool-records.json` record exact ZIP and member hashes, ordered
+membership, parsed endings, and source evidence. These backstage files contain
+results; do not display them in the app's browse or pre-play views. Only the
+first Grand Finals contest is published, so the browse list does not disclose
+the later contest. Nearby warmups and unrelated files are excluded.
+`review_summit11.py` and `review_summit11_pools.py` reproduce the byte and
+parser checks from the original archive in `data/archives/`.
 
 The app fetches the publisher's original event ZIP on demand, verifies its
 whole-file hash, and extracts only the selected set members by exact path and
