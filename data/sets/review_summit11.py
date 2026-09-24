@@ -148,7 +148,8 @@ def main() -> None:
             "sourceResult": {"entrantA": score_a, "entrantB": score_b},
         })
     OUTPUT.write_text(json.dumps({"source": source, "asset": asset,
-                                  "replays": replays, "items": items}, indent=2) + "\n", encoding="utf-8")
+                                  "replays": replays, "items": items,
+                                  "catalogItemIds": [items[0]["itemId"]]}, indent=2) + "\n", encoding="utf-8")
     print("Reviewed official archive and wrote backstage set evidence.")
 
 

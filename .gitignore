@@ -6,6 +6,8 @@ coverage/
 output/
 *.log
 data/slp/
+data/archives/
+__pycache__/
 data/__pycache__/
 *.slp
 *.zip

@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parent
 SOURCE = ROOT / "replay-batch.json"
 OUTPUT = ROOT / "catalog-v1.json"
 SET_RECORDS = ROOT / "sets" / "summit11-records.json"
+POOL_RECORDS = ROOT / "sets" / "summit11-pool-records.json"
 SOURCE_ID = "huggingface-slippi-public-v3.7"
 NAMESPACE = uuid.UUID("f8cbf661-8ead-491b-b637-e869300b69f5")
 
@@ -46,14 +47,41 @@ def main() -> None:
 
     generated_at = datetime.fromisoformat(batch["sampledAt"]).astimezone(timezone.utc)
     timestamp = generated_at.isoformat(timespec="milliseconds").replace("+00:00", "Z")
-    set_records = json.loads(SET_RECORDS.read_text(encoding="utf-8"))
+    set_records = [json.loads(path.read_text(encoding="utf-8"))
+                   for path in (SET_RECORDS, POOL_RECORDS)]
+    archive_asset = set_records[0]["asset"]
+    if any(record["asset"] != archive_asset for record in set_records[1:]):
+        raise ValueError("Reviewed sets must reference the same pinned publisher archive")
+    archive_source = set_records[0]["source"]
+    archive_source["evidenceUrls"] = list(dict.fromkeys(
+        url for record in set_records for url in record["source"]["evidenceUrls"]))
+    archive_source["reviewedAt"] = max(record["source"]["reviewedAt"] for record in set_records)
+    archive_source["auditReference"] = (
+        "data/sets/summit11-records.json and data/sets/summit11-pool-records.json: "
+        "pinned archive and member hashes, complete endings, ordered stage and result cross-checks."
+    )
     content_key = revision + "\n" + "\n".join(record["sha256"] for record in records)
-    content_key += "\n" + set_records["asset"]["sha256"]
-    catalog_set = set_records["items"][0]
-    catalog_replay_ids = {segment["replayId"] for segment in catalog_set["segments"]}
-    catalog_set_replays = [replay for replay in set_records["replays"]
+    content_key += "\n" + archive_asset["sha256"]
+    reviewed_items = [item for record in set_records for item in record["items"]]
+    published_id_list = [item_id for record in set_records for item_id in record["catalogItemIds"]]
+    published_ids = set(published_id_list)
+    if len(published_ids) != len(published_id_list):
+        raise ValueError("Duplicate published set id")
+    catalog_sets = [item for item in reviewed_items
+                    if item["itemId"] in published_ids]
+    if not catalog_sets or len(catalog_sets) != len(published_ids):
+        raise ValueError("Published set ids must resolve to reviewed sets")
+    published_replay_ids = [segment["replayId"] for item in catalog_sets
+                            for segment in item["segments"]]
+    catalog_replay_ids = set(published_replay_ids)
+    if len(catalog_replay_ids) != len(published_replay_ids):
+        raise ValueError("Published sets overlap on replay membership")
+    catalog_set_replays = [replay for record in set_records for replay in record["replays"]
                            if replay["replayId"] in catalog_replay_ids]
+    if len(catalog_set_replays) != len(catalog_replay_ids):
+        raise ValueError("Reviewed set references a missing replay")
     content_key += "\n" + "\n".join(replay["sha256"] for replay in catalog_set_replays)
+    content_key += "\n" + "\n".join(item["itemId"] for item in catalog_sets)
     catalog_revision = "curated-v1-" + hashlib.sha256(content_key.encode()).hexdigest()[:16]
     download_scope = {
         "origin": "https://huggingface.co",
@@ -119,11 +147,12 @@ def main() -> None:
             "provenance": "erickfm's CC0-labeled Slippi Public Dataset v3.7; original compilation by altf4 with nikki and yashichi. Set identity and completeness unverified.",
         })
 
-    catalog["sources"].append(set_records["source"])
-    catalog["assets"].append(set_records["asset"])
+    catalog["sources"].append(archive_source)
+    catalog["assets"].append(archive_asset)
     catalog["replays"].extend(catalog_set_replays)
-    catalog_set["verification"]["manifestRevision"] = catalog_revision
-    catalog["items"].append(catalog_set)
+    for item in catalog_sets:
+        item["verification"]["manifestRevision"] = catalog_revision
+        catalog["items"].append(item)
     OUTPUT.write_text(json.dumps(catalog, indent=2, ensure_ascii=True) + "\n", encoding="utf-8")
     print("Wrote curated catalog from reviewed standalone and set evidence.")
 

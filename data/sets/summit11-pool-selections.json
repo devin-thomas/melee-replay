@@ -1,0 +1,138 @@
+[
+  {
+    "sourceThread": "https://www.reddit.com/r/smashbros/comments/om96u3",
+    "organizerVideo": "https://www.youtube.com/watch?v=zw8IXpGDWRU",
+    "pool": "A",
+    "entrantA": "Zain",
+    "entrantB": "n0ne",
+    "entrantAPort": 3,
+    "entrantAOpeningCharacter": "MARTH",
+    "memberPaths": [
+      "Day 2/Game_20210716T232718.slp",
+      "Day 2/Game_20210716T233117.slp",
+      "Day 2/Game_20210716T233545.slp"
+    ],
+    "stageSequenceSha256": "1eba0f98db8fec00ba3362e2b4b401dd1c8330982818f64fab88a6d758f5ba24",
+    "sourceScoreSha256": "706c30075830a4f02a2f13521d2e0d261b1868f1248f4fe6256c313aa9f97dd9"
+  },
+  {
+    "sourceThread": "https://www.reddit.com/r/smashbros/comments/om9mvi",
+    "organizerVideo": "https://www.youtube.com/watch?v=pCwIuwPid_o",
+    "pool": "A",
+    "entrantA": "aMSa",
+    "entrantB": "Yingling",
+    "entrantAPort": 0,
+    "entrantAOpeningCharacter": "YOSHI",
+    "memberPaths": [
+      "Day 2/Game_20210716T234528.slp",
+      "Day 2/Game_20210716T234800.slp",
+      "Day 2/Game_20210716T235101.slp"
+    ],
+    "stageSequenceSha256": "7eb36e28002fdc436a6f6486f20112f22228a0e7b2f7a7d5f394d2b11833fa72",
+    "sourceScoreSha256": "706c30075830a4f02a2f13521d2e0d261b1868f1248f4fe6256c313aa9f97dd9"
+  },
+  {
+    "sourceThread": "https://www.reddit.com/r/smashbros/comments/om9wxm",
+    "organizerVideo": "https://www.youtube.com/watch?v=OqRabQ2tOVI",
+    "pool": "B",
+    "entrantA": "Mang0",
+    "entrantB": "moky",
+    "entrantAPort": 1,
+    "entrantAOpeningCharacter": "FALCO",
+    "memberPaths": [
+      "Day 2/Game_20210717T000601.slp",
+      "Day 2/Game_20210717T000934.slp",
+      "Day 2/Game_20210717T001245.slp",
+      "Day 2/Game_20210717T001526.slp",
+      "Day 2/Game_20210717T001743.slp"
+    ],
+    "stageSequenceSha256": "221bd01d50243ad9421af1185357dda5e9bd06b851ab6ab7e87f984e03343238",
+    "sourceScoreSha256": "0fd922e83d21fc2fda1578059c2012e5b132fbb80fba2be9660eb85d8c3f3404"
+  },
+  {
+    "sourceThread": "https://www.reddit.com/r/smashbros/comments/omaeir",
+    "organizerVideo": "https://www.youtube.com/watch?v=rwmYtEnIFA4",
+    "pool": "B",
+    "entrantA": "Hungrybox",
+    "entrantB": "KoDoRiN",
+    "entrantAPort": 3,
+    "entrantAOpeningCharacter": "JIGGLYPUFF",
+    "memberPaths": [
+      "Day 2/Game_20210717T002405.slp",
+      "Day 2/Game_20210717T002846.slp",
+      "Day 2/Game_20210717T003131.slp",
+      "Day 2/Game_20210717T003749.slp"
+    ],
+    "stageSequenceSha256": "d1a06cbe73683171e8ad9a5441f82fa0ea5fe27c4815322b0db65563a86d8757",
+    "sourceScoreSha256": "51ad5c36f38fc1f146295801f5d2db92ebddab58bf285e6b9ae54b50b843374f"
+  },
+  {
+    "sourceThread": "https://www.reddit.com/r/smashbros/comments/omav8u",
+    "organizerVideo": "https://www.youtube.com/watch?v=QGYKHAxDAqc",
+    "pool": "C",
+    "entrantA": "Wizzrobe",
+    "entrantB": "SFAT",
+    "entrantAPort": 2,
+    "entrantAOpeningCharacter": "CAPTAIN_FALCON",
+    "memberPaths": [
+      "Day 2/Game_20210717T010413.slp",
+      "Day 2/Game_20210717T010908.slp",
+      "Day 2/Game_20210717T011300.slp",
+      "Day 2/Game_20210717T011636.slp"
+    ],
+    "stageSequenceSha256": "03cf3780a8f22e449ae209e9d625dd0432f7e401683469167b1c4b74a24baaeb",
+    "sourceScoreSha256": "51ad5c36f38fc1f146295801f5d2db92ebddab58bf285e6b9ae54b50b843374f"
+  },
+  {
+    "sourceThread": "https://www.reddit.com/r/smashbros/comments/ombkug",
+    "organizerVideo": "https://www.youtube.com/watch?v=6QCh-byKx9M",
+    "pool": "C",
+    "entrantA": "Aklo",
+    "entrantB": "LSD",
+    "entrantAPort": 0,
+    "entrantAOpeningCharacter": "FOX",
+    "memberPaths": [
+      "Day 2/Game_20210717T012902.slp",
+      "Day 2/Game_20210717T013236.slp",
+      "Day 2/Game_20210717T013622.slp",
+      "Day 2/Game_20210717T013958.slp",
+      "Day 2/Game_20210717T014318.slp"
+    ],
+    "stageSequenceSha256": "ad36e84562615e6e06ea9bf22d5ed0a5a30c47830f630f289b574e54905ae03a",
+    "sourceScoreSha256": "18b058689d010062a25cd7fb949b2abfea1757d2de45ca3abdda17db956e506b"
+  },
+  {
+    "sourceThread": "https://www.reddit.com/r/smashbros/comments/omc5kd",
+    "organizerVideo": "https://www.youtube.com/watch?v=bGTbo3t_9GY",
+    "pool": "D",
+    "entrantA": "iBDW",
+    "entrantB": "Plup",
+    "entrantAPort": 0,
+    "entrantAOpeningCharacter": "FOX",
+    "memberPaths": [
+      "Day 2/Game_20210717T015540.slp",
+      "Day 2/Game_20210717T015850.slp",
+      "Day 2/Game_20210717T020209.slp",
+      "Day 2/Game_20210717T020445.slp"
+    ],
+    "stageSequenceSha256": "c36257e7e23d510180446f3540076c1eeecb00dfbbd80e58d3d44a6b9488d847",
+    "sourceScoreSha256": "2335c54ffe3749ceafac20eea51040b4fa52beab7682f26d5d1bb75d1878478b"
+  },
+  {
+    "sourceThread": "https://www.reddit.com/r/smashbros/comments/omcg3y",
+    "organizerVideo": "https://www.youtube.com/watch?v=coQ8qR0WjRo",
+    "pool": "D",
+    "entrantA": "Axe",
+    "entrantB": "2saint",
+    "entrantAPort": 1,
+    "entrantAOpeningCharacter": "PIKACHU",
+    "memberPaths": [
+      "Day 2/Game_20210717T021221.slp",
+      "Day 2/Game_20210717T021938.slp",
+      "Day 2/Game_20210717T022415.slp",
+      "Day 2/Game_20210717T023118.slp"
+    ],
+    "stageSequenceSha256": "81595698c148a95f67852c92bc87e1415fa4b8aab8a2c7cfbf39ae7420956757",
+    "sourceScoreSha256": "51ad5c36f38fc1f146295801f5d2db92ebddab58bf285e6b9ae54b50b843374f"
+  }
+]
