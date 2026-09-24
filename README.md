@@ -20,6 +20,8 @@ Run `out/make/squirrel.windows/x64/melee-replay-0.1.0 Setup.exe` to install the 
 
 The ZIP under `out/make/zip/win32/x64/` is a portable alternative. Replay files, Playback Dolphin, and the game image are not bundled in either artifact.
 
+The spoiler-free [Windows acceptance log](docs/acceptance.md) records packaged replay, installer/update, and OBS checks.
+
 ## Develop on Windows
 
 Requires Node.js and npm for development. Playback uses an installed official Slippi Playback Dolphin and a user-supplied NTSC Melee 1.02 game image; neither is bundled. Setup detects an existing Slippi Launcher playback installation and a compatible image in Dolphin's configured ISO folders, or lets you choose both files. Use Recheck in Setup after changing either file.

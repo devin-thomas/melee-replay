@@ -23,6 +23,18 @@ try {
   if (count < 60) throw new Error(`Expected the reviewed catalog, found ${count} items`);
   await page.screenshot({ path: join(output, 'packaged-browse.png') });
   console.log(`Packaged catalog rendered ${count} items. Screenshot: ${join(output, 'packaged-browse.png')}`);
+  if (process.argv.includes('--storage')) {
+    const snapshot = await page.evaluate(() => window.melee.snapshot());
+    if (!Number.isFinite(snapshot.managedStorage.totalBytes) ||
+        !Number.isFinite(snapshot.managedStorage.downloadCacheBytes) ||
+        snapshot.managedStorage.totalBytes < snapshot.managedStorage.downloadCacheBytes) {
+      throw new Error('Packaged managed storage report is invalid.');
+    }
+    await page.getByRole('button', { name: 'Setup' }).click();
+    await page.getByRole('region', { name: 'Managed storage' }).waitFor();
+    await page.getByRole('button', { name: 'Clear download cache' }).waitFor();
+    console.log('Packaged Setup rendered aggregate managed storage and cache controls.');
+  }
 
   if (process.argv.includes('--download')) {
     await page.locator('.replay-row').first().click();
